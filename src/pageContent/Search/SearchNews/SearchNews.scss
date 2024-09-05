@@ -1,0 +1,10 @@
+.acc-news-search-block{
+    .acc-serach-news-image{
+        img{
+            @include media-breakpoint-down(xl) {
+                width: 200px;
+                margin-bottom: $spacer;
+            }
+        }
+    }
+}

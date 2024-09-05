@@ -1,0 +1,7 @@
+mutation createCustomerAccount($customerInput:CustomerInput!) {
+    createCustomer (input: $customerInput) {
+        customer {
+            customer_id
+        }
+    }
+}

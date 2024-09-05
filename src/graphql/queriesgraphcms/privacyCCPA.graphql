@@ -1,0 +1,37 @@
+query PrivacyCCPAContent{
+  ccpas {
+    id
+    section1accordion {
+      id
+      title
+      question
+      answer {
+        html
+        text
+      }
+      answerImage {
+        id
+        fileName
+        height
+        width
+        size
+        mimeType
+        url
+      }
+      pageName
+    }
+    storelanguage {
+      languages
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

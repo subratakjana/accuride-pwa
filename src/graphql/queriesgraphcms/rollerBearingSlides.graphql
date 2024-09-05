@@ -1,0 +1,207 @@
+query rollerBearingsContent {
+    rollerBearings {
+        id
+        stage
+        banner{
+            id
+            fileName
+            url
+        }
+        mobileBanner{
+            id
+            fileName
+            url
+        }
+        section1Title
+        section1SubTitle
+        section1Desc {
+            html
+            text
+        }
+        contactBar {
+            barText
+            contactNumber
+            link
+        }
+        section2ImageDesc {
+            id
+            bannerTitle
+            bannerButtonLabel
+            bannerButtonLink
+            bannerButton2Label
+            bannerButton2Link
+            bannerDescription {
+                html
+                text
+            }
+            noteText
+            bannerImage {
+                id
+                fileName
+                url
+                width
+                height
+            }
+            sliderOrFixedBlock
+        }
+        section3VideoSlider {
+            id
+            bannerTitle
+            bannerButtonLabel
+            bannerButtonLink
+            bannerButton2Label
+            bannerButton2Link
+            bannerDescription {
+                html
+                text
+            }
+            bannerImage {
+                id
+                fileName
+                url
+                width
+                height
+            }
+            bannerVideoUrl
+            sliderOrFixedBlock
+        }
+        section4ImageGallery {
+            id
+            imageTitle
+            imageDescription
+            galleryImages {
+                id
+                fileName
+                url
+                width
+                height
+            }
+            galleryImages2 {
+                id
+                fileName
+                url
+                width
+                height
+            }
+            imageButtonLabel
+            imageButtonLink
+        }
+        section5ImageSlider {
+            id
+            bannerTitle
+            bannerButtonLabel
+            bannerButtonLink
+            bannerButton2Label
+            bannerButton2Link
+            bannerDescription {
+                html
+                text
+            }
+            bannerImage {
+                id
+                fileName
+                url
+                width
+                height
+            }
+            bannerVideoUrl
+            sliderOrFixedBlock
+        }
+        section6VideoSlider {
+            id
+            bannerTitle
+            bannerButtonLabel
+            bannerButtonLink
+            bannerButton2Label
+            bannerButton2Link
+            bannerDescription {
+                html
+                text
+            }
+            bannerImage {
+                id
+                fileName
+                url
+                width
+                height
+            }
+            bannerVideoUrl
+            sliderOrFixedBlock
+        }
+        section7ImageDesc {
+            bannerTitle
+            bannerButtonLabel
+            bannerButtonLink
+            bannerButton2Label
+            bannerButton2Link
+            bannerDescription {
+                html
+                text
+            }
+            bannerImage {
+                id
+                fileName
+                url
+                width
+                height
+            }
+            bannerVideoUrl
+            sliderOrFixedBlock
+        }
+        section8Title
+        section8Desc {
+            html
+            text
+        }
+        section9ImageGallery {
+            id
+            imageTitle
+            imageDescription2{
+                html
+                text
+            }
+            galleryImages {
+                id
+                fileName
+                url
+            }
+            imageButtonLabel
+            imageButtonLink
+        }
+        section10ImageDesc {
+            bannerTitle
+            bannerButtonLabel
+            bannerButtonLink
+            bannerButton2Label
+            bannerButton2Link
+            bannerDescription {
+                html
+                text
+            }
+            bannerImage {
+                id
+                fileName
+                url
+                width
+                height
+            }
+            bannerVideoUrl
+            sliderOrFixedBlock
+        }
+        section10RightsideImages {
+            id
+            fileName
+            url
+        }
+        pages {
+            id
+            pageTitle
+            pageName
+            pageSlug
+            pageIntroduction {
+                html
+                text
+            }
+        }
+    }
+}

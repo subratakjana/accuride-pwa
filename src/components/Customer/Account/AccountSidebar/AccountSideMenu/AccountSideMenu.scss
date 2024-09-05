@@ -1,0 +1,39 @@
+.acc-acount-sidemenu{
+    .card-body{
+        height: calc(100vh - #{$spacer}*5.5);
+        border-bottom: $spacer solid $white;
+        overflow-y: auto;
+        @include media-breakpoint-up(xl) {
+            height: auto;            
+        }
+    }
+    .nav{
+        .nav-item{
+            padding: $spacer/2 0;
+            font-size: $font-size-base + .125;
+            a{
+                color: theme-color(dark);
+            }
+            &:first-child{
+                padding-top: 0;
+            }
+            &:last-child{
+                padding-bottom: 0;
+            }
+            &:before{
+                content: "\2022";
+                font-weight: bold;
+                display: inline-block; 
+                width: $spacer;
+                font-size: $font-size-base + .125;
+                color: theme-color(dark);
+            }
+            &.acc-activated{
+                font-weight: 500;
+                a{
+                    color: theme-color(dark);
+                }
+            }
+        }
+    }    
+}

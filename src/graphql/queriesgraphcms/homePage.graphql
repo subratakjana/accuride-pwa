@@ -1,0 +1,71 @@
+query homePageInfo {
+  homes {
+    id
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    solutionsHeading
+    section1ImageGallery {
+      id
+      imageTitle
+      imageDescription
+      galleryImages {
+        id
+        fileName
+        url
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    section2StaticBanner {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section3ImageGallery {
+      id
+      imageTitle
+      imageDescription
+      galleryImages {
+        id
+        fileName
+        url
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    section4Title
+    page {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

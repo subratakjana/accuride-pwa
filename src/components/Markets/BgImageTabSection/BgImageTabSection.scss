@@ -1,0 +1,124 @@
+.acc-tab-bg-image {
+  .nav-tabs {
+    a {
+      text-transform: uppercase;
+      border: none;
+      width: calc(100% / 5);
+      text-align: center;
+      border-radius: 0;
+      padding: $spacer;
+      position: relative;
+      z-index: 1;
+      &:hover {
+        outline: none;
+      }
+      &:focus {
+        outline: none;
+      }
+      &:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: -24px;
+        height: 25px;
+        width: 100%;
+        z-index: 10;
+        background: $white;
+      }
+      &.active {
+        outline: none;
+        &:after {
+          background: url('/assets/images/pointer-bg.png') center no-repeat;
+          @include media-breakpoint-up(xxxl) {
+            background-size: 102% 100%;
+          }
+        }
+      }
+    }
+  }
+  .tab-content {
+    .tab-pane {
+      & > img {
+        width: 100%;
+        object-fit: fill;
+        @include media-breakpoint-up(xl) {
+          height: 480px;
+        }
+      }
+      .acc-tab-text {
+        width: 400px;
+        left: $spacer * 8;
+        top: $spacer * 4;
+        p {
+          @include media-breakpoint-up(xl) {
+            color: $white;
+          }
+        }
+      }
+
+      span.tabImageWraper {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 480px;
+
+        @include media-breakpoint-up(xl) {
+          height: 480px;
+        }
+      }
+    }
+  }
+  .acc-custom-res-tab {
+    & > button {
+      position: relative;
+      background: none;
+      color: $grey-dark;
+      border: none;
+      border-bottom: 1px $grey-medium solid;
+      font-size: $h2-font-size;
+      padding-right: $spacer * 2;
+      &:focus {
+        outline: none;
+      }
+      .acc-res-tab-arrow {
+        font-size: $spacer * 2.2;
+        color: $info;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .acc-tab-text {
+      .bg-tab-icon {
+        filter: contrast(0);
+        -webkit-filter: contrast(0);
+      }
+    }
+
+    span.tabImageWraperMob {
+      display: block;
+      position: relative;
+      width: 100%;
+
+      @include media-breakpoint-down(lg) {
+        height: 270px;
+      }
+
+      @include media-breakpoint-down(md) {
+        height: 200px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        height: 150px;
+      }
+
+      @include media-breakpoint-down(xs) {
+        height: 120px;
+      }
+    }
+  }
+}
+
+.acc-bg-img-tab-icon {
+  width: $spacer * 6.25;
+  height: $spacer * 6.25;
+}

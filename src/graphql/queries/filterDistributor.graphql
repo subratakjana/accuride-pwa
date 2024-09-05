@@ -1,0 +1,23 @@
+query filterDistributors($qryStr:String){
+    filterDistributorsByAttribute(optionValue: $qryStr){
+     items{
+    id
+    name
+    address
+    zip
+    phone
+    category
+    city
+    country
+    description
+    email
+    fax
+    lat
+    lng
+    website
+    state
+  }
+
+    totalRecords
+}
+}

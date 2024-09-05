@@ -1,0 +1,66 @@
+query specialtySlidesContent {
+  specialtySlidess {
+    id
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    section1imagegallery {
+      id
+      imageTitle
+      imageDescription
+      galleryImages {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 635, height: 414, fit: clip}}})
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    section2imagegallery {
+      id
+      imageTitle
+      imageDescription
+      galleryImages {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 301, height: 226, fit: clip}}})
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    section3imagegallery {
+      id
+      imageTitle
+      imageDescription
+      galleryImages {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 412, height: 269, fit: clip}}})
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    storelanguage {
+      languages
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

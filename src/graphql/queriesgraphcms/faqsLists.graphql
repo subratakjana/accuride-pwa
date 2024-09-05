@@ -1,0 +1,62 @@
+query faqList {
+  faqs(where: {storeLanguage: {languages: English}, AND: {pages: {pageSlug: "faqs"}}}) {
+    id
+    stage
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    section1Block1 {
+      html
+      text
+    }
+    section1Block1Link
+    section1Block2 {
+      html
+      text
+    }
+    section1Block2Link
+    section1Block3 {
+      html
+      text
+    }
+    section1Block3Link
+    questionAnswerAccordion {
+      id
+      title
+      question
+      answer {
+        html
+        text
+      }
+      answerImage {
+        id
+        fileName
+        height
+        width
+        size
+        mimeType
+        url
+      }
+      pageName
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

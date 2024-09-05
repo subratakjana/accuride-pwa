@@ -1,0 +1,7 @@
+mutation createTokenBaseCard($getinput: TokenBaseCardCreateInput!){
+  createTokenBaseCard(input: $getinput) {
+    label
+    hash
+    active
+  }
+}

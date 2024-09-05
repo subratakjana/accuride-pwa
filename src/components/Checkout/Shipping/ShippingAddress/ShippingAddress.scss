@@ -1,0 +1,45 @@
+.acc-shipping-address {
+  .acc-address-list {
+    .acc-item {
+      margin-bottom: $spacer;
+      &:last-child {
+        margin-bottom: 0;
+        @include media-breakpoint-up(sm) {
+          margin-bottom: $spacer;
+        }
+      }
+      article {
+        position: relative;
+        border: 2px solid transparent;
+        &.acc-activated {
+          border-color: theme-color(secondary);
+          padding: $spacer;
+        }
+        .acc-action {
+          position: absolute;
+          right: 0;
+          top: 0;
+          svg {
+            fill: theme-color(dark);
+            stroke: theme-color(dark);
+          }
+        }
+      }
+    }
+  }
+}
+
+.acc {
+  &-shipping {
+    &-logo-icon {
+      width: $spacer * 1.875;
+    }
+    &-close-icon {
+      width: $spacer * 1.7;
+      height: $spacer * 1.7;
+    }
+    &-edit-icon {
+      width: $spacer * 1.25;
+    }
+  }
+}

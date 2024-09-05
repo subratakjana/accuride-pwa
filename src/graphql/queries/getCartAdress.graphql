@@ -1,0 +1,50 @@
+query getCartAdress($cartId: String!) {
+    cart(cart_id: $cartId) {
+        billing_address {
+            firstname
+            lastname
+            company
+            city
+            region_id
+            region {
+                code
+                label
+            }
+            country {
+                code
+                label
+            }
+            postcode
+            street
+            telephone
+        }
+        shipping_addresses {
+            firstname
+            lastname
+            company
+            street
+            city
+            region_id
+            region {
+                code
+                label
+            }
+            postcode
+            telephone
+            country {
+                code
+                label
+            }
+            selected_shipping_method {
+                amount {
+                    value
+                    currency
+                }
+                carrier_code
+                carrier_title
+                method_code
+                method_title
+            }
+        }
+    }
+}

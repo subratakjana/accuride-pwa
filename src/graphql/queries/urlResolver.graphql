@@ -1,0 +1,9 @@
+query resolveUrl($urlKey: String!, $lastSlug: String!) {
+    urlResolver(url: $urlKey) {
+        type
+        id : entity_uid
+    }
+    categoryList(filters: {url_key: {eq: $lastSlug}}) {
+        display_mode
+    }
+}

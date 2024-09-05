@@ -1,0 +1,70 @@
+.acc-card-carousel-witth-bg{
+    .slick-track{
+        display: flex !important;
+        .slick-slide{
+            padding: $spacer/ 2;
+            height: inherit !important;
+            position: relative;
+            & > div{
+                    height: 100%;
+                    position: relative;
+                & > div{
+                    height: 100%;
+                    position: relative;
+                    background: #ccc;
+                    border-radius: 0;
+                    .card-body{
+                        background: none;
+                        padding: $spacer*2;
+                        .card-title{
+                            font-size: $h1-font-size;
+                            color: $grey-dark;
+                        }
+                        .card-text{
+                            color: $grey-dark;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.acc-blue-bg-card{
+    .slick-track{
+        display: flex !important;
+        .slick-slide{
+            padding: ($spacer*1) / 2;
+            height: inherit !important;
+            position: relative;
+            & > div{
+                height: 100%;
+                position: relative;
+                & > div{
+                    height: 100%;
+                    position: relative;
+                    background: $primary;
+                    border-radius: 0;
+                    .card-body{
+                        text-align: left;
+                        background: $primary;
+                        padding: $spacer;            
+                        @include media-breakpoint-up(lg) {
+                            min-height: 280px;
+                        }
+                        .card-title{
+                            font-size: $h4-font-size;
+                            color: $white;
+                            border-bottom: $border-width solid theme-color(light);
+                            padding-bottom: $spacer;
+                            margin-bottom: $spacer;
+                        }
+                        .card-text{
+                            color: $white;
+                            font-size: 14px;
+                        }
+                    }  
+                }
+            }      
+        }
+    }
+}

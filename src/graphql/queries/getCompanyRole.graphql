@@ -1,0 +1,22 @@
+query getCompanyRole {
+    company{
+        id
+        roles(pageSize: 555, currentPage: 1){
+            items{
+                id
+                name
+                users_count
+                permissions {
+                  id
+                  text
+                  sort_order
+                  children {
+                    id
+                    text
+                    sort_order
+                  }
+                }
+            }
+        }
+    }
+}

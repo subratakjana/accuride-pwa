@@ -1,0 +1,15 @@
+@import '/src/styles/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.reviewTab {
+  :global(.yotpo-head) {
+    display: none !important;
+  }
+}
+
+.acc-reviews-not-found-icon {
+  width: $spacer * 4;
+  &-mobile {
+    width: $spacer * 2;
+  }
+}

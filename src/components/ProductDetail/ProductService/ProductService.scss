@@ -1,0 +1,56 @@
+.acc-product-service {
+  border-top: 1px solid theme-color(medium);
+  border-bottom: 1px solid theme-color(medium);
+  @include media-breakpoint-up(xl) {
+    border-bottom: 0;
+  }
+  .acc-service-list {
+    li {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-size: $font-size-base - 0.0625;
+      @include media-breakpoint-up(xl) {
+        text-transform: capitalize;
+      }
+      @include media-breakpoint-up(xxl) {
+        text-transform: uppercase;
+      }
+      svg {
+        height: $spacer * 2.5;
+        @include media-breakpoint-up(xl) {
+          height: $spacer * 1.5;
+        }
+        @include media-breakpoint-up(xxl) {
+          height: $spacer * 2.5;
+        }
+      }
+    }
+  }
+}
+
+.acc-service-modal {
+  .modal-body {
+    .section-padding {
+      @include media-breakpoint-up(xl) {
+        padding-top: $spacer * 2;
+        padding-bottom: $spacer * 2;
+      }
+    }
+  }
+}
+
+.acc {
+  &-service {
+    &-logo-icon {
+      width: $spacer * 2;
+    }
+    &-close-icon {
+      width: $spacer * 1.625;
+      height: $spacer * 1.625;
+    }
+  }
+}

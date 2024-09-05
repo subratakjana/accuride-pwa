@@ -1,0 +1,56 @@
+.acc-product-configuration {
+    .form-control:not(select) {
+        text-align: center;
+        text-align-last: center;
+        padding-right: $spacer/2;
+        background-image: none;
+    }
+
+    // group product
+    .acc-group-product {
+        .acc-item {
+            border-bottom: 1px solid theme-color(medium);
+            padding-bottom: $spacer;
+            margin-bottom: $spacer;
+
+            .acc-img {
+                max-height: 280px;
+                margin: 0 auto;
+            }
+
+            .acc-qty {
+                width: $spacer * 2.5;
+            }
+        }
+    }
+}
+
+.acc-pdp-find-distri-bttn {
+    background: rgb(201, 201, 201);
+    border: 1px solid rgb(198, 198, 198);
+    color: rgb(0, 84, 163);
+
+    &:hover {
+        color: rgb(0, 84, 163);
+    }
+}
+
+.addToCartBtn,
+.acc-pdp-find-distri-bttn {
+    @include media-breakpoint-up(md) {
+        width: calc(50% - #{$spacer * 0.25});
+        white-space: nowrap;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        width: $spacer * 13;
+    }
+}
+.disabled-div {
+    opacity: 0.5; 
+    pointer-events: none; /* disable pointer events on the div */
+}
+.enabled-div {
+    opacity: 1; 
+    pointer-events: auto;
+}

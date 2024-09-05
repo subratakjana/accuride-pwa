@@ -1,0 +1,6 @@
+
+mutation GET_HASH_KEY($userIp: GetHashKeyInput!){
+  getHashKey(input: $userIp) {
+      hashkey
+  }
+}

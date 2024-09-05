@@ -1,0 +1,51 @@
+query eventsesContent{
+  eventses {
+    id
+    stage
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    eventsImageBlock {
+      id
+      stage
+      title
+      image {
+        id
+        fileName
+        height
+        width
+        size
+        mimeType
+        url
+      }
+      imageTitle
+      imageDescription
+      startDate
+      endDate
+      location {
+        html
+        text
+      }
+      setAsUpcomingEvents
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

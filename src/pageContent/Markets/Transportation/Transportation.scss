@@ -1,0 +1,32 @@
+.acc-transportation-ps-banner{
+    background: $primary;
+    border-bottom: $spacer/2 $secondary solid;
+    margin-top: $spacer*9;
+    @include media-breakpoint-down(lg) {
+        padding-top: $spacer*2;
+    }
+    .product-bg-desc{
+        .right-with-text{
+            article{
+                background: none;                
+                color: $white;
+                padding: $spacer*2 0 $spacer*3;
+                @include media-breakpoint-up(xl) {
+                    text-align: left !important;
+                }
+                h1{
+                    color: $white;
+                }
+            }
+        }
+        .left-with-image{
+            img{
+                position: relative;
+                margin-top: -($spacer*12);
+                @include media-breakpoint-down(lg) {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

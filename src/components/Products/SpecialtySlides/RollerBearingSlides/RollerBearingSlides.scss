@@ -1,0 +1,51 @@
+.acc-rollerbearing-intro-sec{
+    p{
+        margin-bottom: 0 !important;
+    }
+}
+
+.acc-rollerbearing-section2{
+    border-bottom: $spacer*2 $primary solid;
+    p{
+        line-height: 10px;
+    }
+}
+
+.acc-exp-logo-sec{
+    border-bottom: $spacer*2 $primary solid;
+    .container{
+        .acc-exp-logo-img{
+            height: 200px;
+            max-width: 180px;
+            div {
+                width: 100%;
+                height: 100%;
+                svg {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        p{
+            margin-bottom: 0 !important;
+            a{
+                pointer-events: none;
+            }
+        }
+    }
+}
+
+.acc-gif-hover-ani{
+    position: relative;
+    .acc-gif-image{
+        opacity: 0;
+        cursor: pointer;        
+    }
+    &:hover{
+        .acc-gif-image{
+            opacity: 1;
+            z-index: 1;
+        } 
+    }
+}

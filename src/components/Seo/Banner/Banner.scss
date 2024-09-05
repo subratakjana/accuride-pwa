@@ -1,0 +1,375 @@
+// import partial files
+@import "../../../../src/styles/scss/variables";
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../node_modules/bootstrap/scss/mixins/breakpoints";
+
+.acc-page-main-banner {
+  img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    @include media-breakpoint-up(lg) {
+      height: 300px;
+    }
+    @include media-breakpoint-up(xl) {
+      height: 400px;
+    }
+  }
+  .acc-banner-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    @include media-breakpoint-up(lg) {
+      width: 100%;
+      max-width: $spacer * 40;
+    }
+  }
+  &.acc-small-banner {
+    img {
+      height: 130px;
+      @include media-breakpoint-up(lg) {
+        height: 150px;
+      }
+      @include media-breakpoint-up(xl) {
+        height: 200px;
+      }
+    }
+  }
+  &.acc-right-caption-bg {
+    .acc-banner-caption {
+      @include media-breakpoint-up(xl) {
+        bottom: $spacer * 1;
+        transform: none;
+        top: auto;
+        right: $spacer * 0;
+        left: auto;
+        max-width: $spacer * 50;
+        padding: $spacer * 3;
+        padding-left: $spacer * 6;
+        h2 {
+          font-size: $h1-font-size;
+          text-transform: uppercase;
+          font-weight: 300;
+          position: relative;
+          z-index: $spacer * 1;
+        }
+        p {
+          font-size: $display4-size;
+          text-transform: uppercase;
+          position: relative;
+          z-index: $spacer * 1;
+        }
+        &:before {
+          content: "";
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          transform: matrix3d(
+            1,
+            0,
+            0,
+            0,
+            0.707066,
+            -0.842649,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          );
+          margin-right: -$spacer * 6;
+          background: rgba($secondary, 0.8);
+          position: absolute;
+          z-index: $spacer * 0;
+        }
+      }
+    }
+  }
+  &.acc-automotive-banner {
+    @include media-breakpoint-up(xl) {
+      .acc-banner-caption {
+        right: $spacer * 4;
+        top: auto;
+        transform: none;
+        bottom: $spacer * 3;
+        max-width: $spacer * 44;
+        h2 {
+          font-size: $h1-font-size;
+          text-transform: uppercase;
+          font-weight: 300;
+          position: relative;
+          z-index: $spacer * 1;
+        }
+        p {
+          font-size: $display3-size;
+          text-transform: uppercase;
+          position: relative;
+          z-index: $spacer * 1;
+        }
+      }
+    }
+  }
+  &.acc-testi-banner {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      right: 0;
+      top: 0;
+      background: rgba($black, 0.5);
+      @include media-breakpoint-up(xl) {
+        width: 50%;
+        background: -moz-linear-gradient(
+          left,
+          rgba($black, 0) 0%,
+          rgba($black, 1) 100%
+        );
+        background: -webkit-linear-gradient(
+          left,
+          rgba($black, 0) 0%,
+          rgba($black, 1) 100%
+        );
+        background: linear-gradient(
+          to right,
+          rgba($black, 0) 0%,
+          rgba($black, 1) 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 );
+      }
+    }
+    img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      object-position: left;
+    }
+    .acc-banner-caption {
+      @include media-breakpoint-up(xl) {
+        right: $spacer * 15;
+        max-width: $spacer * 25;
+        left: auto;
+      }
+      text-align: center;
+      right: $spacer * 0;
+      left: $spacer * 0;
+      padding: 0 $spacer * 1;
+      z-index: 1;
+    }
+  }
+  &.acc-career-banner {
+    .acc-banner-caption {
+      position: relative !important;
+      top: auto;
+      transform: none;
+      text-align: center;
+      max-width: none;
+      @include media-breakpoint-up(xl) {
+        right: $spacer * 10;
+        max-width: $spacer * 28;
+        position: absolute !important;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: left;
+      }
+      h2 {
+        color: $grey-dark !important;
+        padding-top: $spacer;
+        @include media-breakpoint-up(xl) {
+          text-transform: uppercase;
+          font-weight: 300;
+          color: $white !important;
+        }
+      }
+      p {
+        color: $grey-dark !important;
+        @include media-breakpoint-up(xl) {
+          padding-bottom: $spacer * 1;
+          color: $white !important;
+        }
+      }
+    }
+  }
+  &.acc-video-banner {
+    .acc-banner-caption {
+      position: relative !important;
+      top: auto;
+      transform: none;
+      text-align: center;
+      max-width: none;
+      @include media-breakpoint-up(xl) {
+        right: $spacer * 10;
+        max-width: $spacer * 28;
+        position: absolute !important;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: left;
+      }
+      h2 {
+        color: $grey-dark !important;
+        padding-top: $spacer;
+        @include media-breakpoint-up(xl) {
+          text-transform: uppercase;
+          font-weight: 300;
+          color: $white !important;
+        }
+      }
+      p {
+        color: $grey-dark !important;
+        @include media-breakpoint-up(xl) {
+          padding-bottom: $spacer * 1;
+          color: $white !important;
+        }
+      }
+    }
+  }
+  &.acc-homeowner-main-banner {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      right: 0;
+      top: 0;
+      background: rgba($black, 0.5);
+      @include media-breakpoint-up(xl) {
+        width: 50%;
+        background: -moz-linear-gradient(
+          left,
+          rgba($black, 0) 0%,
+          rgba($black, 1) 100%
+        );
+        background: -webkit-linear-gradient(
+          left,
+          rgba($black, 0) 0%,
+          rgba($black, 1) 100%
+        );
+        background: linear-gradient(
+          to right,
+          rgba($black, 0) 0%,
+          rgba($black, 1) 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 );
+      }
+    }
+    .acc-banner-caption {
+      z-index: 1;
+      @include media-breakpoint-up(xl) {
+        right: $spacer * 10;
+        max-width: $spacer * 48;
+        h2 {
+          font-weight: 300;
+          text-align: center;
+          font-size: $spacer * 2.5;
+        }
+        h5 {
+          text-align: right;
+          font-weight: 300;
+          color: $white;
+          margin: 0;
+          font-size: $spacer * 1.5;
+        }
+        p {
+          padding-bottom: 0;
+          margin-bottom: 0;
+          text-align: right;
+          color: $white;
+        }
+      }
+    }
+  }
+  &.acc-wildOverlands-banner {
+    &::after {
+      content: "";
+      background: url("/assets/images/rip-bg.png");
+      width: 100%;
+      height: $spacer * 1;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-repeat: repeat-x;
+      background-position: top;
+    }
+    .acc-banner-caption {
+      @include media-breakpoint-up(xl) {
+        right: $spacer * 5;
+        max-width: $spacer * 25;
+        h2 {
+          text-transform: uppercase;
+          font-weight: 300;
+          color: $black !important;
+          font-size: $spacer * 2.5;
+          font-weight: 600;
+        }
+        p {
+          padding-bottom: $spacer * 1;
+          color: $black !important;
+          font-size: $spacer * 1.5;
+        }
+      }
+    }
+  }
+  &.acc-drawer-slides-product-banner-9300 {
+    .acc-banner-caption {
+      @include media-breakpoint-up(xl) {
+        right: $spacer * 8;
+        max-width: $spacer * 25;
+        text-align: center;
+        h2 {
+          text-transform: uppercase;
+          font-size: $spacer * 1.5;
+        }
+        p {
+          padding-bottom: $spacer * 1;
+          font-size: $spacer * 2;
+        }
+      }
+    }
+  }
+  &.acc-drawer-slides-product-banner-3800 {
+    .acc-banner-caption {
+      @include media-breakpoint-up(xl) {
+        right: $spacer * 8;
+        max-width: $spacer * 25;
+        text-align: center;
+        h2 {
+          text-transform: uppercase;
+          font-size: $spacer * 1.2;
+          color: $primary !important;
+        }
+        p {
+          padding-bottom: $spacer * 1;
+          font-size: $spacer * 1.5;
+          color: $primary !important;
+        }
+      }
+    }
+  }
+  &.acc-drawer-slides-product-banner-3100 {
+    .acc-banner-caption {
+      @include media-breakpoint-up(xl) {
+        left: $spacer * 8;
+        max-width: $spacer * 30;
+        text-align: center;
+        h2 {
+          text-transform: uppercase;
+          font-size: $spacer * 1.2;
+          color: $primary !important;
+        }
+        p {
+          padding-bottom: $spacer * 1;
+          font-size: $spacer * 1.5;
+          color: $primary !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+query getCompanyTeam {
+    company{
+        id
+        name
+        structure{
+            items {
+                entity{
+                    ... on CompanyTeam {
+                        __typename
+                        name
+                        description
+                        id
+                    }
+                }
+            }
+        }
+    }
+}
+

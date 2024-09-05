@@ -1,0 +1,10 @@
+query GET_HOME_TOP_BANNER {
+    homeBanner {
+        home_banner_image
+        link
+        slider_id
+        target
+        image_type
+    }
+}
+

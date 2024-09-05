@@ -1,0 +1,29 @@
+@import "~bootstrap/scss/functions";
+@import "/src/styles/scss/variables";
+
+.acc-fullLoader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(theme-color(light), 0.9);
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.insideLoader {
+  position: absolute;
+}
+
+.acc-mini-cart-loading {
+  height: 300px;
+  position: relative;
+}
+
+.acc-market-video-loader {
+  position: absolute !important;
+}

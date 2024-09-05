@@ -1,0 +1,25 @@
+.acc-shipping-method{
+    .acc-method-list{
+        li{
+            position: relative;
+            .acc-ship-option-name{
+                @include media-breakpoint-up(xl) {
+                    max-width: 164px;
+                }
+            }
+        }
+    }
+}
+
+// sidebar
+.acc-right-sidebar{
+    .acc-shipping-method{
+        padding-top: $spacer/2 !important;
+        header{
+            h2{
+                font-size: $spacer*1.125;
+                padding: 0 !important;
+            }
+        }
+    }
+}

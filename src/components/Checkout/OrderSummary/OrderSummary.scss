@@ -1,0 +1,11 @@
+.acc-order-summary {
+  top: $spacer * 3;
+  position: sticky;
+  z-index: 3;
+  .badge {
+    top: $spacer/4 !important;
+  }
+  &-cart-icon {
+    width: $spacer * 2.25;
+  }
+}

@@ -1,0 +1,22 @@
+.acc-literature-content{
+    .acc-literature-content-body{
+        @include media-breakpoint-up(sm) {
+            min-height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @include media-breakpoint-up(lg) {
+            min-height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @include media-breakpoint-up(xl) {
+            min-height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

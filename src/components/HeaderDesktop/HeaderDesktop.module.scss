@@ -1,0 +1,91 @@
+@import "~bootstrap/scss/functions";
+@import "/src/styles/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+// desktop header start
+.acc-header-desktop {
+  position: sticky;
+  top: -$spacer * 2;
+  z-index: 14;
+
+  &.acc-header-desktop-cart {
+    top: 0;
+  }
+
+  // top bar
+  .acc-header-top-bar {
+    height: $spacer * 2;
+  }
+
+  .acc-sticky-header {
+    height: $spacer * 4;
+    background: theme-color-level(medium, -10);
+
+    // logo start
+    .acc-desktop-logo-col {
+      max-width: 220px;
+      flex: none;
+
+      svg {
+        height: $spacer * 4;
+        fill: theme-color(primary);
+        width: 150px;
+      }
+    }
+
+    // search start
+    .acc-desktop-search-col {
+      display: flex;
+      align-items: center;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      flex: none;
+
+      @include media-breakpoint-up(lg) {
+        max-width: 150px;
+      }
+
+      /* @include media-breakpoint-up(xl) {
+                max-width: 150px;
+            } */
+
+      @include media-breakpoint-up(xxl) {
+        max-width: 220px;
+      }
+    }
+
+    // mini cart
+    .acc-mini-cart-col {
+      max-width: $spacer * 4;
+      display: flex;
+      align-items: center;
+
+      // .acc-mini-cart-button {
+      :global(.badge) {
+        position: absolute;
+        right: $spacer * 0.25;
+        top: $spacer * 0.5;
+      }
+
+      // }
+    }
+  }
+
+  &>.acc-header-top-bar,
+  &>.acc-sticky-header {
+    &:global(> .container) {
+      max-width: map-get($container-max-widths, xxxl);
+    }
+  }
+}
+
+// if sticky sign up banner
+:global(.acc-has-sticky-banner) {
+  .acc-header-desktop {
+    top: $spacer * 0.5;
+
+    &.acc-header-desktop-cart {
+      top: $spacer * 2.5;
+    }
+  }
+}

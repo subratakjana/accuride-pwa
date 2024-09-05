@@ -1,0 +1,228 @@
+query productDetails ($url_key: String!) {
+    products(filter: {url_key: {eq: $url_key}}) {
+        # id
+        total_count
+        items {
+            __typename
+            price_tier_quote
+            price_tiers {
+                 discount {
+                    amount_off
+                    percent_off
+                }
+                final_price {
+                    value
+                }
+                quantity
+                # discount {
+                #     percent_off
+                # }
+            }
+            custom_category
+            categories{
+               	#__typename
+                name
+                uid
+            }
+            meta_title
+            meta_description
+            meta_keyword
+            sku
+            uid
+            name
+            #average_rating
+            custom_canonical
+            available_exit_link
+            exit_link
+            stock_status
+            product_logos {
+                logo_url
+            }
+            description {
+                html
+            }
+            url_key
+            specifications
+            tech_specification
+            image {
+                #label
+                gallery_url
+            }
+            product_for_sales
+            __typename
+            specifications
+            product_features
+            applications
+            quantity_in
+            product_price_range {
+                minimum_price {
+                    final_price {
+                        currency
+                        value
+                    }
+                }
+                maximum_price {
+                    final_price {
+                        currency
+                        value
+                    }
+                }
+            }
+            # small_image {
+            #     gallery_url
+            #     url(width:200,height:250)
+            #     label
+            # }
+            media_gallery {
+                gallery_url
+                label
+                url(width:142,height:142)
+                ... on ProductVideo {
+                video_content {
+                        # media_type
+                        # video_provider
+                        video_url
+                        # video_title
+                        # video_description
+                        # video_metadata
+                    }
+                }
+            }
+            related_products {
+                uid
+                name
+                url_key
+                #sku
+                #__typename
+                product_for_sales
+                #average_rating
+                image {
+                    gallery_url
+                }
+                product_price_range {
+                    minimum_price {
+                        final_price {
+                        currency
+                        value
+                        }
+                    }
+                    maximum_price {
+                        final_price {
+                        #currency
+                        value
+                        }
+                    }
+                }
+            }
+            ... on GroupedProduct {
+                items {
+                    product {
+                        __typename
+                        categories{
+                            #__typename
+                            name
+                            uid
+                        }
+                        price_tier_quote
+                        uid
+                        sku
+                        stock_status
+                        url_key
+                        name
+                        image {
+                            gallery_url
+                        }
+                        # small_image {
+                        #     gallery_url
+                        #     url(width:200,height:250)
+                        #     label
+                        # }
+                        product_price_range {
+                            minimum_price {
+                                final_price {
+                                currency
+                                value
+                                }
+                            }
+                            maximum_price {
+                                final_price {
+                                currency
+                                value
+                                }
+                            }
+                        }
+                        price_tiers {
+                             discount {
+                                amount_off
+                                percent_off
+                            }
+                            final_price {
+                                value
+                            }
+                            quantity
+                            # discount {
+                            #     percent_off
+                            # }
+                        }
+                    }
+                }
+            }
+            ... on ConfigurableProduct {
+                variants {
+                    attributes {
+                        label
+                        value_index : uid
+                    }
+                    product {
+                        product_for_sales
+                        price_tier_quote
+                        uid # must need to pass id else return store error.
+                        sku
+                        stock_status
+                        media_gallery {
+                        gallery_url
+                        label
+                            ... on ProductVideo {
+                                video_content {
+                                # media_type
+                                # video_provider
+                                video_url
+                                # video_title
+                                # video_description
+                                # video_metadata
+                                }
+                            }
+                        }
+                        price_range{
+                            minimum_price{
+                                final_price{
+                                    value
+                                }
+                            }
+                        }
+                        price_tiers{
+                            discount{
+                                amount_off
+                                percent_off
+                            }
+                            final_price{
+                                value
+                                #currency
+                            }
+                            quantity
+                        }
+                    }
+                }
+                configurable_options {
+                    attribute_code
+                    label
+                    value_index: uid
+                    values{
+                        label
+                        value_index: uid
+                    }
+                }
+            }
+        }
+    }
+}

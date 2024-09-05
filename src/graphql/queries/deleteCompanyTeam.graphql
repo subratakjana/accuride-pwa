@@ -1,0 +1,5 @@
+mutation deleteCompanyTeam($id: ID!){
+    deleteCompanyTeam(id: $id){
+        success
+    }
+}

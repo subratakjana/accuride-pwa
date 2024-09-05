@@ -1,0 +1,50 @@
+mutation setPaymentMethodOnCartAndPlaceOrder($getinput: SetPaymentMethodOnCartInput, $cartId: String!){
+  setPaymentMethodOnCart(input: $getinput) {
+    cart {
+      email
+      shipping_addresses {
+        firstname
+        lastname
+        telephone
+      }
+      prices {
+        grand_total {
+            currency
+            value
+        }
+      }
+      items {
+        quantity
+        product {
+            id : uid
+            name
+            sku
+            price_range {
+                minimum_price {
+                    final_price {
+                        currency
+                        value
+                    }
+                }
+            }
+        }
+      }
+      selected_payment_method {
+        code
+        tokenbase_card_id
+        tokenbase_data {
+          cc_type
+          cc_last4
+          cc_exp_year
+          cc_exp_month
+        }
+      }
+    }
+  }
+  placeOrder(input: {cart_id: $cartId}) {
+    order {
+      order_number
+      order_entity_id
+    }
+  }
+}

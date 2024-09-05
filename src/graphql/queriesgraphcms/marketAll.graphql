@@ -1,0 +1,37 @@
+query marketall {
+    markets(
+        where: {
+            storeLanguage: { languages: English }
+            AND: { pages: { pageSlug: "markets" } }
+        }
+    ) {
+        banner {
+            bannerImage {
+                fileName
+                url
+                id
+            }
+            bannerHeading
+        }
+        iconLists {
+            id
+            icon {
+                fileName
+                url
+                id
+            }
+            title
+            link
+        }
+        pages {
+            id
+            pageTitle
+            pageName
+            pageSlug
+            pageIntroduction {
+                html
+                text
+            }
+        }
+    }
+}

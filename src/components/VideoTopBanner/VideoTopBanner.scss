@@ -1,0 +1,27 @@
+.acc-top-video-banner{
+    .acc-main-video-banner{
+        height: auto;
+        position: relative;
+        text-align: center;
+        .acc-video-banner-image{
+            width: 100%;
+            display: block;        
+        }   
+    }
+    &.acc-rolerbearing-main-banner{
+        video{
+            border-bottom: $spacer*2 $primary solid;
+        }
+        @include media-breakpoint-down(sm) {
+            border-bottom: $spacer $primary solid;
+        }
+    }
+    &.acc-tradesmen-main-banner{
+        video{
+            border-bottom: $spacer*2 $primary solid;
+        }
+        @include media-breakpoint-down(sm) {
+            border-bottom: $spacer $primary solid;
+        }
+    }
+}

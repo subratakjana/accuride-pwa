@@ -1,0 +1,50 @@
+.acc-emergency-recreational-utility {
+    .acc-market-emergency-banner {
+        &.acc-page-main-banner {
+            @include media-breakpoint-up(xxl) {
+                height: 520px;
+            }
+        }
+    }
+
+    .acc-page-main-mob-banner {
+        .acc-mob-banner-img {
+            @include media-breakpoint-down(xs) {
+                height: 118px;
+            }
+        }
+    }
+
+    .acc-line-separator {
+        height: $spacer * 0.375;
+        @include media-breakpoint-up(md) {
+            height: $spacer * 0.75;
+        }
+    }
+
+    .acc-market-emergency-info {
+        p {
+            &:last-child {
+                @include media-breakpoint-down(sm) {
+                    margin-bottom: $spacer * 0.5;
+                }
+            }
+        }
+    }
+
+    .acc-market-emergency-recreational-tab {
+        @include media-breakpoint-down(sm) {
+            padding-top: 0;
+        }
+    }
+
+    .acc-partners-section {
+        background-color: #eaecee;
+        @include media-breakpoint-down(lg) {
+            padding-bottom: $spacer * 2.4;
+        }
+        .acc-market-emergency-partners-section {
+            padding-bottom: 0;
+        }
+    }
+}

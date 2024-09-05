@@ -1,0 +1,14 @@
+query getProductCurrency ($sku: String!) {
+  products( filter: {sku: {eq: $sku}}) {
+    items {
+        product_price_range {
+          minimum_price {
+            final_price {
+              currency
+              value
+            }
+          }
+        }
+      }
+  }
+}

@@ -1,0 +1,3 @@
+mutation deleteCustomerAddressQuery($id:Int!) {
+    deleteCustomerAddress (id: $id)
+}

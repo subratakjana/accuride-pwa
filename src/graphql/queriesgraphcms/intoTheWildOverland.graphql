@@ -1,0 +1,284 @@
+query wildOverlandsContent {
+  wildOverlands {
+    id
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    section1StaticBanner {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerVideoUrl
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 660, height: 371, fit: clip}}})
+      }
+      sliderOrFixedBlock
+    }
+    section2StaticBanner {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 919, height: 500, fit: clip}}})
+      }
+      sliderOrFixedBlock
+    }
+    section3BgImage{
+      id
+      fileName
+      url
+    }
+    section3LeftDesc{
+      html
+      text
+    }
+    section3RightDesc{
+      html
+      text
+    }
+    section4Title
+    section4Description
+    section5StaticBanner {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 636, height: 401, fit: clip}}})
+      }
+      sliderOrFixedBlock
+    }
+    section6Image{
+      id
+      fileName
+      url
+    }
+    section6BgImageDescription{
+      html
+      text
+    }
+    section6SlideImages{
+      id
+      fileName
+      url      
+    }
+    section7StaticBanner{
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section8Title
+    section8Description{
+      html
+      text
+    }
+    section8VideoUrl
+    section8VideoImage{
+      id
+      fileName
+      url
+    }
+    section9StaticBanner{
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+        assetTitle
+      }
+      sliderOrFixedBlock
+    }
+    section10StaticBanner{
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section11StaticBanner{
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section12StaticBanner{
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerVideoUrl
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section13StaticBanner{
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section14Title
+    section14LeftDescription{
+      html
+      text
+    }
+    section14RightDescription{
+      html
+      text
+    }
+    section15Title
+    section15Description{
+      html
+      text
+    }
+    section16InfoCards{
+      id
+      cardTitle
+      cardDescription
+      cardBgColor{
+        hex
+        css
+        rgba{
+          r
+          g
+          b
+          a
+        }
+      }
+      pageName
+    }
+    section17StaticBanner{
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    storeLanguage{
+      id
+      languages
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

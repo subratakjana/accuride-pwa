@@ -1,0 +1,45 @@
+query literaturelists {
+  literatures(stage: PUBLISHED, where: {storeLanguage: {languages: English}, AND: {pages: {pageSlug: "literature"}}}) {
+    id
+    stage
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    title
+    literatureDownloadsBlocks {
+      id
+      image {
+        id
+        fileName
+        height
+        width
+        size
+        mimeType
+        url
+      }
+      title
+      titleLink
+      buttonLabel
+      buttonLink
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

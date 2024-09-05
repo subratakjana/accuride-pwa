@@ -1,0 +1,12 @@
+query SignupBannersQuery {
+    signupBanners {
+        id
+        enable
+        defaultMessage {
+          html
+        }
+        checkoutMessage {
+          html
+        }
+    }
+}

@@ -1,0 +1,158 @@
+query EmergencyRecreationalUtilityContent {
+    emergencyRecreationalUtilityTransportations {
+        id
+        banner {
+            id
+            bannerImage {
+                id
+                fileName
+                url
+            }
+        }
+        section1Title
+        section1SubTitle
+        section2tabs {
+            id
+            tabName
+            tabTitle
+            pageName
+            tabVideoLink
+            tabDescription {
+                text
+                html
+            }
+            tabImage {
+                id
+                fileName
+                url(
+                    transformation: {
+                        image: {
+                            resize: { width: 612, height: 431, fit: clip }
+                        }
+                    }
+                )
+                width
+                height
+            }
+            tabBannerSubImage {
+                id
+                fileName
+                url(
+                    transformation: {
+                        image: {
+                            resize: { width: 267, height: 200, fit: clip }
+                        }
+                    }
+                )
+            }
+            technicalSpecifications {
+                id
+                pageTitle
+                fullDescription {
+                    html
+                    text
+                }
+                parentTabTitle
+                buttonLabel
+                buttonLink
+                button2Label
+                button2Link
+                videoId
+                videoLink
+                respectiveProductVideo {
+                    fileName
+                    id
+                    url
+                }
+                respectiveProductImage {
+                    id
+                    fileName
+                    url
+                    width
+                    height
+                }
+                tooltip
+            }
+        }
+        featuredProductTitle
+        featuredProductDescription
+        featuredProducts {
+            id
+            productSku
+            productId
+            productFeatureImage {
+                url(
+                    transformation: {
+                        image: {
+                            resize: { width: 387, height: 221, fit: clip }
+                        }
+                    }
+                )
+                fileName
+                width
+                height
+            }
+            productTitle
+            productSlug
+            productLink
+            productId
+        }
+        shopButtonLabel
+        shopButtonLink
+        section4slider {
+            id
+            title
+            description {
+                html
+                text
+            }
+            productLink1
+            productLink2
+            buttonLabel
+            buttonLink
+            videoLink
+            name
+            designation
+            image {
+                id
+                fileName
+                url
+            }
+            linkType
+        }
+        section5Title
+        section6ImageGallery {
+            id
+            fileName
+            url
+        }
+        section7imagedesc {
+            id
+            bannerTitle
+            bannerButtonLabel
+            bannerButtonLink
+            bannerButton2Label
+            bannerButton2Link
+            bannerDescription {
+                html
+                text
+            }
+            bannerImage {
+                id
+                fileName
+                url
+            }
+            sliderOrFixedBlock
+        }
+        pages {
+            id
+            pageTitle
+            pageName
+            pageSlug
+            pageIntroduction {
+                html
+                text
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+query shippingreturns {
+  shippingAndReturnses(where: {storeLanguage: {languages: English}, AND: {pages: {pageSlug: "shipping"}}}) {
+    id
+    stage
+    description {
+      html
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+      }
+    }
+  }
+}

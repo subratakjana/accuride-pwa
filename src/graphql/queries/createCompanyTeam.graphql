@@ -1,0 +1,9 @@
+mutation createCompanyTeam($getInput: CompanyTeamCreateInput!){
+  createCompanyTeam(input: $getInput) {
+    team {
+      id
+      name
+      description
+    }
+  }
+}

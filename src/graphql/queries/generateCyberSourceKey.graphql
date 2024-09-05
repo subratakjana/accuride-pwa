@@ -1,0 +1,6 @@
+query generateCyberSourceKey{
+  generateCyberSourceKey{
+    keyId
+    digest
+  }
+}

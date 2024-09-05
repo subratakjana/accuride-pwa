@@ -1,0 +1,138 @@
+.acc-ft-sec2-heading {
+    border-width: $spacer * 0.25 !important;
+    letter-spacing: -0.6px;
+
+    @include media-breakpoint-up(xxxxl) {
+        font-size: $spacer * 2.688;
+        letter-spacing: -0.65px;
+    }
+
+    @include media-breakpoint-up(xxxl) {
+        font-size: $spacer * 1.688;
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: $spacer * 1.5;
+    }
+}
+
+.acc-ft-sec3-heading {
+    @include media-breakpoint-up(xxxxl) {
+        letter-spacing: -0.8px;
+    }
+
+    @include media-breakpoint-down(xl) {
+        font-size: $spacer * 1.5;
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: $spacer * 1.25;
+        line-height: 1.25;
+        margin-top: $spacer * 3;
+        margin-bottom: $spacer * 1.25 !important;
+    }
+}
+
+.acc-sec3-btn {
+    position: absolute;
+
+    @include media-breakpoint-down(md) {
+        position: relative;
+        letter-spacing: -0.78px;
+        text-transform: uppercase;
+        font-size: $spacer;
+    }
+}
+
+.acc-video-product-listing-section {
+    &-row {
+        row-gap: $spacer * 5;
+
+        .acc-video-wrap {
+            &>span {
+                position: relative !important;
+
+                .acc-video-placeholder-image {
+                    position: relative !important;
+                    height: 435px !important;
+
+                    @include media-breakpoint-down(md) {
+                        height: 320px !important;
+                    }
+
+                    @include media-breakpoint-down(sm) {
+                        height: 280px !important;
+                    }
+
+                    @include media-breakpoint-down(xs) {
+                        height: 197px !important;
+                    }
+                }
+            }
+
+            .acc-video-btn {
+                pointer-events: none;
+                line-height: 0;
+
+                @include media-breakpoint-down(md) {
+                    width: 80px;
+                    height: auto;
+                }
+                
+                @include media-breakpoint-down(xs) {
+                    width: 51px;
+                }
+            }
+
+            .acc-video-stamp {
+                position: absolute;
+                pointer-events: none;
+                top: 0;
+                left: 0;
+
+                @include media-breakpoint-down(xl) {
+                    width: 180px;
+                    height: auto;
+                }
+
+                @include media-breakpoint-down(md) {
+                    width: 156px;
+                }
+
+                @include media-breakpoint-down(xs) {
+                    width: 116px;
+                }
+            }
+        }
+
+        .acc-video-product-img {
+            @include media-breakpoint-down(md) {
+                min-height: 150px !important;
+            }
+        }
+
+        .acc-video-product {
+
+            &-title,
+            &-title-desc {
+                @include media-breakpoint-down(md) {
+                    font-size: $spacer * 1.25 !important;
+                    margin-bottom: $spacer !important;
+                }
+            }
+
+            &-price {
+                @include media-breakpoint-down(md) {
+                    font-size: $spacer * 1.25 !important;
+                    margin-bottom: $spacer * 1.5 !important;
+                }
+            }
+        }
+
+        .swiper-pagination {
+            position: relative;
+            bottom: 0;
+            margin-top: $spacer;
+        }
+    }
+}

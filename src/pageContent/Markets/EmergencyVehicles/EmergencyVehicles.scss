@@ -1,0 +1,57 @@
+.acc-accesscontrol-bg-image{
+    background-size: cover;
+} 
+.acc-acess-control-static-banner1{
+    background: #0E0D12;    
+}
+.acc-acess-control-static-banner2{
+    .container-fluid{
+        .row{
+            .col-lg-7{
+                background: $primary;
+                article{
+                    width: 85%;
+                }
+            }
+        }
+    }
+}
+
+.acc-static-banner-bg-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.acc-emergency-vehicles-ps-banner{
+    background: $primary;
+    border-bottom: $spacer/2 $secondary solid;
+    margin-top: $spacer*2;
+    margin-bottom: $spacer*3;
+    @include media-breakpoint-down(lg) {
+        padding-top: $spacer*2;
+    }
+    .product-bg-desc{
+        .right-with-text{
+            article{
+                background: none;
+                color: $white;
+                padding: $spacer*2 0 $spacer*3;
+                @include media-breakpoint-up(xl) {
+                    text-align: left !important;
+                }
+                h1{
+                    color: $white;
+                }
+            }
+        }
+        .left-with-image{
+            img{
+                position: relative;
+                margin-top: -($spacer*12);
+                @include media-breakpoint-down(lg) {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

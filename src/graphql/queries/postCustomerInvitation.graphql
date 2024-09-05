@@ -1,0 +1,9 @@
+mutation sendInvitation($email: [String]!, $message: String!) {
+  sendInvitation(email: $email, message: $message) {
+    message {
+        success,
+        notice,
+        error
+    }
+  }
+}

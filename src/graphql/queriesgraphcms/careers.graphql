@@ -1,0 +1,56 @@
+query careersesContent{
+  careerses {
+    id
+    stage
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+      bannerDescription2{
+        text
+        html
+      }
+      bannerLinkType
+    }
+    section1ImageGallery {
+      id
+      imageTitle
+      imageDescription
+      galleryImages {
+        id
+        fileName
+        url
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    section2Title
+    section2Link
+    section2LinkText
+    currentOpenings {
+      id
+      stage
+      jobTitle
+      designation
+      numberOfPosts
+      description
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

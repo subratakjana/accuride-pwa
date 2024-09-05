@@ -1,0 +1,3 @@
+.acc-payment-method .form-control:focus{
+    z-index: 2; // for focus field overlap in .acc-order-summary header.
+}

@@ -1,0 +1,25 @@
+.acc-social-share{
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            margin-right: $spacer/2;
+            a{
+                width: $spacer*2;
+                height: $spacer*2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100%;
+                transition: $transition;
+                &:hover{
+                    transform: translateY(-$spacer/4);
+                }
+                svg{
+                    height: $spacer/1.125;
+                    fill: $white;
+                }
+            }
+        }
+    }
+}

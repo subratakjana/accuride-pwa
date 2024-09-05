@@ -1,0 +1,99 @@
+.acc-market-static-banner2{   
+    .container-fluid{    
+        @include media-breakpoint-up(lg) {    
+            background: $primary;  
+            article{
+                p{
+                    color: $white;
+                    a{
+                        text-decoration: underline;
+                        color: $white;
+                    }
+                }
+            }  
+        }    
+        .row{ 
+            @include media-breakpoint-up(lg) {    
+                margin-left: -($spacer*1.5); 
+                margin-right: -($spacer*1.5); 
+            }          
+            .acc-custom-bg-image{    
+                min-height: 250px;   
+                background-size: cover; 
+                background-position: center;         
+                @include media-breakpoint-up(lg) {    
+                    min-height: 500px;   
+                }  
+            }    
+        }    
+    }
+    &.acc-gray-bg-left-image{
+        @include media-breakpoint-up(lg) {
+            .container-fluid{                
+                background: $grey-light;  
+                article{
+                    p{
+                        color: $grey-dark;
+                        a{
+                            text-decoration: underline;
+                            color: $primary;
+                        }
+                    }
+                }
+                .row{
+                    .order-last{
+                        order: 1;
+                    }
+                    .order-first{
+                        order: 2;
+                        .float-right{
+                            float: left !important;
+                        }
+                    }
+                    .text-white{
+                        color: $grey-dark !important;
+                    }
+                }
+            }
+        }
+    } 
+    &.acc-gray-bg-right-image{
+        @include media-breakpoint-up(lg) {
+            .container-fluid{                
+                background: $grey-light;  
+                article{
+                    p{
+                        color: $grey-dark;
+                        a{
+                            text-decoration: underline;
+                            color: $primary;
+                        }
+                    }
+                }
+                .row{                   
+                    .text-white{
+                        color: $grey-dark !important;
+                    }
+                }
+            }
+        }
+    }
+    &.acc-drawer-slides-left-image{        
+        @include media-breakpoint-up(lg) {
+            .container-fluid{                
+                .row{
+                    .order-last{
+                        order: 1;
+                        background-position: left center;
+                    }
+                    .order-first{
+                        order: 2;
+                        .float-right{
+                            float: left !important;
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}

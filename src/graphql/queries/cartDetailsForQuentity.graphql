@@ -1,0 +1,5 @@
+query cartDetailsForQuentity($cartId: String!) {
+    cart(cart_id: $cartId) {
+        total_quantity
+    }
+}

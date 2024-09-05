@@ -1,0 +1,387 @@
+html{
+    scroll-behavior: smooth;
+}
+.acc-homeowner-custom-tab{
+    .container{
+        .nav-tabs{
+            a{
+                text-transform: uppercase;
+                border: none;
+                width: calc(100% / 4);
+                text-align: center;
+                border-radius: 0;
+                padding: $spacer 0;
+                &.active{
+                    border-top: 4px $primary solid;
+                    outline: none;
+                }
+            }
+        }
+        .tab-content{
+            background: $grey-light;
+            padding: $spacer*1;
+            @include media-breakpoint-up(md) {
+                padding: $spacer*3 $spacer*5 $spacer*4;
+            }
+            margin-top: $spacer*2;
+            .acc-homeowner-image-wrap{
+                &:before{
+                    content: '';
+                    background: $grey-light;
+                    bottom: -15px;
+                    left: -15px;
+                    position: absolute;
+                    box-shadow: $shadow2;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 0;
+                }
+                img{
+                    position: relative;
+                    z-index: 0;
+                }
+                .acc-homeowner-dots-wrap{
+                    .dot{
+                        &.dot-1{
+                            top: 16%;
+                            left: 20%;
+                        }
+                        &.dot-2{
+                            top: 50%;
+                            left: 38%;
+                        }
+                        &.dot-3{
+                            top: 63%;
+                            left: 59%;
+                        }
+                        &.dot-4{
+                            top: 64%;
+                            left: 73%;
+                        }
+                        &.dot-5{
+                            top: 51%;
+                            left: 83%;
+                        }
+                        width: 20px;
+                        height: 20px;
+                        background: $grey-medium;
+                        box-shadow: 0 0 0 3px rgba($white, 0.8);
+                        padding: 7px;
+                        cursor: pointer;
+                        border-radius: 50%;
+                        &.active{
+                            background: $primary;
+                            span{
+                                background: $primary;
+                            }
+                        }
+                        span{
+                            background: $grey-medium;
+                            box-shadow: 0 0 0 10px rgba($white, 0);
+                            width: 6px;
+                            height: 6px;
+                            position: relative;
+                            &::after{
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 50%;
+                                box-shadow: 0 0 0 3px rgba($white, 1);
+                            }
+                        }
+                    }
+                }
+                .acc-homeowner-image-caption{
+                    background: rgba($white, 0.8);
+                    top: 10px;
+                    @include media-breakpoint-up(md) {
+                        max-width: 400px;
+                        min-width: 400px;
+                    }
+                    display: none;
+                    &.caption-active{
+                        display: block;
+                    }
+                }
+            }
+            .acc-homeowner-content-wrap{
+                max-height: 415px;
+                & > div{
+                    h3{
+                        // color: $grey-medium;
+                        color: $grey-semidark;
+                        line-height: $spacer*1.8;
+                        padding-bottom: $spacer/3;
+                    }
+                    h4{
+                        color: $grey-semidark;
+                    }
+                    p{
+                        color: $grey-semidark;
+                    }
+                    button{
+                        display: none;
+                    }
+                    &.content-active{
+                        h3{
+                            color: $primary;
+                        }
+                        h4{
+                            color: $primary;
+                        }
+                        p{
+                            color: $grey-dark;
+                        }
+                        button{
+                            display: initial;
+                        }
+                    }
+                }
+            }
+            #uncontrolled-tab-example-tabpane-livingroom{
+                .dot-1{
+                    top: 61%;
+                    left: 35%;
+                }
+                .dot-2{
+                    top: 58%;
+                    left: 66%;
+                }
+            }
+            #uncontrolled-tab-example-tabpane-closet{
+                .dot-1{
+                    top: 47%;
+                    left: 14%;
+                }
+                .dot-2{
+                    top: 75%;
+                    left: 40%;
+                }
+                .dot-3{
+                    top: 10%;
+                    left: 80%;
+                    z-index: 9;
+                }
+            }
+            #uncontrolled-tab-example-tabpane-garage{
+                .dot-1{
+                    top: 40%;
+                    left: 14%;
+                }
+                .dot-2{
+                    top: 72%;
+                    left: 34%;
+                }
+                .dot-3{
+                    top: 65%;
+                    left: 54%;
+                }
+                .dot-4{
+                    top: 72%;
+                    left: 76%;
+                }
+                .dot-5{
+                    top: 50%;
+                    left: 89%;
+                }
+            }
+        }
+        .acc-custom-res-tab{
+            & > button{
+                position: relative;
+                background: none;
+                color: $grey-dark;
+                border: none;
+                border-bottom: 1px $grey-medium solid;
+                font-size: $h2-font-size;
+                &:focus{
+                    outline: none;
+                }
+                .acc-res-tab-arrow{
+                    font-size: $spacer*2.2;
+                    color: $info;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+            .collapse{
+                .tab-content-sec{
+                    .acc-tab-image-holder{
+                        cursor: pointer;
+                        & > img{
+                            height: 200px;
+                        }
+                        .acc-video-play-icon{
+                            font-size: $spacer*3;
+                            fill: $white;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                }
+                ul{
+                    li{
+                        a{
+                            color: $grey-dark;
+                        }
+                    }
+                }
+            }
+            .tab-content-sec{
+                .content-item{
+                    img{
+                        margin: auto;
+                    }
+                    iframe{
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+.acc-homeowner-writer-section{
+    .writerImageHolder {
+        position: relative;
+        width: 100%;
+        height: 120px;
+
+        @include media-breakpoint-up(xs) {
+            height: 160px;
+        }
+
+        @include media-breakpoint-up(sm) {
+            height: 280px;
+        }
+
+        @include media-breakpoint-up(md) {
+            height: 320px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            height: 400px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            height: 572px;
+        }
+    }
+    article{
+        @include media-breakpoint-up(lg) {
+            top: 50%;
+            transform: translateY(-50%);
+            left: $spacer*6;
+        }
+    }
+}
+.acc-homeowner-story-section{
+    .storyImgOuter {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 120px;
+
+        @include media-breakpoint-up(xs) {
+            height: 180px;
+        }
+
+        @include media-breakpoint-up(sm) {
+            height: 230px;
+        }
+
+        @include media-breakpoint-up(md) {
+            height: 300px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            height: 400px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            height: 456px;
+        }
+    }
+
+    .acc-homeowner-story-content{
+        @include media-breakpoint-up(xl) {
+            top: 50%;
+            transform: translateY(-50%);
+            right: $spacer*2;
+            max-width: 600px;
+            p{
+                color: $white;
+                a{
+                    color: $white;
+                }
+            }
+        }
+    }
+    .acc-homeowner-story-writer-desc{
+        bottom: auto;
+        top: $spacer*4;
+        right: 5%;
+        left: auto;
+        p{
+            color: $white;
+        }
+        @include media-breakpoint-up(lg) {
+            bottom: $spacer*7;
+            left: 21%;
+            right: auto;
+            top: auto;
+        }
+    }
+    .acc-homeowner-story-second-writer-desc{
+        bottom: auto;
+        top: $spacer*4;
+        right: 5%;
+        left: auto;
+        p{
+            color: $white;
+        }
+        @include media-breakpoint-up(lg) {
+            top: $spacer*15;
+            left: 17%;
+            right: auto;
+        }
+    }
+}
+.acc-homeowner-logo-image{
+    &:first-child{
+        img{
+            width: 180px;
+        }
+    }
+    .acc-svg-image {
+        width: 180px;
+        margin: 0 auto;
+        svg {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+.acc-homeowner-review-sec{
+    @include media-breakpoint-down(md) {
+        padding-top: 0;
+    }
+    article{
+        max-width: $spacer*45;
+        width: 100%;
+        margin: auto;
+        h1{
+            font-weight: 300;
+        }
+        h4{
+            @include media-breakpoint-up(md) {
+                text-align: right;
+            }
+            font-style: italic;
+            font-weight: 300;
+        }
+    }
+}

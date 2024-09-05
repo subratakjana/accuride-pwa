@@ -1,0 +1,36 @@
+.acc-acess-control-static-banner{
+    background: #0E0D12;
+}
+.acc-static-banner-left-image{
+    .acc-static-banner-text{
+        @include media-breakpoint-up(lg) {
+            order: 2;
+        }
+    }
+    .acc-static-banner-image{
+        @include media-breakpoint-up(lg) {
+            order: 1;
+        }
+        img{
+            margin: 0 auto;
+        }
+    }
+    &.acc-cad-image{
+        .acc-static-banner-image{
+            text-align: center;
+            @include media-breakpoint-up(lg) {
+                text-align: right;
+            }
+        }
+    }
+}
+.acc-static-banner-dark-text{
+    .acc-static-banner-text{
+        h1{
+            color: $primary !important;
+        }
+        p{
+            color: $grey-dark !important;
+        }
+    }
+}

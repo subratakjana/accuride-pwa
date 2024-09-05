@@ -1,0 +1,206 @@
+query constructionRailwayContent {
+  constructionRailways {
+    id
+    stage
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    section5Title
+    section5Description
+    section5TabSection {
+      id
+      tabName
+      tabTitle
+      pageName
+      tabVideoLink
+      tabDescription {
+        text
+        html
+      }
+      tabImage {
+        id
+        fileName
+        url
+        width
+        height
+      }
+      tabBannerSubImage {
+        id
+        fileName
+        url
+      }
+      technicalSpecifications {
+        id
+        pageTitle
+        fullDescription {
+          html
+          text
+        }
+        parentTabTitle
+        buttonLabel
+        buttonLink
+        button2Label
+        button2Link
+        videoId
+        videoLink
+      }
+    }
+    section5ButtonLabel
+    section5ButtonLink
+    section7ImageDesc {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section6Title
+    section3ImageDesc {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 660, height: 548, fit: clip}}})
+      }
+      sliderOrFixedBlock
+    }
+    section8ImageDesc {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 660, height: 413, fit: clip}}})
+      }
+      sliderOrFixedBlock
+    }
+    section6Description
+    section1ImageGallery {
+      id
+      imageTitle
+      imageDescription
+      galleryImages {
+        id
+        fileName
+        url
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    section4Slider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 789, height: 450, fit: clip}}})
+      }
+      sliderOrFixedBlock
+    }
+    storeLanguage {
+      id
+      languages
+    }
+    section6Images {
+      id
+      fileName
+      height
+      width
+      size
+      mimeType
+      url
+    }
+    section2TabArea {
+      id
+      tabName
+      tabTitle
+      pageName
+      tabVideoLink
+      tabDescription {
+        text
+        html
+      }
+      tabImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 612, height: 382, fit: clip}}})
+        width
+        height
+      }
+      tabBannerSubImage {
+        id
+        fileName
+        url
+      }
+      technicalSpecifications {
+        id
+        pageTitle
+        fullDescription {
+          html
+          text
+        }
+        parentTabTitle
+        buttonLabel
+        buttonLink
+        button2Label
+        button2Link
+        videoId
+        videoLink
+      }
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

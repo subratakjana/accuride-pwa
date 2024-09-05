@@ -1,0 +1,15 @@
+@import "/src/styles/scss/variables";
+
+.maintenance-page {
+  .maintenance-page-logo {
+    svg {
+      margin: auto;
+      fill: $primary;
+      width: $spacer * 24;
+    }
+  }
+
+  h2 {
+    color: $black !important;
+  }
+}

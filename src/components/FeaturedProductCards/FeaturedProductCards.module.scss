@@ -1,0 +1,101 @@
+@import "/src/styles/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+.acc-featured-products-section-heading {
+  letter-spacing: -1.18px;
+
+  @include media-breakpoint-up(xxxxl) {
+    font-size: $spacer * 2.938;
+  }
+
+  @include media-breakpoint-down(xs) {
+    font-size: $h1-font-size;
+    letter-spacing: -0.603px;
+  }
+}
+
+.acc-featured-products-slider {
+  &:global(.slick-slider) {
+    &:global(.slick-initialized) {
+      margin: 0 -#{$spacer * 0.25};
+
+      :global(.slick-dots) {
+        margin-top: $spacer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: $spacer * 0.25;
+
+        li {
+          &:global(.slick-active) {
+            button {
+              background-color: $primary-dark;
+            }
+          }
+        }
+      }
+
+      :global(.slick-slide) {
+        padding: 0 $spacer * 0.25;
+        min-height: 422px;
+        display: flex;
+
+        & > div {
+          flex-grow: 1;
+          display: flex;
+          & > div {
+            flex-grow: 1;
+          }
+        }
+
+        .acc-featured-product-cards {
+          background: linear-gradient($grey-light, transparent, $grey-light);
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          & > span {
+            position: relative !important;
+            width: 100% !important;
+            height: 150px !important;
+            margin-top: auto !important;
+            margin-bottom: $spacer * 1.5 !important;
+            mix-blend-mode: darken;
+          }
+
+          h3 {
+            font-size: $spacer * 2.466;
+            letter-spacing: -0.2px;
+            line-height: 1;
+
+            span {
+              font-size: $spacer * 1.726;
+              line-height: 1.4;
+              font-weight: 400;
+              letter-spacing: -0.69px;
+              margin-top: $spacer * 0.5;
+
+              @include media-breakpoint-down(xs) {
+                font-size: $spacer * 1.5;
+              }
+            }
+          }
+
+          :global(.btn) {
+            @include media-breakpoint-up(xxxl) {
+              font-size: $spacer * 1.375;
+              letter-spacing: -1.08px;
+            }
+
+            @include media-breakpoint-down(xs) {
+              font-size: $spacer;
+              letter-spacing: -0.78px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

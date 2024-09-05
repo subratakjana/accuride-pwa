@@ -1,0 +1,67 @@
+query proAdvantagesQuery {
+  proAdvantages {
+    title
+    banner {
+      bannerImage {
+        id
+        url
+      }
+      bannerImageForMobile{
+        id
+        url
+      }
+      subImage1 {
+        id
+        url
+      }
+      bannerText1{
+        text
+        html
+      }
+      bannerText2{
+        text
+        html
+      }
+    }
+    section1LeftButton{
+      id
+      buttonText
+      buttonLink
+    }
+    section1RightButton{
+      id
+      buttonText
+      buttonLink
+    }
+    section2Title
+    section2ImageGrid {
+      id
+      image {
+        id
+        url
+      }
+      title
+      title2
+    }
+    section3Banner {
+      id
+      bannerImage{
+        id
+        url
+      }
+      subImage1{
+        id
+        url
+      }
+      bannerText1{
+        text
+        html
+      }
+      bannerButton{
+        id
+        buttonText
+        buttonLink
+      }
+    }
+  }
+}

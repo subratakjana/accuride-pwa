@@ -1,0 +1,264 @@
+query archiWoodworkingsContent {
+  archiWoodworkings {
+    id
+    stage
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    section1Title
+    section1ImageGallery{
+      id
+      imageTitle
+      imageDescription
+      galleryTitle
+      galleryImages {
+        id
+        fileName
+        url
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    section2Title
+    section2Description{
+			html
+      text
+    }
+    section2Accordion{
+      id
+      pageName
+      videoLink
+      image {
+        id
+        fileName
+        url
+      }
+      title
+      description {
+        html
+        text
+      }
+      description2 {
+        html
+        text
+      }
+      buttonLabel
+      buttonLink
+      videoImage
+    }
+    section3StaticBanner1{
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section3StaticBanner2{
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section3Description{
+			html
+      text
+    }
+    section4Title
+    section4Description{
+			html
+      text
+    }
+    section4Accordion{
+      id
+    	title
+    	question
+      answer {
+          html
+          text
+      }
+    	answerImage {
+        id
+        fileName
+        height
+        width
+        size
+        mimeType
+        url
+    	}
+    	pageName
+    }
+    section5Title
+    section5Accordion{
+      id
+    	title
+    	question
+      answer {
+          html
+          text
+      }
+    	answerImage {
+        id
+        fileName
+        height
+        width
+        size
+        mimeType
+        url
+    	}
+    	pageName
+    }
+    section6Title
+    section6Accordion{
+      id
+    	title
+    	question
+      answer {
+          html
+          text
+      }
+    	answerImage {
+        id
+        fileName
+        height
+        width
+        size
+        mimeType
+        url
+    	}
+    	pageName
+    }
+    section7Title
+   	section7Description
+    section7Image{
+      id
+      fileName
+      url
+    }
+    section8StaticBanner{
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }   
+    section9Title
+    section9Description{
+      html
+      text
+    }
+    section9ImageGallery{
+      id
+      imageTitle
+      imageDescription
+      imageDescription2{
+        html
+        text
+      }
+      galleryTitle
+      galleryImages {
+        id
+        fileName
+        url
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    section10Title
+    section10Description
+    section10Accordion{
+      id
+      pageName
+      videoLink
+      image {
+        id
+        fileName
+        url
+      }
+      title
+      description {
+        html
+        text
+      }
+      description2 {
+        html
+        text
+      }
+      buttonLabel
+      buttonLink
+      videoImage
+    }
+    section11Title
+    section11ImageGallery{
+      id
+      imageTitle
+      imageDescription
+      galleryTitle
+      galleryImages {
+        id
+        fileName
+        url
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    section11ImageGalleryTitle
+    section11ImageGalleryDesc
+    storeLanguage {
+      id
+      languages
+    }
+    pages{
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }  
+}

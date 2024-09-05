@@ -1,0 +1,22 @@
+query termsOfSalesContent {
+  termsOfSales {
+    id
+    description {
+      html
+      text
+    }
+    storelanguage {
+      languages
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

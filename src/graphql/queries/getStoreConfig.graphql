@@ -1,0 +1,30 @@
+query getStoreConfig {
+    storeConfig {
+        # base_currency_code
+        # base_link_url
+        # base_media_url
+        # base_static_url
+        # base_url
+        # code : store_code
+        # copyright
+        # default_description
+        # default_display_currency_code
+        # default_keywords
+        # default_title
+        # head_shortcut_icon
+        # header_logo_src
+        # id : store_code
+        # no_route
+        # secure_base_link_url
+        # secure_base_media_url
+        # secure_base_static_url
+        # secure_base_url
+        # timezone
+        # countryList {
+        #     country_code
+        #     country_name
+        #     is_default
+        # }
+        checkoutActonUrl
+    }
+}

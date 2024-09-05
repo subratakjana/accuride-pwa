@@ -1,0 +1,32 @@
+query warranty {
+  warranties(where: {storeLanguage: {languages: English}, AND: {pages: {pageSlug: "warranty"}}}) {
+    id
+    stage
+    section1Accordion {
+      id
+      title
+      question
+      answer {
+        html
+      }
+      answerImage {
+        id
+        fileName
+        height
+        width
+        size
+        mimeType
+      }
+      pageName
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+      }
+    }
+  }
+}

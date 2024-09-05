@@ -1,0 +1,85 @@
+query homePageInfoNew {
+  homeNews{
+    id
+    banner {
+      id
+      url
+    }    
+    homeMobileBanner{
+      id
+      url
+    }
+    section1ThreeBox {
+      id
+      galleryTitle
+      imageTitle
+      imageButtonLabel
+      imageButtonLink
+      imageDescription
+      galleryImages{
+        id
+        url
+      }
+    }  
+    section2ImageGallery{
+      id
+      galleryTitle
+      imageTitle
+      imageButtonLabel
+      imageButtonLink
+      galleryImages{
+        id
+        url
+      }
+    }
+    section3ImageDesc {
+      bannerTitle
+      bannerImage {
+        id
+        url
+      }
+      bannerDescription {
+        html
+        text
+      }
+    }  
+    section4Text{
+      html
+    }
+    section5ImageDesc{
+      bannerTitle
+      bannerImage {
+        id
+        url
+      }
+      bannerButtonLabel
+      bannerButtonLink
+    }
+    section6Text
+    section7Text
+    section7ButtonImage{
+      id
+      url
+    }
+    section7ButtonLink
+    section8Text{
+      html
+    }
+    section9ImageDesc{
+      bannerTitle
+      bannerImage {
+        id
+        url
+      }
+      bannerDescription {
+        html
+        text
+      }
+      bannerButtonLink
+    }
+    section9RightSideImages{
+      id
+      url
+    }
+  }
+}

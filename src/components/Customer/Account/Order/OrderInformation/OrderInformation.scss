@@ -1,0 +1,22 @@
+.acc-order-info-list{
+    .acc-item{
+        article{
+            border-bottom: 1px solid theme-color(medium);
+            padding-bottom: $spacer;
+            margin-bottom: $spacer;
+            @include media-breakpoint-up(sm) {
+                border-bottom: none;
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+        }
+        &:last-child{
+            article{
+                margin-bottom: 0;
+                padding-bottom: 0;
+                border: 0;
+            }
+        }
+    }
+    
+}

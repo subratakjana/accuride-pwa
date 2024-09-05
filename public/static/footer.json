@@ -1,0 +1,458 @@
+{
+  "footerMenus": [
+    {
+      "id": "cka2e52o8015r01713v4bcwxr",
+      "menuTitle": "NEWS SIGNUP",
+      "pageSlugUrl": "https://marketing.accuride.com/acton/media/34600/newsletter-signup",
+      "staticLink": null,
+      "externalLink": "0",
+      "openInNewTab": true,
+      "footerSubMenus": []
+    },
+    {
+      "id": "cka2egazs01de01275tp6gxka",
+      "menuTitle": "CAREERS",
+      "pageSlugUrl": "/company/careers/",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": false,
+      "footerSubMenus": []
+    },
+    {
+      "id": "cka2ginow02s30167rxb605z0",
+      "menuTitle": "WARRANTY",
+      "pageSlugUrl": "/warranty",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": null,
+      "footerSubMenus": []
+    },
+    {
+      "id": "cka2gkvxs02t70174wldwc826",
+      "menuTitle": "PRIVACY",
+      "pageSlugUrl": "/privacy/",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": null,
+      "footerSubMenus": []
+    },
+    {
+      "id": "cka2gm35c02ua0167jrikvodc",
+      "menuTitle": "CCPA",
+      "pageSlugUrl": "/privacy#california-privacy-policy",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": null,
+      "footerSubMenus": []
+    },
+    {
+      "id": "cka2gmwgw02um0174bb68h32k",
+      "menuTitle": "TERMS OF SALE",
+      "pageSlugUrl": "/terms-of-sale",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": null,
+      "footerSubMenus": []
+    },
+    {
+      "id": "cka2gntnc02vf01676p8ibrud",
+      "menuTitle": "CALIFORNIA PROP 65",
+      "pageSlugUrl": "/p65warnings-california/",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": null,
+      "footerSubMenus": []
+    },
+    {
+      "id": "ckx8pcmm8gaq20b72js36ez3v",
+      "menuTitle": "Access Control Systems",
+      "pageSlugUrl": "/markets/access-control-solutions",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": false,
+      "footerSubMenus": []
+    },
+    {
+      "id": "ckx8r8sbkgm8z0c36iu2kkcby",
+      "menuTitle": "MARKETS",
+      "pageSlugUrl": "/markets",
+      "staticLink": null,
+      "externalLink": null,
+      "openInNewTab": false,
+      "footerSubMenus": [
+        {
+          "id": "ckx8pcmm8gaq20b72js36ez3v",
+          "menuTitle": "Access Control Systems"
+        },
+        {
+          "id": "ckx8rgdgwgqho0c25al4w51z3",
+          "menuTitle": "Aerospace / Watercraft"
+        },
+        {
+          "id": "ckx8rmjowgog20b29w8pvxoj8",
+          "menuTitle": "Appliances"
+        },
+        {
+          "id": "ckx8rqaq0gr1d0c25szquejnd",
+          "menuTitle": "Architectural & Design"
+        },
+        {
+          "id": "ckx8rsgnkgrdt0c25l41traym",
+          "menuTitle": "Automation / Motion Control"
+        },
+        {
+          "id": "ckx8rtdu0grf80c25s45177op",
+          "menuTitle": "Automotive"
+        },
+        {
+          "id": "ckx8rv7f4gp400b29ez8njcma",
+          "menuTitle": "Construction / Railway"
+        },
+        {
+          "id": "ckx8s2cd4go0x0c36l7jvtvf4",
+          "menuTitle": "Electronic Enclosures"
+        },
+        {
+          "id": "cllvynupql0jd0an29bodcxwu",
+          "menuTitle": "Vehicle Equipment and Storage"
+        },
+        {
+          "id": "ckx8s8ruggps20b29wixzqhuw",
+          "menuTitle": "Healthcare"
+        },
+        {
+          "id": "ckx8sa588gpuf0b29ze3ms7qp",
+          "menuTitle": "Homeowners"
+        },
+        {
+          "id": "ckx8satx4gri80b72y3g8feum",
+          "menuTitle": "Machinery"
+        },
+        {
+          "id": "ckx8sexaogrw40b72602qppof",
+          "menuTitle": "Vending / Cash Handling"
+        },
+        {
+          "id": "ckx8sj3rcgsw70c25t6kr2vwx",
+          "menuTitle": "Woodworking & Cabinetry"
+        }
+      ]
+    },
+    {
+      "id": "ckx8rgdgwgqho0c25al4w51z3",
+      "menuTitle": "Aerospace / Watercraft",
+      "pageSlugUrl": "/markets/aerospace-watercraft-solutions",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": false,
+      "footerSubMenus": []
+    },
+    {
+      "id": "ckx8rmjowgog20b29w8pvxoj8",
+      "menuTitle": "Appliances",
+      "pageSlugUrl": "/markets/appliance",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": false,
+      "footerSubMenus": []
+    },
+    {
+      "id": "ckx8rqaq0gr1d0c25szquejnd",
+      "menuTitle": "Architectural & Design",
+      "pageSlugUrl": "/markets/architectural-design",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": false,
+      "footerSubMenus": []
+    },
+    {
+      "id": "ckx8rsgnkgrdt0c25l41traym",
+      "menuTitle": "Automation / Motion Control",
+      "pageSlugUrl": "/markets/automation-movement-solutions",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": false,
+      "footerSubMenus": []
+    },
+    {
+      "id": "ckx8rtdu0grf80c25s45177op",
+      "menuTitle": "Automotive",
+      "pageSlugUrl": "/markets/automotive-movement-solutions",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": false,
+      "footerSubMenus": []
+    },
+    {
+      "id": "ckx8rv7f4gp400b29ez8njcma",
+      "menuTitle": "Construction / Railway",
+      "pageSlugUrl": "/markets/construction-railway-machinery",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": false,
+      "footerSubMenus": []
+    },
+    {
+      "id": "ckx8s2cd4go0x0c36l7jvtvf4",
+      "menuTitle": "Electronic Enclosures",
+      "pageSlugUrl": "/markets/electronic-enclosures",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": false,
+      "footerSubMenus": []
+    },
+    {
+      "id": "ckx8s8ruggps20b29wixzqhuw",
+      "menuTitle": "Healthcare",
+      "pageSlugUrl": "/markets/healthcare-environments",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": false,
+      "footerSubMenus": []
+    },
+    {
+      "id": "ckx8sa588gpuf0b29ze3ms7qp",
+      "menuTitle": "Homeowners",
+      "pageSlugUrl": "/markets/residential-domestic-applications",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": false,
+      "footerSubMenus": []
+    },
+    {
+      "id": "ckx8satx4gri80b72y3g8feum",
+      "menuTitle": "Machinery",
+      "pageSlugUrl": "/markets/machinery-equipment-solutions",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": false,
+      "footerSubMenus": []
+    },
+    {
+      "id": "ckx8sexaogrw40b72602qppof",
+      "menuTitle": "Vending / Cash Handling",
+      "pageSlugUrl": "/markets/vending-cash-handling",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": false,
+      "footerSubMenus": []
+    },
+    {
+      "id": "ckx8sj3rcgsw70c25t6kr2vwx",
+      "menuTitle": "Woodworking & Cabinetry",
+      "pageSlugUrl": "/markets/woodworking-cabinetry",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": false,
+      "footerSubMenus": []
+    },
+    {
+      "id": "ckx8szbv4grvm0b296xkwglpd",
+      "menuTitle": "COMPANY",
+      "pageSlugUrl": "/company",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": false,
+      "footerSubMenus": [
+        {
+          "id": "ckx8t6m7kgu2n0b72ou1i7u7g",
+          "menuTitle": "Events"
+        },
+        {
+          "id": "ckx8t5yag000i0d7126y6i0d3",
+          "menuTitle": "OEM Direct"
+        },
+        {
+          "id": "ckx8t2i28gtvq0b72bykhu7n6",
+          "menuTitle": "Newsroom"
+        },
+        {
+          "id": "ckx8t1nywgtto0b72il2863nn",
+          "menuTitle": "Testimonials"
+        },
+        {
+          "id": "ckx8t0xqggqr10c362p16eo8x",
+          "menuTitle": "Why Accuride"
+        },
+        {
+          "id": "ckx8t0bcwgudc0c251sfwh89f",
+          "menuTitle": "Who We Are"
+        },
+        {
+          "id": "ckyle9ezsdkzu0b74ot236hs3",
+          "menuTitle": "Testimonials"
+        },
+        {
+          "id": "clgqame53kj110an1ttrzrymp",
+          "menuTitle": "Reviews"
+        }
+      ]
+    },
+    {
+      "id": "ckx8t0bcwgudc0c251sfwh89f",
+      "menuTitle": "Who We Are",
+      "pageSlugUrl": "/company/about",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": false,
+      "footerSubMenus": []
+    },
+    {
+      "id": "ckx8t0xqggqr10c362p16eo8x",
+      "menuTitle": "Why Accuride",
+      "pageSlugUrl": "/company/why-accuride",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": false,
+      "footerSubMenus": []
+    },
+    {
+      "id": "ckx8t1nywgtto0b72il2863nn",
+      "menuTitle": "Testimonials",
+      "pageSlugUrl": "/company/customer-stories",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": false,
+      "footerSubMenus": []
+    },
+    {
+      "id": "ckx8t2i28gtvq0b72bykhu7n6",
+      "menuTitle": "Newsroom",
+      "pageSlugUrl": "/news",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": false,
+      "footerSubMenus": []
+    },
+    {
+      "id": "ckx8t5yag000i0d7126y6i0d3",
+      "menuTitle": "OEM Direct",
+      "pageSlugUrl": "/company/oem-direct",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": false,
+      "footerSubMenus": []
+    },
+    {
+      "id": "ckx8t6m7kgu2n0b72ou1i7u7g",
+      "menuTitle": "Events",
+      "pageSlugUrl": "/company/events",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": false,
+      "footerSubMenus": []
+    },
+    {
+      "id": "ckyle9ezsdkzu0b74ot236hs3",
+      "menuTitle": "Testimonials",
+      "pageSlugUrl": "/company/customer-stories",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": false,
+      "footerSubMenus": []
+    },
+    {
+      "id": "clgqame53kj110an1ttrzrymp",
+      "menuTitle": "Reviews",
+      "pageSlugUrl": "/company/reviews",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": false,
+      "footerSubMenus": []
+    },
+    {
+      "id": "cllvynupql0jd0an29bodcxwu",
+      "menuTitle": "Vehicle Equipment and Storage",
+      "pageSlugUrl": "/markets/emergency-recreational-vehicle-equipment-storage",
+      "staticLink": "0",
+      "externalLink": null,
+      "openInNewTab": false,
+      "footerSubMenus": []
+    }
+  ],
+  "otherStoresMenus": [
+    {
+      "id": "cka2hayzc03al0127nq3il6mu",
+      "menuTitle": "Europe",
+      "linkUrl": "https://www.accuride-europe.com/"
+    },
+    {
+      "id": "cka2hbno803bj0171oi5qxzzl",
+      "menuTitle": "China",
+      "linkUrl": "#"
+    },
+    {
+      "id": "cka2hd5oo03ch0127gi5ubgvc",
+      "menuTitle": "Japan",
+      "linkUrl": "https://accuride.co.jp/"
+    }
+  ],
+  "socialLinksMenus": [
+    {
+      "id": "cka2zbqow0fpp0174ijqyc2er",
+      "socialLinkUrl": "https://www.facebook.com/AccurideInternational",
+      "socialNetwork": "Facebook",
+      "socialIcon": {
+        "id": "cklbye65437ct0a71nimkdgvh",
+        "fileName": "SM_FB_ICON_45X45.svg",
+        "url": "https://media.graphassets.com/exXZMyrUTj2Byz4u3zpz"
+      },
+      "openInNewTab": true
+    },
+    {
+      "id": "cka2zyqmg0g0p0171vvji051b",
+      "socialLinkUrl": "https://www.linkedin.com/company/252776/",
+      "socialNetwork": "LinkedIn",
+      "socialIcon": {
+        "id": "cklbyup1s39qt0a77q6pf8556",
+        "fileName": "SM_LI_ICON_45X45.svg",
+        "url": "https://media.graphassets.com/KWHNM4R3iYYvM7UaOerQ"
+      },
+      "openInNewTab": true
+    },
+    {
+      "id": "cka3uf62o0q540174w4vfqak4",
+      "socialLinkUrl": "https://www.youtube.com/user/AccurideIntl/",
+      "socialNetwork": "YouTube",
+      "socialIcon": {
+        "id": "cklbyzpls39zq0a775ashftoe",
+        "fileName": "SM_YT_ICON_45X64.png",
+        "url": "https://media.graphassets.com/C6PpfHIUQNm5OYqvXV4n"
+      },
+      "openInNewTab": true
+    },
+    {
+      "id": "cka3ugr680h3s017898vzrp0i",
+      "socialLinkUrl": "https://twitter.com/accurideus",
+      "socialNetwork": "Twitter",
+      "socialIcon": {
+        "id": "cklbz4gwg38f50a71yjs0xdqs",
+        "fileName": "SM_T_ICON_45X55.svg",
+        "url": "https://media.graphassets.com/UVk7f96ERGGfMOa1DyCg"
+      },
+      "openInNewTab": true
+    },
+    {
+      "id": "cka3uiu0o0h4v0178y0vp0j0t",
+      "socialLinkUrl": "https://www.instagram.com/accurideus/",
+      "socialNetwork": "Instagram",
+      "socialIcon": {
+        "id": "cklbz5euo37l40a20tar771bi",
+        "fileName": "SM_IG_ICON_45X45.svg",
+        "url": "https://media.graphassets.com/ltmQwXJfTRCT7ltUeehw"
+      },
+      "openInNewTab": true
+    },
+    {
+      "id": "cksa8yfygifui0d32jdqojh1r",
+      "socialLinkUrl": "https://www.pinterest.com/AccurideUs/",
+      "socialNetwork": "Pinterest",
+      "socialIcon": {
+        "id": "cksa8ljg8ienz0d32dlza1lrw",
+        "fileName": "Pinterest_45x45.svg",
+        "url": "https://media.graphassets.com/e1SgTcBCRTqGPM9KZ5j9"
+      },
+      "openInNewTab": true
+    }
+  ]
+}

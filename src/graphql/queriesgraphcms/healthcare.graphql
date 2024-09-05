@@ -1,0 +1,117 @@
+query healthcareContent{
+  healthcares {
+    id
+    stage
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    section1ImageGallery {
+      id
+      imageTitle
+      imageDescription
+      galleryImages {
+        id
+        fileName
+        url
+      }
+      imageButtonLabel
+      imageButtonLink
+      linkType
+    }
+    section4ImageDesc {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    storeLanguage {
+      id
+      languages
+    }
+    section3Title
+    sec3Description{
+      html
+      text
+    }
+    imageGalleries {
+      id
+      imageTitle
+      imageDescription
+      galleryImages {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 419, height: 316, fit: clip}}})
+      }
+      imageButtonLabel
+      imageButtonLink
+      linkType
+    }
+    section2ImageDesc {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section5Title
+    section5Description
+    featuredProducts{
+      id
+      productSku
+      productId
+      productFeatureImage{
+        url(transformation: {image: {resize: {width: 387, height: 221, fit: clip}}})
+        fileName
+        width
+        height
+      }
+      productTitle
+      productSlug
+      productLink
+      productId
+      
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      } 
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.acc-product-intro-modal {
+    max-width: 520px;
+    @include media-breakpoint-down(sm) {
+        max-width: 480px;
+    }
+    @include media-breakpoint-down(xs) {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    .modal-content {
+        background-color: transparent;
+        border: none;
+        .acc-btn-close {
+            position: absolute;
+            width: $spacer * 4;
+            height: $spacer * 4;
+            background-color: $white;
+            border: 2px solid $primary;
+            border-radius: 50%;
+            top: $spacer * 0.5;
+            right: 0;
+            transform: translateX(25%);
+            padding: $spacer;
+            @include media-breakpoint-down(sm) {
+                width: $spacer * 3;
+                height: $spacer * 3;
+                padding: $spacer * 0.75;
+            }
+            @include media-breakpoint-down(xs) {
+                width: $spacer * 2;
+                height: $spacer * 2;
+                padding: $spacer * 0.5;
+            }
+            div{
+                width: 100%;
+                svg {
+                    fill: $primary;
+                    width: 100%;
+                    height: 100%;
+                    transition: $transition;
+                }
+            }
+            &:hover {
+                background-color: $primary;
+                div {
+                    svg {
+                        fill: $white;
+                    }
+                }
+            }
+        }
+        .acc-product-btn {
+            position: absolute;
+            bottom: $spacer * 6.5;
+            left: 50%;
+            transform: translateX(-50%);
+            min-width: 200px;
+            font-size: $h4-font-size;
+            font-weight: 700;
+            text-transform: uppercase;
+            @include media-breakpoint-down(sm) {
+                bottom: $spacer * 5.5;
+            }
+            @include media-breakpoint-down(xs) {
+                bottom: $spacer * 3.5;
+                min-width: auto;
+                font-size: $font-size-base;
+            }
+        }
+    }
+}

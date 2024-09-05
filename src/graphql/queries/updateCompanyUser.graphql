@@ -1,0 +1,9 @@
+mutation updateCompanyUser($updateInput: CompanyUserUpdateInput!) {
+    updateCompanyUser(input: $updateInput) {
+      user{
+        company
+        created_at
+        customer_id
+      }
+    }
+}

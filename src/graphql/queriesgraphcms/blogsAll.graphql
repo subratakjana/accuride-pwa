@@ -1,0 +1,40 @@
+query blogList {
+  blogs(first: 500, orderBy: createdAt_DESC, stage: PUBLISHED){
+    postTitle
+    postSlug
+    createdAt
+    id
+    postExcerpt
+    setAsFeaturePost
+    postImage {
+      id
+      url(transformation: {image: {resize: {width: 635, height: 397, fit: clip}}})
+    }
+    categories(first: 1) {
+      id
+      categoryTitle
+      categorySlug
+      parentCategory {
+        id
+        categoryTitle
+        categorySlug
+      }
+    }
+    pages {
+      id
+      pageSlug
+      banner {
+        id
+        bannerHeading
+        bannerDescription
+        bannerImage {
+          id
+          fileName
+          url(transformation: {image: {resize: {width: 1349, height: 200, fit: clip}}})
+        }
+        bannerButtonText
+        bannerButtonLink
+      }
+    }
+  }
+}

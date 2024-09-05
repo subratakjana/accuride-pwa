@@ -1,0 +1,713 @@
+.acc-electronic-enclosure-page {
+    .container {
+        max-width: map-get($container-max-widths, xxl);
+    }
+
+    .acc-ee-page-heading {
+        font-family: $font-family-secondary;
+        font-size: $spacer * 3.125;
+        font-weight: 700;
+        // color: $primary;
+        letter-spacing: -1.25px;
+        line-height: 1.5;
+
+        @include media-breakpoint-down(xl) {
+            font-size: $spacer * 2.375;
+            letter-spacing: -0.55px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            font-size: $spacer * 2;
+        }
+
+        @include media-breakpoint-down(sm) {
+            font-size: $spacer * 1.375;
+        }
+    }
+
+    .acc-electronic-enclosure-banner {
+        &.acc-page-main-banner {
+            .acc-banner-caption {
+                h2 {
+                    font-family: $font-family-secondary;
+                    font-weight: 700;
+                    font-size: $spacer * 4.188;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .acc-page-main-mob-banner {
+        .acc-main-banner-mob-caption {
+            h2 {
+                font-family: $font-family-secondary;
+                font-weight: 700;
+                color: $white !important;
+                // font-size: $spacer * 1.5;
+                margin: 0;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: $spacer * 1.5;
+                }
+            }
+        }
+    }
+
+    .acc-custom-introduction {
+        .container {
+            max-width: map-get($container-max-widths, xxxxl);
+        }
+
+        .introduction-wrapper {
+            width: 100% !important;
+        }
+
+        font-family: $font-family-secondary;
+
+        h1 {
+            @extend .acc-ee-page-heading;
+            text-transform: none !important;
+            padding-bottom: 0 !important;
+            margin-bottom: $spacer * 0.5 !important;
+        }
+
+        p {
+            color: $primary;
+            font-size: $spacer * 2.081;
+
+            @include media-breakpoint-down(xl) {
+                font-size: $spacer * 1.5;
+            }
+
+            @include media-breakpoint-down(sm) {
+                font-size: $spacer;
+            }
+        }
+    }
+
+    .acc-icon-list-row {
+        &>* {
+            @include media-breakpoint-up(lg) {
+                flex: 0 0 25%;
+                max-width: 25%;
+            }
+
+            @include media-breakpoint-down(sm) {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+
+            &.acc-icon-list-item {
+                .acc-icon {
+                    @include media-breakpoint-up(lg) {
+                        height: $spacer * 7.25;
+                    }
+                }
+
+                h3 {
+                    @include media-breakpoint-up(lg) {
+                        font-size: $spacer * 1.5;
+                        letter-spacing: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .acc-electronic-enclosure-contact-bar {
+        p {
+            @include media-breakpoint-up(lg) {
+                font-size: $spacer * 3.125;
+                letter-spacing: 0;
+            }
+        }
+    }
+
+    .acc-electronic-enclosure-innovative-engineering {
+
+        .acc-innovative-engineering-content {
+            padding: $spacer * 2;
+
+            .row {
+                row-gap: $spacer;
+            }
+
+            h3,
+            h4,
+            h5,
+            .acc-disclaimer-text {
+                color: $white;
+                text-shadow: $spacer * 0.625 $spacer * 0.625 $spacer * 0.625 rgba($black, 0.161);
+            }
+
+            h3 {
+                line-height: 1;
+                font-weight: 700;
+
+                @include media-breakpoint-down(md) {
+                    margin-bottom: $spacer * 0.25;
+                }
+            }
+
+            h4 {
+                line-height: 1.2;
+                font-weight: 300;
+
+                @include media-breakpoint-down(md) {
+                    margin-bottom: $spacer;
+                }
+            }
+
+            h3,
+            h4 {
+                font-size: $spacer * 1.875;
+                font-style: italic;
+                letter-spacing: -0.75px;
+
+                @include media-breakpoint-down(md) {
+                    font-size: $spacer * 1.5;
+                    letter-spacing: -0.6px;
+                }
+            }
+
+            h5 {
+                @extend .acc-ee-page-heading;
+                line-height: 1;
+                margin-bottom: $spacer * 2.5;
+                font-family: $font-family-base;
+
+                @include media-breakpoint-down(md) {
+                    font-size: $spacer * 1.125;
+                    letter-spacing: -0.45px;
+                    line-height: 1.4;
+                }
+            }
+
+            .btn {
+                font-family: $font-family-secondary;
+
+                @include media-breakpoint-up(lg) {
+                    font-size: $spacer * 1.063;
+                    letter-spacing: -0.42px;
+                }
+            }
+
+            .acc-disclaimer-text {
+                font-size: $spacer * 1.25;
+                margin-top: $spacer;
+                font-style: italic;
+                letter-spacing: 0.32px;
+            }
+
+            .acc-innovative-engineering-video {
+                &-col {
+                    @include media-breakpoint-down(sm) {
+                        height: 256px;
+                        margin: 0 (-$spacer) (-$spacer * 2);
+                        width: auto;
+                        max-width: none;
+                        flex: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+
+                &-btn {
+                    max-width: 120px !important;
+                    min-width: 120px !important;
+                }
+            }
+        }
+    }
+
+    .acc-revolutionary-solutions {
+        font-family: $font-family-secondary;
+
+        h2 {
+            font-family: $font-family-secondary;
+            font-size: $spacer * 2.5;
+            letter-spacing: -1px;
+
+            @include media-breakpoint-down(lg) {
+                font-size: $spacer * 1.5;
+            }
+        }
+
+        p {
+            color: $black;
+            font-size: $spacer * 1.25;
+            max-width: map-get($map: $container-max-widths, $key: xl);
+
+            @include media-breakpoint-down(lg) {
+                font-size: $spacer;
+            }
+        }
+    }
+
+    .acc-market-electronic-enclosure-tab {
+        &.acc-tab-section {
+            .nav-tabs {
+                display: none;
+            }
+
+            .tab-content {
+                padding: 0;
+            }
+
+            .tab-content-sec {
+                @include media-breakpoint-only(lg) {
+                    order: 1;
+                }
+
+                .content-item {
+                    max-width: 560px;
+                    margin: 0 auto;
+
+                    h3 {
+                        font-family: $font-family-secondary;
+                        font-weight: 700;
+                        font-size: $spacer * 1.875;
+                        letter-spacing: -0.75px;
+                        color: $primary;
+                        margin-bottom: $spacer * 0.5;
+
+                        @include media-breakpoint-down(xl) {
+                            font-size: $spacer * 1.5;
+                            letter-spacing: -0.5px;
+                        }
+
+                        @include media-breakpoint-down(sm) {
+                            font-size: $spacer * 1.25;
+                        }
+                    }
+
+                    h4 {
+                        font-size: $spacer * 1.875;
+                        letter-spacing: -1.32px;
+                        font-weight: 400;
+                        color: $primary;
+                        margin-bottom: $spacer * 0.5;
+                        padding: 0;
+
+                        @include media-breakpoint-down(xl) {
+                            font-size: $spacer * 1.5;
+                        }
+
+                        @include media-breakpoint-down(md) {
+                            font-size: $spacer * 1.125;
+                            letter-spacing: -0.79px;
+                        }
+                    }
+
+                    p {
+                        font-size: $spacer * 1.25;
+                        letter-spacing: 0.14px;
+                        color: $black;
+                        margin-bottom: 0;
+
+                        &:nth-of-type(1) {
+                            margin-bottom: $spacer * 0.5;
+                        }
+
+                        &:nth-last-of-type(2) {
+                            margin-top: $spacer;
+                        }
+
+                        &:empty {
+                            display: none;
+                        }
+
+                        strong {
+                            letter-spacing: 0.14px;
+                            font-weight: 700;
+                        }
+
+                        a {
+                            font-weight: 700;
+                            color: $primary;
+                            transition: $transition;
+
+                            &:hover {
+                                color: $secondary;
+                            }
+                        }
+
+                        @include media-breakpoint-down(lg) {
+                            font-size: $spacer;
+
+                            strong {
+                                letter-spacing: 0.11px;
+                            }
+                        }
+                    }
+
+                    img {
+                        height: auto;
+                    }
+
+                    &>div {
+                        max-width: 100%;
+                    }
+                }
+            }
+
+            .tab-image-sec {
+                @include media-breakpoint-only(lg) {
+                    order: 2;
+                }
+
+                .acc-homeowner-dots-wrap {
+                    width: 100%;
+
+                    @include media-breakpoint-down(sm) {
+                        padding-bottom: 0 !important;
+                    }
+
+                    .acc-next-img {
+                        min-width: auto;
+                        width: 620px;
+                        max-width: 100%;
+                        margin-left: auto;
+                    }
+
+                    .dot {
+                        width: $spacer * 3;
+                        height: $spacer * 3;
+                        right: 33.5%;
+                        border: $spacer * 0.188 solid $primary;
+
+                        @include media-breakpoint-down(sm) {
+                            right: 36%;
+                            border-width: $spacer * 0.094;
+                            width: $spacer * 1.375;
+                            height: $spacer * 1.375;
+                        }
+
+                        &.active {
+                            color: $grey-semidark;
+                            border: $spacer * 0.25 solid $secondary;
+                            box-shadow: 0 0 $spacer * 0.5 $white;
+
+                            @include media-breakpoint-down(sm) {
+                                border-width: $spacer * 0.094;
+                                box-shadow: none;
+                                color: $primary;
+                            }
+
+                            svg {
+                                border: $spacer * 0.125 solid $grey-semidark;
+
+                                @include media-breakpoint-down(sm) {
+                                    border-width: $spacer * 0.094;
+                                }
+                            }
+                        }
+
+                        svg {
+                            border: $spacer * 0.1888 solid $secondary;
+                            border-radius: 100%;
+                            width: 100%;
+                            height: 100%;
+                            transition: $transition;
+
+                            @include media-breakpoint-down(sm) {
+                                border-width: $spacer * 0.094;
+                            }
+                        }
+
+                        &-0 {
+                            top: 19%;
+                        }
+
+                        &-1 {
+                            top: 33%;
+                        }
+
+                        &-2 {
+                            bottom: 36%;
+                        }
+
+                        &-3 {
+                            bottom: 20%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .acc-custom-sec-title {
+        padding-top: 3.55rem;
+        padding-bottom: 2.2rem;
+
+        h2 {
+            font-family: $font-family-secondary;
+            color: #2f5398;
+            font-weight: bold;
+            font-size: $h1-font-size * 2.1;
+            line-height: $headings-line-height;
+            margin-bottom: 0;
+
+            @include media-breakpoint-down(md) {
+                font-size: $h1-font-size * 1.8;
+            }
+
+            @include media-breakpoint-down(sm) {
+                font-family: $font-family-secondary;
+                color: #2f5399;
+                font-weight: 700;
+                font-size: $h1-font-size;
+                letter-spacing: -0.55px;
+                line-height: $line-height-base;
+                margin-bottom: 0;
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            padding-top: 1.5rem;
+            padding-bottom: 1.8rem;
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding-top: 1.8rem;
+            padding-bottom: 1.8rem;
+        }
+    }
+
+    .acc-custom-image-slider-right-image {
+        .container-fluid {
+            padding: 0;
+
+            .align-items-center {
+                align-items: unset !important;
+
+                .text-col {
+                    padding: $spacer * 3 $spacer * 4 !important;
+                    font-family: $font-family-secondary;
+                    font-size: $spacer * 1.25;
+                    color: $black;
+
+                    @include media-breakpoint-down(md) {
+                        font-size: $spacer;
+                        letter-spacing: -0.4px;
+                        padding: 0 !important;
+                    }
+
+                    &.bg-light {
+                        background-color: #e9e9ea !important;
+
+                        h2 {
+                            font-family: $font-family-secondary;
+                            font-weight: 700;
+                            font-size: $spacer * 2.5;
+                            letter-spacing: -1px;
+
+                            @include media-breakpoint-down(xl) {
+                                font-size: $spacer * 1.75;
+                            }
+
+                            @include media-breakpoint-down(md) {
+                                background-color: $white;
+                                font-size: $spacer * 1.125;
+                                font-weight: 500;
+                                letter-spacing: -0.45px;
+                                text-align: center;
+                                padding: $spacer $spacer * 3;
+                            }
+
+                            &+div {
+                                @include media-breakpoint-down(md) {
+                                    padding: $spacer * 1.5 $spacer;
+                                }
+                            }
+                        }
+
+                        p {
+                            &:empty {
+                                display: none;
+                            }
+                        }
+
+                        ul {
+                            margin-top: -($spacer * 0.75);
+
+                            li {
+                                position: relative;
+                                padding-left: $spacer;
+
+                                &:before {
+                                    content: "";
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 0;
+                                    transform: translateY(-50%);
+                                    width: $spacer * 0.375;
+                                    height: $spacer * 0.375;
+                                    background-color: currentColor;
+                                    border-radius: 50%;
+                                }
+                            }
+                        }
+                    }
+
+                    article {
+                        @include media-breakpoint-up(lg) {
+                            max-width: calc(map-get($container-max-widths, xl) / 1.5);
+                        }
+                    }
+                }
+
+                .image-col {
+                    &>span {
+                        @include media-breakpoint-up(lg) {
+                            position: absolute !important;
+                            width: 100% !important;
+                            height: 100% !important;
+                        }
+
+                        img {
+                            object-position: right center !important;
+
+                            @include media-breakpoint-down(lg) {
+                                position: relative !important;
+                                width: auto !important;
+                                height: 100% !important;
+                            }
+                        }
+                    }
+
+                    span {
+                        display: flex !important;
+                    }
+                }
+
+                @include media-breakpoint-down(md) {
+                    flex-direction: column-reverse;
+                }
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding-top: 0;
+        }
+    }
+
+    .acc-electronic-enclosure-partners {
+        &-row {
+            row-gap: $spacer * 1.5;
+
+            .acc-partner-logo {
+                svg {
+                    max-width: 200px;
+                    max-height: 150px;
+                    width: 100%;
+                    height: auto;
+                    margin: 0 auto;
+
+                    @include media-breakpoint-down(md) {
+                        max-width: 120px;
+                        max-height: 100px;
+                    }
+                }
+            }
+        }
+    }
+
+    .acc-electronic-enclosure-cable-management {
+        padding: 0;
+
+        .acc-background-image {
+            max-width: map-get($map: $container-max-widths, $key: xxl);
+            right: 0;
+            margin: 0 auto;
+        }
+
+        .row {
+            justify-content: flex-start !important;
+
+            @include media-breakpoint-down(md) {
+                align-items: flex-start !important;
+                padding-top: $spacer * 1.5;
+            }
+
+            @include media-breakpoint-down(md) {
+                min-height: $spacer * 15 !important;
+            }
+
+            div[class*="col-"] {
+                flex: 0 0 40%;
+                max-width: 40%;
+
+                @include media-breakpoint-down(md) {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+
+                article {
+                    text-align: left !important;
+                    padding-left: $spacer * 4;
+
+                    @include media-breakpoint-down(md) {
+                        padding-left: 0;
+                    }
+
+                    h1 {
+                        display: none;
+                    }
+
+                    p {
+                        @extend .acc-ee-page-heading;
+                        line-height: 1.2;
+                        color: $white;
+                        margin-bottom: $spacer * 3;
+
+                        @include media-breakpoint-down(md) {
+                            max-width: 75%;
+                            margin-bottom: $spacer * 1.5;
+                        }
+                    }
+
+                    .btn-primary {
+                        font-family: $font-family-secondary;
+                        font-size: $spacer * 1.063;
+                        font-weight: 700;
+                        letter-spacing: -0.42px;
+                        border: none !important;
+                        margin-bottom: 0;
+                        display: inline-block;
+                        width: auto;
+                        border: none;
+
+                        @include media-breakpoint-down(sm) {
+                            width: 100%;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .acc-custom-cad-downloads {
+        .btn-primary {
+            font-size: $spacer * 2.25;
+            letter-spacing: -0.9px;
+            line-height: 1;
+            font-family: $font-family-secondary;
+            font-weight: 700;
+            line-height: 1.4;
+
+            @include media-breakpoint-up(md) {
+                padding: $spacer $spacer * 5;
+                border-radius: $btn-border-radius-lg;
+            }
+
+            @include media-breakpoint-down(md) {
+                font-size: $spacer * 1.063;
+                letter-spacing: -0.42px;
+            }
+        }
+    }
+}

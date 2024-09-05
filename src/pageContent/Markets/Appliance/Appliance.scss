@@ -1,0 +1,125 @@
+.acc-market-bg-image{
+    background-size: cover;
+    min-height: 428px;
+    .acc-applience-miele-section{
+        max-width: 250px;
+        width: 100%;
+    }
+}
+.acc-roller-sec{
+
+    span.roller-sec-banner {
+        position: relative;
+        width: 100%;
+        height: 120px;
+
+        @include media-breakpoint-up(xs) {
+            height: 160px;
+        }
+
+        @include media-breakpoint-up(sm) {
+            height: 270px;
+        }
+
+        @include media-breakpoint-up(md) {
+            height: 330px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            height: 400px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            height: 450px;
+        }
+    }
+
+    .acc-appli-roller-bearing-heading{
+        & + div{
+            display: block !important;
+        }
+    }
+    .acc-roller-bearing-content{
+        .acc-roller-sec-bg-color{
+            height: calc(100% - 170px);
+            z-index: 0;
+            border-bottom: 10px $secondary solid;
+            @include media-breakpoint-down(sm) {
+                height: calc(100% - 130px);
+            }
+        }
+        .container{
+            z-index: 1;
+            position: relative;
+            max-width: 950px;
+        }
+        .container-fluid{
+            z-index: 1;
+            position: relative;
+            @include media-breakpoint-up(xxl) {
+                max-width: calc(100% - 170px);
+            }
+            h3{
+                @include media-breakpoint-down(sm) {
+                    font-size: $spacer;
+                }
+                &.acc-roller-heading-active{
+                    position: relative;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 3px;
+                        top: -2px;
+                        left: 0;
+                        background: $white;
+                    }
+                }
+            }
+            // .acc-roller-order-now-bttn{
+            //     @include media-breakpoint-down(sm) {
+            //         padding-left: $spacer/3 !important;
+            //         padding-right: $spacer/3 !important;
+            //     }
+            // }
+            .acc-roller-image-desc{
+                color: $primary;
+                @include media-breakpoint-up(sm) {
+                    position: absolute;
+                    bottom: $spacer;
+                    right: $spacer*8;
+                }
+            }
+        }
+    }
+}
+
+.acc-appliances-more-intro {
+    div {
+        @include media-breakpoint-down(md) {
+            font-size: $spacer;
+            line-height: 1.5;
+        }
+    }
+
+    .btn {
+        @include media-breakpoint-down(md) {
+            font-size: $spacer;
+        }
+    }
+}
+
+.acc-appliances-more-intro {
+    div {
+        @include media-breakpoint-down(md) {
+            font-size: $spacer;
+            line-height: 1.5;
+        }
+    }
+
+    .btn {
+        @include media-breakpoint-down(md) {
+            font-size: $spacer;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+query getCompareProducts {
+    getCompareProducts{
+        product_sku
+        product_name
+        product_id
+    }
+}

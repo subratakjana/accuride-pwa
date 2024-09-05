@@ -1,0 +1,25 @@
+@import "../../../../../src/styles/scss/variables";
+@import "../../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../../node_modules/bootstrap/scss/mixins/breakpoints";
+
+.acc-newproduct-slide {
+  margin-left: -$spacer/2;
+  margin-right: -$spacer/2;
+  .slick-track {
+    display: flex;
+    .slick-slide {
+      padding-left: $spacer/2;
+      padding-right: $spacer/2;
+      height: auto;
+      > div {
+        height: 100%;
+      }
+
+      .embed-responsive {
+        max-width: 360px;
+        margin: 0 auto;
+      }
+    }
+  }
+}

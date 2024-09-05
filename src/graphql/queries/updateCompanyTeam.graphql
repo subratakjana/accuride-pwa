@@ -1,0 +1,15 @@
+mutation updateCompanyTeam($id: ID!, $name: String, $description: String) {
+  updateCompanyTeam(
+    input: {
+      name: $name
+      description: $description
+      id: $id
+    }
+  ) {
+    team {
+      id
+      name
+      description
+    }
+  }
+}

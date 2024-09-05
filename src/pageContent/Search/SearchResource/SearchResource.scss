@@ -1,0 +1,11 @@
+.acc-resource-search-block{
+    .acc-resource-news-image{
+        img{
+            @include media-breakpoint-down(xl) {
+                width: 200px !important;
+                height: auto !important;
+                margin-bottom: $spacer;
+            }
+        }
+    }
+}

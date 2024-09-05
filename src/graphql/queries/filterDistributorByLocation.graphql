@@ -1,0 +1,22 @@
+query FilterDistributorswithLocation($qryStr:String){
+  filterDistributorsByLocation(optionValue: $qryStr){
+    totalRecords
+    items{
+    id
+    name
+    address
+    zip
+    phone
+    category
+    city
+    country
+    description
+    email
+    fax
+    lat
+    lng
+    website
+    state
+  }
+  }
+}

@@ -1,0 +1,31 @@
+query getCustomerAccountDetails {
+    customer {
+            firstname
+            lastname
+            suffix
+            email
+            is_subscribed
+            company
+            jobTitle
+            jobType
+            addresses {
+                id
+                default_billing
+                default_shipping
+                firstname
+                lastname
+                street
+                city
+                default_billing
+                default_shipping
+                region {
+                region_code
+                region
+                region_id
+            }
+            postcode
+            country_code
+            telephone
+        }
+    }
+}

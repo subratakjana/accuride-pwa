@@ -1,0 +1,12 @@
+query DistributorFilter($category :[DistributorCategory!], $state : [DistributorState!]){
+  distributorsLists(where : {category : $category,state : $state}){
+    id
+    stage
+    name
+    address
+    phoneNumber
+    email
+    lat
+    lng
+  }
+}

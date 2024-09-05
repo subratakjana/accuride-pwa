@@ -1,0 +1,195 @@
+.customReviewPage {
+  header.header-review {
+    border-top: solid 2px theme-color(secondary);
+
+    @include media-breakpoint-up(xl) {
+      border: none;
+    }
+  }
+  #yotpo-testimonials-custom-tab {
+    .yotpo-popup-box-medium {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: $spacer * 1.2 0;
+
+      &.yotpo-modal-bottom-line {
+        .yotpo-bottomline {
+          padding-top: 0;
+        }
+
+        input[type='button'].primary-color-btn {
+          margin-bottom: 0;
+          margin-top: $spacer;
+          display: block;
+          float: right;
+
+          &.yotpo-hidden {
+            &.only-invisible {
+              display: none !important;
+            }
+          }
+        }
+      }
+    }
+
+    .yotpo-nav-content {
+      .yotpo-review {
+        .yotpo-header {
+          .yotpo-icon-profile {
+            background-color: map-get($map: $theme-colors, $key: primary);
+          }
+        }
+
+        .yotpo-footer {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+
+          @include media-breakpoint-up(md) {
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+          }
+
+          .footer-actions {
+            margin-bottom: $spacer * 0.3;
+
+            @include media-breakpoint-up(sm) {
+              margin-bottom: 0;
+            }
+          }
+
+          .transparent-color-btn {
+            .yotpo-icon {
+              color: map-get($map: $theme-colors, $key: secondary);
+            }
+          }
+        }
+      }
+    }
+
+    .yotpo-modal-body-wrapper {
+      .stars-wrapper {
+        span.yotpo-icon {
+          cursor: pointer;
+        }
+      }
+
+      .yotpo-footer {
+        &.visible {
+          display: flex !important;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+
+          @include media-breakpoint-up(md) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          .socialize-wrapper {
+            position: relative;
+
+            .socialize {
+              @include media-breakpoint-up(md) {
+                min-width: inherit;
+                margin-bottom: 0;
+              }
+            }
+
+            .yotpo-or {
+              @include media-breakpoint-down(sm) {
+                float: left;
+                display: block;
+                width: 100%;
+                margin: 0;
+                text-align: left;
+              }
+            }
+          }
+
+          .connect-wrapper {
+            padding-left: 0;
+
+            .form-element {
+              @include media-breakpoint-down(xs) {
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+                padding-left: 0;
+                padding-right: 0;
+              }
+            }
+          }
+        }
+      }
+
+      .form-element {
+        &.submit-button {
+          @include media-breakpoint-down(xs) {
+            float: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+
+    nav[role='navigation'] {
+      display: flex;
+      justify-content: center;
+      .yotpo-pager {
+        .yotpo-page-element {
+          position: relative;
+          display: block;
+          width: $spacer * 2 !important;
+          text-align: center;
+          font-size: $spacer;
+          font-weight: 400;
+          padding: 0.375rem 0.5rem;
+          margin: 0 0 0 -0.05rem;
+          border: solid 1px theme-color(medium);
+
+          &.yotpo-disabled {
+            opacity: 0.4;
+          }
+
+          &::before {
+            color: theme-color(medium);
+          }
+
+          &:hover:not(.yotpo-disabled) {
+            background-color: map-get(
+              $map: $theme-colors,
+              $key: primary
+            ) !important;
+            color: white !important;
+
+            &::before {
+              color: white;
+            }
+          }
+
+          &.yotpo-active {
+            background-color: map-get(
+              $map: $theme-colors,
+              $key: primary
+            ) !important;
+            z-index: 3;
+            color: white !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.acc-reviews-not-found-icon {
+  width: $spacer * 4;
+}

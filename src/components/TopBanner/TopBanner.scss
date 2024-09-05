@@ -1,0 +1,81 @@
+.banner{
+    height: calc(100vh - #{$navbarHt});
+    position: relative;
+    text-align: center;
+    padding-bottom: $spacer;
+    @include media-breakpoint-up(md) {
+        height: calc(75vh - #{$navbarHt});
+    }
+    @include media-breakpoint-up(xs) {
+        height: calc(100vh - #{$spacer*11});
+        @supports (-webkit-overflow-scrolling: touch) {
+            height: calc(100vh - #{$spacer*18});
+        }
+    }    
+    &-image{
+        width: 100%;
+        display: block;
+        height: calc(100vh - #{$navbarHt});
+        object-fit: cover;
+        object-position: bottom center;
+        @include media-breakpoint-up(md) {
+            height: calc(75vh - #{$navbarHt});
+            object-position: center center;
+        }
+        @include media-breakpoint-up(xs) {
+            height: calc(100vh - #{$spacer*11});
+            object-position: bottom center;
+            @supports (-webkit-overflow-scrolling: touch) {
+                height: calc(100vh - #{$spacer*18});
+            }
+        }
+    }
+    &-content{
+        position: absolute;
+        bottom: $spacer;
+        z-index: 2;
+        left: 0;
+        right: 0;
+        .heading{
+            color: $white;
+        }
+        .btn{
+            color: theme-color(secondary);
+        }
+        .lazy-load-image-background {
+            display: block!important;
+        }
+        .slick-slide{
+            position: relative;
+            .banner-image{
+                height: 100%;
+            }
+            p{
+                position: absolute;
+                text-transform: uppercase;
+                color:$white;
+                font-size: 2.7vw;
+                bottom: 25px;
+                right: 25px;
+                max-width: 40%;
+                text-align: left;
+                line-height: 4vw;
+            }
+        }
+    }
+    .scroll-down{
+        svg{
+            width: $spacer * 2;
+            height: auto;
+            margin: 0 auto;
+        }
+    }
+    &.desktop-slider{
+        height: auto;
+        .banner-content{
+            position: relative;
+            bottom: auto;
+            top: 0;
+        }
+    }
+}

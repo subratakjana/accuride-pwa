@@ -1,0 +1,8 @@
+.acc-discount-code{
+    .form-group{
+        @include media-breakpoint-up(md) {
+            max-width: 480px;
+            margin: 0 auto;
+        }
+    }
+}

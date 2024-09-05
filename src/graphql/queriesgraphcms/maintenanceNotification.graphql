@@ -1,0 +1,7 @@
+query maintenanceBanner {
+    maintenances {
+        maintenanceNotificationEnable
+        maintenanceStartDate
+        maintenanceEndDate
+    }
+}

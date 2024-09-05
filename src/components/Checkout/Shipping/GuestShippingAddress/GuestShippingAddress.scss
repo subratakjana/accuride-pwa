@@ -1,0 +1,19 @@
+.acc-guest-loginform {
+  @include media-breakpoint-up(xl) {
+    border-bottom: 1px solid theme-color(medium);
+  }
+}
+
+.acc {
+  &-guest {
+    &-shipping {
+      &-logo-icon {
+        width: $spacer * 1.875;
+      }
+      &-close-icon {
+        width: $spacer * 1.7;
+        height: $spacer * 1.7;
+      }
+    }
+  }
+}

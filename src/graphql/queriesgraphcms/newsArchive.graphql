@@ -1,0 +1,52 @@
+query archivenewsList($slug: String!) {
+  newsrooms(stage: PUBLISHED, orderBy: newsDate_DESC, where: {newsroomCategories_some: {newsroomCategorySlug: $slug}}) {
+    id
+    newsTitle
+    newsSlug
+    createdAt
+    id
+    newsExcerpt
+    newsDate
+    newsImage {
+      id
+      url(transformation: {image: {resize: {width: 412, height: 283, fit: clip}}})
+    }
+    newsroomCategories {
+      id
+      newsroomCategoryTitle
+      newsroomCategorySlug
+      metaTitle
+      metaDescription
+      metaKeywords
+      metaImage {
+        id
+        fileName
+        url
+      }
+    }
+    pages {
+      id
+      pageTitle
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+      banner {
+        id
+        bannerHeading
+        bannerDescription
+        bannerImage {
+          id
+          fileName
+          url(transformation: {image: {resize: {width: 1349, height: 200, fit: clip}}})
+        }
+        bannerButtonText
+        bannerButtonLink
+      }
+      seoTitle
+      seoDescription
+      secKeywords
+    }
+  }
+}

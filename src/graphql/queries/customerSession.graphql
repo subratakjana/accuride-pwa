@@ -1,0 +1,6 @@
+query customerSession {
+    customerSession{
+        session_lifetime
+        popup_time
+    }
+}

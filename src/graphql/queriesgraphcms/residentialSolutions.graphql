@@ -1,0 +1,139 @@
+query residentSolutionsContent {
+  residentSolutions{
+    id
+    stage
+    banner{
+        id
+        bannerHeading
+        bannerDescription
+        bannerImage {
+        id
+        fileName
+        url
+        }
+        bannerButtonText
+        bannerButtonLink
+    }
+    section1ImageVideo{
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerVideoUrl
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section2ImageDesc{
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section3Title
+    section3Description
+    section3ImageGallery{
+      id
+      imageTitle
+      imageDescription
+      galleryImages {
+        id
+        fileName
+        url
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    section4Title
+    section4Description
+    section4Accordion{
+      id
+      pageName
+      videoLink
+      image {
+          id
+          fileName
+          url
+      }
+      title
+      description {
+          html
+          text
+      }
+      description2 {
+          html
+          text
+      }
+      buttonLabel
+      buttonLink
+      videoImage
+    }
+    section5Title
+    section5Description
+    section5Image{
+      id
+      fileName
+      url
+    }
+    section6Image{
+      id
+      fileName
+      url
+    }
+    section6ButtonLabel
+    section6ButtonLink
+    section7ImageDesc{
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    storeLanguage {
+      id
+      languages
+    }
+    pages{
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }      
+    }
+  }
+}

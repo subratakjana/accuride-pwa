@@ -1,0 +1,47 @@
+.acc-header-topbar{
+    .nav{
+        padding: $spacer/4 0;
+        .nav-item{
+            padding-right: $spacer/2;
+            margin-right: $spacer/2;
+            border-right: 1px solid $white;
+            font-size: $font-size-base;
+            @include media-breakpoint-down(xs) {
+                padding-right: $spacer/4;
+                margin-right: $spacer/4;
+            }
+            &:last-child{
+                padding-right: 0;
+                margin-right: 0;
+                border-right: 0;
+            }
+            &.dropdown{
+                .dropdown-menu{
+                    margin-top: $spacer/4;
+                    box-shadow: $shadow1;
+                    .dropdown-item{
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        color: theme-color(primary);
+                        &:hover{
+                            color: theme-color(secondary);
+                        }
+                    }
+                }
+            }
+            > a{
+                color: $white;
+                text-transform: uppercase;
+                font-size: $font-size-base - .0625;
+                padding: 0;
+                @include media-breakpoint-down(xs) {
+                    font-size: 9px;
+                    //line-height: 20px;
+                }
+                &:hover{
+                    color: theme-color(secondary);
+                }
+            }
+        }
+    }
+}

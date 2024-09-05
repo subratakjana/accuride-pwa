@@ -1,0 +1,105 @@
+// import partial files
+.acc-ban-skeleton{
+    max-height: 435px;
+}
+
+.notification-banner{
+    // background: rgba($primary, 1);
+    .container {
+        @include media-breakpoint-down(xl) {
+            padding-right: $spacer * 3;
+        }
+    }
+}
+
+.acc-home-online-store-section{
+    padding: $spacer*6 0;
+    @include media-breakpoint-down(lg) {
+        padding: $spacer*3 0;
+    }
+    @include media-breakpoint-down(xs) {
+        padding: $spacer*2 0;
+    }
+    position: relative;
+    &::after{
+        content: '';
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: $grey-light;
+        z-index: 0;
+    }
+    &::before{
+        content: '';
+        width: 50%;
+        height: 10px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        background: $secondary;
+        z-index: 0;
+    }
+    & > *{
+        position: relative;
+        z-index: 1;
+    }
+    h1{
+        font-size: $spacer*2.5;
+        @include media-breakpoint-down(xl) {
+            font-size: $spacer*1.5;
+        }
+        @include media-breakpoint-down(sm) {
+            font-size: $spacer;
+        }
+    }
+    .acc-home-online-store-image{
+        @include media-breakpoint-down(xl) {
+
+        }
+    }
+}
+.acc-home-warrenty-iso-sec{
+    .acc-home-warrenty-sec{
+        .acc-home-warrenty-img{
+            width: 151px;
+            height: 151px;
+            position: relative;
+        }
+        .acc-home-warrenty-text{
+            width: calc(100% - 151px);
+        }
+    }
+    .acc-home-iso-sec{
+        img{
+            @include media-breakpoint-down(lg) {
+                width: $spacer*4;
+            }
+        }
+    }
+}
+.acc-home-new-section4-text{
+    text-align: center;
+    padding-bottom: $spacer*4;
+    @include media-breakpoint-down(lg) {
+        padding-bottom: $spacer;
+    }
+    h2{
+        color: $grey-medium;
+        a{
+            color: $primary;
+        }
+    }
+}
+.acc-home-new-section8-text{
+    h2{
+        color: $white;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        a{
+            color: $white;
+        }
+    }
+}

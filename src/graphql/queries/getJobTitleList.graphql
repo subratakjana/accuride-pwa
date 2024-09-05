@@ -1,0 +1,6 @@
+query getJobTitleList {
+    jobTitle {
+        label
+        value
+    }
+}

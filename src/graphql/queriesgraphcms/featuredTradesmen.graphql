@@ -1,0 +1,76 @@
+query featuredTradesmensContent {
+    featuredTradesmens {
+        id
+        stage
+        banner {
+            id
+            bannerImage {
+                id
+                fileName
+                url
+                assetTitle
+            }
+            bannerMobileImage {
+                id
+                fileName
+                url
+            }
+            bannerVideoLink
+        }
+        section2Heading
+        section3Heading
+        section3ButtonText
+        section3ButtonLink
+        productListingWithVideos {
+            id
+            videoPlaceholderImage {
+                id
+                url
+                fileName
+                assetTitle
+            }
+            videoPlaceholderImageStamp {
+                id
+                url
+                fileName
+                assetTitle
+            }
+            youTubeVideoLink
+            productName
+            productNameDetails
+            productPrice
+            buttonText
+            buttonLink
+            productImage {
+                id
+                url
+                fileName
+                assetTitle
+            }
+        }
+        featuredProductHeading
+        featuredProductCards {
+            id
+            productName
+            productNameDetails
+            productImage {
+                url
+                id
+                fileName
+            }
+            buttonText
+            buttonLink
+            newProduct
+        }
+        pages {
+            id
+            pageTitle
+            pageName
+            pageSlug
+            pageIntroduction {
+                html
+                text
+            }
+        }
+    }
+}

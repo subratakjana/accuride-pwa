@@ -1,0 +1,381 @@
+# query getFilteredProducts ($filter_obj_filter:ProductAttributeFilterInput!) {
+#     filters: products (filter: $filter_obj_filter){
+#             aggregations{
+#             label
+#             count
+#             attribute_code
+#             position
+#             options {
+#                 count
+#                 label
+#                 value
+#             }
+#         } 
+#     }
+# }
+
+# query getOnlineProducts ($filter_obj_online:ProductAttributeFilterInput!, $filter_obj_short: ProductAttributeSortInput!, $current_page_online:Int!, $page_size:Int!) {
+#     online: products(filter: $filter_obj_online, pageSize: $page_size, currentPage : $current_page_online, sort: $filter_obj_short) {
+#         products: items {
+#           	__typename
+#             id : uid
+#             categories{
+#               	__typename
+#                 name
+#                 id : uid
+#             }
+#             name
+#             sku
+#             url_key
+#             cross_image
+#             average_rating
+#             image {
+#                 label
+#                 gallery_url
+#             }
+#             small_image {
+#                 url(width:247,height:225)
+#             },
+#             thumbnail {
+#                 url(width:100,height:100)
+#             }
+#             load_rating
+#             product_for_sales
+#             quantity_in
+#             stock_status
+#             product_price_range {
+#                 maximum_price {
+#                     final_price {
+#                         currency
+#                         value
+#                     }
+#                 }
+#                 minimum_price {
+#                     final_price {
+#                         currency
+#                         value
+#                     }
+#                 }
+#             }
+#             ... on GroupedProduct {
+#                 items {
+#                     product {
+#                       	__typename
+#                         name
+#                         id : uid # must need to pass id else return store error.
+#                     }
+#                 }
+#             }
+#             ... on ConfigurableProduct {
+#                 variants {
+#                     attributes {
+#                         label
+#                         value_index : uid
+#                     }
+#                     product {
+#                         id : uid # must need to pass id else return store error.
+#                         sku
+#                         stock_status
+#                         price_range{
+#                             minimum_price{
+#                                 final_price{
+#                                     value
+#                                 }
+#                             }
+#                         }
+#                     }
+#                 }
+#                 configurable_options {
+#                     attribute_code
+#                     label
+#                     id : uid
+#                     values{
+#                         label
+#                         value_index : uid
+#                     }
+#                 }
+#             }
+#         } 
+#         page_info {
+#             page_size
+#             current_page
+#             total_pages
+#         }
+#     }
+# }
+
+# query getOtherProducts ($filter_obj_other:ProductAttributeFilterInput!, $filter_obj_short: ProductAttributeSortInput!, $current_page_other:Int!, $page_size:Int!) {
+#     others: products(filter: $filter_obj_other, pageSize: $page_size, currentPage : $current_page_other, sort: $filter_obj_short) {
+#         products: items {
+#           	__typename
+#             id : uid
+#             name
+#             sku
+#             url_key
+#             cross_image
+#             average_rating
+#             image {
+#                 label
+#                 gallery_url
+#             }
+#             small_image {
+#                 url(width:247,height:225)
+#             },
+#             thumbnail {
+#                 url(width:100,height:100)
+#             }
+#             load_rating
+#             product_for_sales
+#             product_price_range {
+#                 maximum_price {
+#                     final_price {
+#                         currency
+#                         value
+#                     }
+#                 }
+#                 minimum_price {
+#                     final_price {
+#                         currency
+#                         value
+#                     }
+#                 }
+#             }
+#             ... on GroupedProduct {
+#                 items {
+#                     product {
+#                       	__typename
+#                         id : uid # must need to pass id else return store error.
+#                         name
+#                     }
+#                 }
+#             }
+#             ... on ConfigurableProduct {
+#                 variants {
+#                     attributes {
+#                         label
+#                         value_index : uid
+#                     }
+#                     product {
+#                         id : uid # must need to pass id else return store error.
+#                         sku
+#                     }
+#                 }
+#                 configurable_options {
+#                     label
+#                     id : uid
+#                     values{
+#                         label
+#                         value_index : uid
+#                     }
+#                 }
+#             }
+#         }
+#         page_info {
+#             page_size
+#             current_page
+#             total_pages
+#         }
+#     }
+# }
+
+# query getCategoryDescription ($category_id: String!) {
+#     categoryDescription: categoryList(filters: {ids: {eq: $category_id}}) {
+#         id : uid
+# 				name
+#         description
+#         image
+#         category_image_url
+#         meta_title
+#         meta_description
+#         meta_keywords
+#     }
+# }
+  
+
+
+
+query products ($filter_obj_online:ProductAttributeFilterInput!, $filter_obj_other:ProductAttributeFilterInput!, $filter_obj_filter:ProductAttributeFilterInput!, $filter_obj_short: ProductAttributeSortInput!, $category_id: String!, $current_page_online:Int!, $current_page_other:Int! $page_size:Int!) {
+    filters: products(filter: $filter_obj_filter){
+            aggregations{
+            label
+            count
+            attribute_code
+            position
+            options {
+                count
+                label
+                value
+            }
+        } 
+    }
+    online: products(filter: $filter_obj_online, pageSize: $page_size, currentPage : $current_page_online, sort: $filter_obj_short) {
+        products: items {
+          	__typename
+            id : uid
+            categories{
+              	#__typename
+                name
+                id : uid
+            }
+            name
+            sku
+            url_key
+            cross_image
+            #average_rating
+            meta_description
+            image {
+                label
+                gallery_url
+            }
+            # small_image {
+            #     url(width:247,height:225)
+            # },
+            # thumbnail {
+            #     url(width:100,height:100)
+            # }
+            # load_rating
+            product_for_sales
+            quantity_in
+            stock_status
+            product_price_range {
+                maximum_price {
+                    final_price {
+                        #currency
+                        value
+                    }
+                }
+                minimum_price {
+                    final_price {
+                        currency
+                        value
+                    }
+                }
+            }
+            ... on GroupedProduct {
+                items {
+                    product {
+                      	__typename
+                        name
+                        id : uid # must need to pass id else return store error.
+                    }
+                }
+            }
+            ... on ConfigurableProduct {
+                variants {
+                    attributes {
+                        label
+                        value_index : uid
+                    }
+                    product {
+                        id : uid # must need to pass id else return store error.
+                        sku
+                        stock_status
+                        price_range{
+                            minimum_price{
+                                final_price{
+                                    value
+                                }
+                            }
+                        }
+                    }
+                }
+                configurable_options {
+                    attribute_code
+                    label
+                    id : uid
+                    values{
+                        label
+                        value_index : uid
+                    }
+                }
+            }
+        } 
+        page_info {
+            page_size
+            current_page
+            total_pages
+        }
+    }
+    others: products(filter: $filter_obj_other, pageSize: $page_size, currentPage : $current_page_other, sort: $filter_obj_short) {
+        products: items {
+          	__typename
+            id : uid
+            name
+            sku
+            url_key
+            cross_image
+            #average_rating
+            meta_description
+            image {
+                label
+                gallery_url
+            }
+            # small_image {
+            #     url(width:247,height:225)
+            # },
+            # thumbnail {
+            #     url(width:100,height:100)
+            # }
+            # load_rating
+            product_for_sales
+            product_price_range {
+                maximum_price {
+                    final_price {
+                        #currency
+                        value
+                    }
+                }
+                minimum_price {
+                    final_price {
+                        currency
+                        value
+                    }
+                }
+            }
+            ... on GroupedProduct {
+                items {
+                    product {
+                      	__typename
+                        id : uid # must need to pass id else return store error.
+                        name
+                    }
+                }
+            }
+            ... on ConfigurableProduct {
+                variants {
+                    attributes {
+                        label
+                        value_index : uid
+                    }
+                    product {
+                        id : uid # must need to pass id else return store error.
+                        sku
+                    }
+                }
+                configurable_options {
+                    label
+                    id : uid
+                    values{
+                        label
+                        value_index : uid
+                    }
+                }
+            }
+        }
+        page_info {
+            page_size
+            current_page
+            total_pages
+        }
+    }
+    categoryDescription: categoryList(filters: {ids: {eq: $category_id}}) {
+        id : uid
+				name
+        description
+        image
+        category_image_url
+        meta_title
+        meta_description
+        meta_keywords
+    }
+}

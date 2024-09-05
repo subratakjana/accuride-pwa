@@ -1,0 +1,56 @@
+.acc-compare-accordion {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  header {
+    padding: $spacer/2 $spacer;
+    height: $spacer * 3;
+    .acc-compare-action {
+      width: $spacer * 3.5;
+    }
+  }
+  footer {
+    padding: $spacer/2 $spacer;
+    height: $spacer * 3;
+  }
+  .acc-compare-sticky {
+    overflow-x: auto;
+    .item {
+      min-width: 50vw;
+      max-width: 50vw;
+      padding: $spacer;
+      border-right: 1px solid theme-color(primary);
+      &:last-child {
+        border-right: 0;
+      }
+    }
+  }
+
+  .compareItems {
+    position: relative;
+    line-height: 20px;
+    font-weight: 500;
+    background-color: #b1980c;
+    padding: 5px 10px;
+    .cancelBtn {
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 30px;
+    }
+  }
+}
+
+.acc {
+  &-compare {
+    &-close-icon {
+      width: $spacer * 1.625;
+      height: $spacer * 1.625;
+    }
+    &-logo-icon {
+      width: $spacer * 2;
+    }
+  }
+}

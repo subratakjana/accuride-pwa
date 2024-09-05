@@ -1,0 +1,84 @@
+query homePageV2 {
+  homev2S {
+    banner {
+      url
+      id
+    }
+    mobileBanner {
+      id
+      url
+    }
+    bannerTopTitleOne
+    bannerTopTitleTwo
+    bannerTopGlobeImage {
+      id
+      url
+    }
+    sectionOneImageAndDesc {
+      ... on ImageDescWithLink {
+        id
+        image {
+          id
+          url
+        }
+        mobileImage{
+          id
+          url
+        }
+        link
+        linkText
+        title
+      }
+    }
+    sectionTwoMainTitle{
+      html
+      text
+    }
+    sectionTwoImageAndDesc {
+      ... on ImageDescWithLink {
+        id
+        link
+        linkText
+        title
+        title3{
+          html
+          text
+        }
+        image {
+          id
+          url
+        }
+        openModal
+      }
+    }
+    sectionThreeTitle {
+      html
+      text
+    }
+    sectionThreeButtonText
+    sectionThreeButtonLink
+    sectionFourTitle
+    sectionFourSubTitle
+    sectionFourImage {
+      id
+      url
+    }
+    sectionFourLink
+    sectionFiveText {
+      html
+      text
+    }
+    sectionFiveTextMob
+    sectionSixText
+    sectionSixLink
+    sectionSixPaypalImage {
+      id
+      url
+    }
+    sectionEightText {
+      html
+      text
+    }
+    sectionEightLink
+  }
+}

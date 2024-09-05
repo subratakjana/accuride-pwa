@@ -1,0 +1,113 @@
+query slideGuides {
+  slideGuideses(where: {storeLanguage: {languages: English}, AND: {pages: {pageSlug: "slide-guides"}}}) {
+    id
+    stage
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    section1Image {
+      id
+      fileName
+      height
+      width
+      size
+      mimeType
+      url(transformation: {image: {resize: {width: 700, height: 500, fit: clip}}})
+    }
+    section1Title
+    section1Description
+    section2Accordion {
+      id
+      pageName
+      videoLink
+      image {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 400, height: 250, fit: clip}}})
+      }
+      title
+      description {
+        html
+        text
+      }
+      description2 {
+        html
+        text
+      }
+      buttonLabel
+      buttonLink
+      videoImage
+    }
+    section3Title
+    section3Description
+    section4Accordion {
+      id
+      pageName
+      videoLink
+      image {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 400, height: 250, fit: clip}}})
+      }
+      title
+      description {
+        html
+        text
+      }
+      description2 {
+        html
+        text
+      }
+      buttonLabel
+      buttonLink
+      videoImage
+    }
+    section5Title
+    section5Description
+    section6BannerSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section7Title
+    section7LeftDescription {
+      html
+      text
+    }
+    section7RightDescription {
+      html
+      text
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

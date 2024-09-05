@@ -1,0 +1,22 @@
+.acc-contact-bar {
+    background-color: $grey-dark;
+    transition: $transition;
+    font-family: $font-family-secondary;
+
+    p {
+        letter-spacing: -1.18px;
+
+        @include media-breakpoint-up(xxxxl) {
+            font-size: $spacer * 2.938;
+        }
+
+        @include media-breakpoint-down(xs) {
+            font-size: $h1-font-size;
+            letter-spacing: -0.41px;
+        }
+    }
+
+    &:hover {
+        background-color: $black;
+    }
+}

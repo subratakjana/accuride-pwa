@@ -1,0 +1,11 @@
+query allTagsContent {
+  allTagsInBlogs {
+    id
+    tagTitle
+    tagSlug
+    tagLink
+    storeLanguage {
+      languages
+    }
+  }
+}

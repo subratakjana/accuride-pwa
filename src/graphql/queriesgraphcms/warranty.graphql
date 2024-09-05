@@ -1,0 +1,51 @@
+query warrantyContent{
+  warranties {
+    id
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    section1Accordion {
+      id
+      title
+      question
+      answer {
+        html
+      }
+      answerImage {
+        id
+        fileName
+        height
+        width
+        size
+        mimeType
+        url
+      }
+      pageName
+    }
+    storeLanguage {
+      languages
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+      seoTitle
+seoDescription
+secKeywords
+    }
+  }
+}

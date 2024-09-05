@@ -1,0 +1,7 @@
+mutation submitWebForms($formInput: WebFormInput!) {
+    submitWebForms(input: $formInput) {
+      message
+      redirect_url
+      files_url
+    }
+}

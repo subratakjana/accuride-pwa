@@ -1,0 +1,27 @@
+query getWebFormDetails($formId: Int!) {
+    getWebForms(formId: $formId) {
+        description
+        form_key
+        webform_id
+        act_on_url
+            webformfields {
+                field_id
+                field_label
+                field_code
+                field_label_hide
+                field_type
+                field_hint
+                field_hidden_value
+                required
+                is_active
+                multiselect
+                position
+                field_width
+                validation_advice
+                select_options {
+                label
+                value
+            }
+        }
+    }
+}

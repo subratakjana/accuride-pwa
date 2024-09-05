@@ -1,0 +1,22 @@
+.ProductDownload{
+    .list-download{
+        li{
+            border-bottom: 1px solid theme-color(medium);
+            margin-bottom: $spacer/2;
+            padding-bottom: $spacer/2;
+            @include media-breakpoint-up(xl) {
+                margin-bottom: $spacer;
+                padding-bottom: $spacer;
+            }
+            &:last-child{
+                border-bottom: 0;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+            .acc-product-download-icon{
+                height: $spacer*1.25;
+                width: $spacer;
+            }
+        }
+    }
+}

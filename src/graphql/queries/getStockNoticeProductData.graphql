@@ -1,0 +1,13 @@
+query getStockNoticeProductData($product_id: Int!, $website_id: Int!) {
+    getStockNoticeProductData(product_id: $product_id, website_id: $website_id){
+        product_data {
+            customer_email
+            has_email_subscribed
+            parent_id
+            product_id
+            product_stock_alert
+            product_stock_status
+            product_type
+        }
+    }
+}

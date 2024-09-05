@@ -1,0 +1,65 @@
+.acc-image-hover-carosel{
+    .acc-image-hover-card{
+        & > img{
+            height: 320px;
+            object-fit: fill;
+        }
+        .acc-custom-click{
+            background: none;
+            z-index: 2;
+        }
+        .hover-image-content{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding-left: $spacer;
+            padding-right: $spacer;
+            width: 100%;
+            opacity: 1;
+            transition: ease 0.8s;
+        }
+        .card-body{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: $spacer*2;
+            width: 100%;
+            opacity: 0;
+            transition: ease 0.8s;
+            & > div{
+                p{
+                    color: $white;
+                }
+                h5{
+                    color: $white;
+                    margin-bottom: 0;
+                    font-size: $spacer*1.5;
+                }
+            }
+            
+        }
+        &:hover{
+            .card-body{
+                opacity: 1;
+            } 
+            .hover-image-content{
+                opacity: 0;
+            }
+        }
+    }
+    .slick-arrow{
+        font-size: $spacer * 4;
+        color: $grey-medium;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        cursor: pointer;
+        &.slick-prev{
+            left: -40px;
+        }
+        &.slick-next{
+            right: -40px;
+        }
+    }
+}

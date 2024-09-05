@@ -1,0 +1,15 @@
+query getStockNoticeConfiguration($storeId: Int!) {
+    getStockNoticeConfiguration(store_id: $storeId){
+      allow_customer
+      allow_stock
+      allow_stock_qty
+      button_color
+      button_text
+      button_text_color
+      email_based_qty
+      message
+      send_limit
+      stop_button_text
+      stop_message
+    }
+}

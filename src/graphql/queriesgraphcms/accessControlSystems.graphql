@@ -1,0 +1,228 @@
+query accessControlSystemsContent {
+  accessControlSystemss {
+    id
+    stage
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    section1FixedSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section2Title
+    section2Description {
+      html
+      text
+    }
+    section2ImageGallery {
+      id
+      imageTitle
+      imageDescription
+      galleryImages {
+        id
+        fileName
+        url
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    section3Title
+    section3Description {
+      html
+      text
+    }
+    section3ImageGallery {
+      id
+      imageTitle
+      imageDescription
+      galleryImages {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 240, height: 159, fit: clip}}})
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    section4FixedSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 950, height: 500, fit: clip}}})
+      }
+      sliderOrFixedBlock
+    }
+    section5Title
+    section5Description {
+      html
+      text
+    }
+    section5ImageGallery {
+      id
+      imageTitle
+      imageDescription
+      galleryImages {
+        id
+        fileName
+        url
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    section6Title
+    section6Description {
+      html
+      text
+    }
+    sec6BigImage {
+      id
+      fileName
+      height
+      width
+      size
+      mimeType
+      url
+    }
+    section6ImageGallery {
+      id
+      imageTitle
+      imageDescription
+      galleryImages {
+        id
+        fileName
+        url
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    section6ButtonLabel
+    section6ButtonLink
+    section7FixedSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 950, height: 500, fit: clip}}})
+      }
+      sliderOrFixedBlock
+    }
+    section8FixedSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 660, height: 580, fit: clip}}})
+      }
+      sliderOrFixedBlock
+    }
+    section9FixedSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    sec9BgImage {
+      id
+      fileName
+      url
+      height
+      width
+      size
+      mimeType
+    }
+    section9BgDescription {
+      html
+      text
+    }
+    storeLanguages {
+      id
+      languages
+    }
+    productTable{
+      id
+      columnImage{
+        url
+      }
+      columnTitle
+      dimensions
+      breakForce
+      locations
+      intelligentSubversionProtection
+      touchRelease
+      autoOpen
+      easyClose
+      voltageSupply
+      buttonLabel
+      buttonLink
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

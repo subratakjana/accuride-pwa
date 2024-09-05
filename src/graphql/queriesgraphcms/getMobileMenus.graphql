@@ -1,0 +1,54 @@
+query mobileMenu($pageSlug: [String!]) {
+    mobilePagess(where: {storeLanguage: {languages: English}, AND: {pageSlug_in: $pageSlug}}) {
+        id
+        pageName
+        pageSlug
+        pageTitle
+        staticLink
+        externalLinkUrl
+        openInNewTab
+        show
+        videoUrl
+        mobileMenu {
+            id
+            pageName
+            pageSlug
+            pageTitle
+            staticLink
+            externalLinkUrl
+            openInNewTab
+            show
+            videoUrl
+            mobileMenu {
+                id
+                pageName
+                pageSlug
+                pageTitle
+                staticLink
+                externalLinkUrl
+                openInNewTab
+                videoUrl
+                mobileMenu {
+                    id
+                    pageName
+                    pageSlug
+                    pageTitle
+                    staticLink
+                    externalLinkUrl
+                    openInNewTab
+                    videoUrl
+                    mobileMenu {
+                        id
+                        pageName
+                        pageSlug
+                        pageTitle
+                        staticLink
+                        externalLinkUrl
+                        openInNewTab
+                        videoUrl
+                    }
+                }
+            }
+        }
+    }
+}

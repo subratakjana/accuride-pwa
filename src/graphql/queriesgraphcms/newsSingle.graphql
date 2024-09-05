@@ -1,0 +1,67 @@
+query newsroomsingle($slug : String!){
+  newsroom(stage: PUBLISHED, where:{newsSlug: $slug}) {
+    id
+    newsTitle
+    newsSlug
+    createdAt
+    updatedAt
+    publishedAt
+      id
+    newsExcerpt
+    newsDate
+    newsImage {
+      id
+      url(transformation: {image: {resize: {width: 691, height: 432, fit: clip}}})
+    }
+    newsroomCategories {
+      id
+      newsroomCategoryTitle
+      newsroomCategorySlug
+    }
+    newsDescription{
+        html
+        text
+    }
+    metaTitle
+    metaDescription
+    metaKeywords
+    metaImage {
+      id
+      fileName
+      url
+    }
+    relatedNews{
+      id
+      newsTitle
+      newsDate
+      newsSlug
+      createdAt
+      newsImage {
+        id
+        url(transformation: {image: {resize: {width: 209, height: 135, fit: clip}}})
+      }
+      newsroomCategories {
+        id
+        newsroomCategoryTitle
+        newsroomCategorySlug
+      }
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+      singlePageContactDetails{
+        html
+        text        
+      }
+      seoTitle
+      seoDescription
+      secKeywords
+    }
+  }
+}

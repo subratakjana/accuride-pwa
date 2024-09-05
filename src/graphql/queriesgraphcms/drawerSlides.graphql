@@ -1,0 +1,168 @@
+query drawerSlidesContent{
+  drawerSlidess {
+    id
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    section1imagegallery {
+      id
+      imageTitle
+      imageDescription
+      galleryTitle
+      galleryImages {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 264, height: 264, fit: clip}}})
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    section2staticbanner {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section3accordion {
+      id
+      pageName
+      videoLink
+      image {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 397, height: 298, fit: clip}}})
+      }
+      title
+      description {
+        html
+        text
+      }
+      description2 {
+        html
+        text
+      }
+      buttonLabel
+      buttonLink
+      videoImage
+    }
+    section4title
+    section4description {
+      html
+      text
+    }
+    section5accordion {
+      id
+      pageName
+      videoLink
+      image {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 397, height: 300, fit: clip}}})
+      }
+      title
+      description {
+        html
+        text
+      }
+      description2 {
+        html
+        text
+      }
+      buttonLabel
+      buttonLink
+      videoImage
+    }
+    section6staticbanner {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      externalLink
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section7title
+    section7accordion {
+      id
+      title
+      question
+      answer {
+        html
+      }
+      answerImage {
+        id
+        fileName
+        height
+        width
+        size
+        mimeType
+        url
+      }
+      pageName
+    }
+    section7buttontext
+    section7buttonlink
+    section8staticbanner {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    storelanguage {
+      languages
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

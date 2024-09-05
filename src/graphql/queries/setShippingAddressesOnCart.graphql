@@ -1,0 +1,95 @@
+mutation setShippingAddressesOnCart ($cart_id: String!, $shipping_addresses : [ShippingAddressInput]!){
+  setShippingAddressesOnCart(input: {cart_id: $cart_id, shipping_addresses: $shipping_addresses}) {
+    cart {
+      total_quantity
+      email
+       prices{
+        applied_taxes{
+          amount{
+            currency
+            value
+          }
+          label
+        }
+        discount: discounts{
+          amount{
+            currency
+            value
+          }
+          label
+        }
+        grand_total{
+          currency
+            value
+        }
+        subtotal_excluding_tax{
+          currency
+            value
+        }
+        subtotal_including_tax{
+          currency
+            value
+        }
+        subtotal_with_discount_excluding_tax{
+          currency
+            value
+        }
+      }
+      items {
+        quantity
+        product {
+          uid
+          name
+          price_range {
+            minimum_price{
+                final_price{
+                    value
+                }
+            }
+          }
+        }
+      }
+      applied_coupons {
+        code
+      }
+      shipping_addresses {
+        available_shipping_methods{
+           amount{
+            value
+          }
+          available
+          carrier_code
+          carrier_title
+          error_message
+          method_code
+          method_title
+        }
+        selected_shipping_method{
+          amount{
+            value
+          }
+          carrier_code
+          carrier_title
+          method_code
+          method_title
+        }
+        firstname
+        lastname
+        company
+        street
+        city
+        region_id
+        region {
+          code
+          label
+        }
+        postcode
+        telephone
+        country {
+          code
+          label
+        }
+      }
+    }
+  }
+}

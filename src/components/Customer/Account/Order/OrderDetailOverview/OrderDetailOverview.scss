@@ -1,0 +1,29 @@
+.acc-order-menu{
+    display: flex;
+    li{
+        text-align: center;
+        flex: 1;
+        border-bottom: 1px solid theme-color(medium); 
+        a{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-top: 1px solid transparent;
+            border-left: 1px solid transparent;
+            border-right: 1px solid transparent;
+            border-bottom: 1px solid transparent;
+            border-radius: $spacer/4 $spacer/4 0 0;
+            padding: $spacer/4;
+            margin-bottom: -1px;
+            &.active{
+                border-left-color: theme-color(medium);
+                border-right-color: theme-color(medium);
+                border-top-color: theme-color(medium);
+                border-bottom: 1px solid $white;
+            }
+            span{
+                white-space: nowrap;
+            }
+        }
+    }
+}

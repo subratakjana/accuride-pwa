@@ -1,0 +1,124 @@
+query blogsingle($slug: String!) {
+    blog(stage: PUBLISHED, where: { postSlug: $slug }) {
+        postTitle
+        postSlug
+        createdAt
+        updatedAt
+        publishedAt
+        id
+        postExcerpt
+        postImage {
+            id
+            url(
+                transformation: {
+                    image: { resize: { width: 691, height: 460, fit: clip } }
+                }
+            )
+        }
+        categories {
+            id
+            categoryTitle
+            categorySlug
+        }
+        postDescription {
+            references {
+                __typename
+                ... on BlogFeaturedProduct {
+                    products {
+                        __typename
+                        ... on FeaturedProduct {
+                            productName
+                            productImage {
+                                id
+                                fileName
+                                url
+                                mimeType
+                            }
+                            productDescription
+                            productLink
+                        }
+                    }
+                    id
+                }
+                ... on BlogFaq {
+                    id
+                    title
+                    faqLists {
+                        __typename
+                        ... on FaqList {
+                            id
+                            question
+                            answer
+                        }
+                    }
+                }
+            }
+            html
+            text
+        }
+        postAuthor
+        metaTitle
+        metaDescription
+        metaKeywords
+        metaImage {
+            id
+            fileName
+            url
+        }
+        relatedBlog {
+            id
+            createdAt
+            postTitle
+            postSlug
+            postImage {
+                id
+                url(
+                    transformation: {
+                        image: {
+                            resize: { width: 209, height: 139, fit: clip }
+                        }
+                    }
+                )
+            }
+            categories {
+                id
+                categoryTitle
+                categorySlug
+            }
+        }
+        relatedProduct {
+            id
+            productId
+            productSku
+            productPrice
+            productFeatureImage {
+                url(
+                    transformation: {
+                        image: {
+                            resize: { width: 209, height: 119, fit: clip }
+                        }
+                    }
+                )
+                fileName
+                width
+                height
+            }
+            productTitle
+            productSlug
+            productLink
+        }
+        pages {
+            id
+            pageTitle
+            pageName
+            pageSlug
+            pageIntroduction {
+                html
+                text
+            }
+            seoTitle
+            seoDescription
+            secKeywords
+        }
+    }
+}

@@ -1,0 +1,73 @@
+query architecturalDesignsContent{
+  architecturalDesigns {
+    id
+    stage
+    banner {
+    id
+    bannerHeading
+    bannerDescription
+    bannerImage {
+      id
+      fileName
+      url
+    }
+    bannerButtonText
+    bannerButtonLink
+    }
+    section1ImageGallery {
+      id
+      imageTitle
+      imageDescription
+      galleryImages {
+        id
+        fileName
+        url
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    section2ImageGallery {
+      id
+      imageTitle
+      imageDescription
+      galleryImages {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 419, height: 303, fit: clip}}})
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    section3Title
+    section3Description
+    featuredProducts{
+      id
+      productSku
+      productId
+      productFeatureImage{
+        url(transformation: {image: {resize: {width: 387, height: 221, fit: clip}}})
+        fileName
+        width
+        height
+      }
+      productTitle
+      productSlug
+      productLink
+      
+    }
+    storeLanguage {
+      id
+      languages
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

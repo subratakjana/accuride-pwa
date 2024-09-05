@@ -1,0 +1,7 @@
+query newscategories{
+  newsroomCategories(stage: PUBLISHED){
+    id
+    newsroomCategoryTitle
+    newsroomCategorySlug
+  }
+}

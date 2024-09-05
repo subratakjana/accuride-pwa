@@ -1,0 +1,25 @@
+.default-table{
+    tbody {
+        td{
+            padding: $spacer/2;
+            &:first-child{
+                padding-left: 0;
+            }
+            &:last-child{
+                padding-right: 0;
+            }
+        }
+    }
+    tfoot {
+        border-top: 1px solid theme-color(medium);
+        td{
+            padding: $spacer/2;
+            &:first-child{
+                padding-left: 0;
+            }
+            &:last-child{
+                padding-right: 0;
+            }
+        }
+    }
+}

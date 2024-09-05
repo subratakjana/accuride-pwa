@@ -1,0 +1,97 @@
+.acc-icon-list-section-heading {
+    letter-spacing: -1.18px;
+
+    @include media-breakpoint-up(xxxxl) {
+        font-size: $spacer * 2.938;
+    }
+
+    @include media-breakpoint-down(xs) {
+        font-size: $h1-font-size;
+        letter-spacing: -0.603px;
+    }
+}
+
+.acc-icon-list-row {
+    row-gap: $spacer * 4;
+   
+    // @include media-breakpoint-up(md) {
+    //     // 768 above
+    //     min-height: 436px;
+    // }
+    // @include media-breakpoint-up(lg) {
+    //     // 992 above
+    //     min-height: 413px;
+    // }
+    // @include media-breakpoint-up(xl) {
+    //     // 1200 above
+    //     min-height: 316px;
+    // }
+    // @include media-breakpoint-up(xxl) {
+    //     // 1200 above
+    //     min-height: 318px;
+    // }
+    // @include media-breakpoint-up(xxxl) {
+    //     // 1400 above
+    //     min-height: 372px;
+    // }
+    @include media-breakpoint-down(lg) {
+        row-gap: $spacer * 2;
+      
+    }
+
+
+    .acc-icon-list-item {
+        .acc-icon {
+            height: $spacer * 5;
+
+            @include media-breakpoint-down(xxl) {
+                height: $spacer * 3.75;
+            }
+
+            div {
+                height: 100%;
+
+                svg {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        h3 {
+            color: currentColor;
+            margin: 0;
+            line-height: 1.2;
+            letter-spacing: -0.41px;
+            font-size: $spacer * 1.5;
+
+            @include media-breakpoint-down(xxl) {
+                font-size: $font-size-base * 1.5;
+            }
+
+            @include media-breakpoint-down(lg) {
+                font-size: $h2-font-size;
+            }
+
+            @include media-breakpoint-down(xs) {
+                font-size: $h4-font-size;
+                letter-spacing: -0.27px;
+            }
+        }
+
+        a {
+            color: $primary;
+            transition: $transition;
+            display: block;
+
+            @include media-breakpoint-down(xxl) {
+                padding: 0;
+            }
+
+            &:hover {
+                color: theme-color-level(dark, -2.1);
+            }
+        }
+    }
+}

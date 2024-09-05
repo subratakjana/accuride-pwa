@@ -1,0 +1,56 @@
+.acc-header-signup-banner {
+  top: 0;
+  z-index: 15;
+  background-color: $primary-dark;
+  color: $white;
+  font-size: $spacer * 1.125;
+  line-height: 1.2;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: $spacer * 0.25 $spacer * 2.5 $spacer * 0.25 $spacer;
+  font-family: sans-serif;
+
+  @include media-breakpoint-down(md) {
+    font-size: $font-size-base * 0.9;
+  }
+
+  .acc-header-signup-banner-content {
+    p {
+      margin: 0;
+    }
+    strong {
+      color: $secondary;
+      font-weight: 700;
+    }
+    a {
+      color: $secondary;
+      font-weight: 700;
+      text-decoration: underline !important;
+    }
+    u {
+      text-decoration: none;
+      font-family: $font-family-secondary;
+    }
+  }
+
+  .acc-signup-banner-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: $spacer * 2.5;
+    height: 100%;
+    font-size: $font-size-base * 1.25;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    &-icon {
+      width: $spacer;
+      height: $spacer;
+    }
+  }
+}

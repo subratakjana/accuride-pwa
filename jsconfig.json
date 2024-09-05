@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "allowSyntheticDefaultImports": false,
+    "baseUrl": "./",
+    "paths": {
+      "@Hooks/*": [
+        "./src/hooks/*"
+      ],
+      "@Components/*": [
+        "./src/components/*"
+      ],
+      "@Contexts/*": [
+        "./src/contexts/*"
+      ],
+      "@HOCs/*": [
+        "./src/hocs/*"
+      ],
+      "@Styles/*": [
+        "./src/styles/*"
+      ],
+      "@I18n/*": [
+        "./src/i18n/*"
+      ],
+      "@Graphql/*": [
+        "./src/graphql/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".next",
+    "out",
+    "next.config.js",
+    ".babelrc"
+  ]
+}

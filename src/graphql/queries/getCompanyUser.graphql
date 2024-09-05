@@ -1,0 +1,11 @@
+query getCompanyUser {
+    getCompanyUser{
+        id
+        name
+        email
+        role
+        status
+        status_code
+        team
+    }
+}

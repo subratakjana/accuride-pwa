@@ -1,0 +1,350 @@
+query whoWeAresContent {
+  whoWeAres {
+    id
+    stage
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    section1FixedSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section2FixedSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section3FixedSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section4FixedSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section5FixedSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section6FixedSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section7FixedSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section8FixedSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section9FixedSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section10FixedSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section11FixedSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section12FixedSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section13FixedSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section14FixedSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section15FixedSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section16FixedSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section17Title
+    section17Description {
+      html
+      text
+    }
+    section18Title
+    section18Image {
+      id
+      fileName
+      height
+      width
+      size
+      mimeType
+      url
+    }
+    distributorsList {
+      id
+      name
+      address
+      address2
+      phoneNumber
+      email
+      lat
+      lng
+      web
+      fax
+      category
+      buttontext
+      buttonlink
+      description
+      stage
+      parentaddress {
+        id
+        name
+        distributorName
+        address
+        address2
+        phoneNumber
+        email
+        lat
+        lng
+        web
+        fax
+        category
+        buttontext
+        buttonlink
+        description
+        stage
+      }
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

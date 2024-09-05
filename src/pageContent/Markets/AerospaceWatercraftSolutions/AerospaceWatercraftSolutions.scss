@@ -1,0 +1,7 @@
+.acc-market-custom-bg-image{
+    background-size: cover;
+    min-height: 200px;
+    @include media-breakpoint-up(md) {
+        min-height: 428px;
+    }
+} 

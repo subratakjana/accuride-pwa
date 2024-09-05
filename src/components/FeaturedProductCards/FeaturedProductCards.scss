@@ -1,0 +1,80 @@
+.acc-featured-products-slider {
+    &.swiper-horizontal {
+        &>.swiper-pagination-bullets {
+            &.swiper-pagination-horizontal {
+                bottom: auto;
+                position: relative;
+                margin-top: $spacer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: $spacer * 0.25;
+
+                .swiper-pagination-bullet {
+                    margin: 0;
+                    transition: $transition;
+                }
+            }
+        }
+
+        .swiper-wrapper {
+            .swiper-slide {
+                height: auto;
+    
+                .acc-featured-product-cards {
+                    background: linear-gradient($grey-light, transparent, $grey-light);
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+    
+                    &>span {
+                        position: relative !important;
+                        width: 100% !important;
+                        height: 150px !important;
+                        margin-top: auto !important;
+                        margin-bottom: $spacer * 1.5 !important;
+                        mix-blend-mode: darken;
+                    }
+    
+                    h3 {
+                        font-size: $spacer * 2.466;
+                        letter-spacing: -0.2px;
+                        line-height: 1;
+    
+                        span {
+                            font-size: $spacer * 1.726;
+                            line-height: 1.4;
+                            font-weight: 400;
+                            letter-spacing: -0.69px;
+                            margin-top: $spacer * 0.5;
+    
+                            @include media-breakpoint-down(xs) {
+                                font-size: $spacer * 1.5;
+                            }
+                        }
+                    }
+    
+                    .btn {
+                        @include media-breakpoint-up(xxxl) {
+                            font-size: $spacer * 1.375;
+                            letter-spacing: -1.08px;
+                        }
+    
+                        @include media-breakpoint-down(xs) {
+                            font-size: $spacer;
+                            letter-spacing: -0.78px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.acc-centered-slides {
+            .swiper-wrapper {
+                justify-content: center;
+            }
+        }
+    }
+}

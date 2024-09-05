@@ -1,0 +1,5 @@
+mutation mergeGuestOrderInAccount($mergeOrderInput:MergeOrderInput!) {
+    mergeOrder (input: $mergeOrderInput) {
+        message
+    }
+}

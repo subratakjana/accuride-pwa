@@ -1,0 +1,21 @@
+.acc-spec-slide{
+    @include media-breakpoint-up(lg) {
+        article{
+            h3{
+                min-height: 80px;
+            }
+            p{
+                min-height: 170px;
+            }
+        }
+    }
+}
+.acc-spec-slides-cat-area{
+    .card{
+        border-radius: 0;
+        .card-footer{
+            background: none;
+            border: none;
+        }
+    }
+}

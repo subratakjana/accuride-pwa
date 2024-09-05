@@ -1,0 +1,169 @@
+query fAQ3800DrawerSlidesContent {
+  fAQ3800DrawerSlides(where: {section6Table_every: {selectPage: FAQ3800DrawerSlide}}) {
+    id
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    section1ImageSlider {
+      id
+      imageTitle
+      imageDescription
+      galleryTitle
+      galleryImages {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 348, height: 100, fit: clip}}})
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    section2Title
+    section2Description
+    secion3TabSection {
+      id
+      tabName
+      tabTitle
+      pageName
+      tabVideoLink
+      tabDescription {
+        text
+        html
+      }
+      tabImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 612, height: 418, fit: clip}}})
+        width
+        height
+      }
+      technicalSpecifications {
+        id
+        pageTitle
+        fullDescription {
+          html
+          text
+        }
+        parentTabTitle
+        buttonLabel
+        buttonLink
+        button2Label
+        button2Link
+      }
+    }
+    section4ImageGallery {
+      id
+      imageTitle
+      imageDescription
+      galleryImages {
+        id
+        fileName
+        url
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    sliderImgSec5{
+      id
+      fileName
+      url
+      assetTitle
+    }
+    sliderDescSec5{
+      id
+      cardTitle
+      cardDescription
+      pageName
+    }
+    section6Table {
+      id
+      columnTitle
+      columnLink
+      columnLink
+      standard
+      easyClose
+      selfClose
+      touchRelease
+      corrosionResistance
+      pocketBayonetMounting
+      overTravel
+      detentOut
+      holdInDetent
+      selectPage
+    }
+    section7StaticBanner {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 951, height: 400, fit: clip}}})
+      }
+      sliderOrFixedBlock
+    }
+    section8StaticBanner {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      externalLink
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section9Title
+    featuredProducts {
+      id
+      productSku
+      productId
+      productFeatureImage {
+        url(transformation: {image: {resize: {width: 387, height: 222, fit: clip}}})
+        fileName
+        width
+        height
+      }
+      productTitle
+      productSlug
+      productLink
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+    storeLanguage {
+      id
+      languages
+    }
+  }
+}

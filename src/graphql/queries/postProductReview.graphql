@@ -1,0 +1,5 @@
+mutation addProductReview($product_id: Int!, $rating_price: Int!, $rating_value: Int!, $rating_quality: Int!, $nickname: String!, $title: String!, $detail: String!) {
+    reviewSubmit (input: {product_id: $product_id, ratings: {rating_price: $rating_price, rating_value: $rating_value, rating_quality: $rating_quality}, nickname: $nickname, title: $title, detail: $detail}) {
+        message
+    }
+}

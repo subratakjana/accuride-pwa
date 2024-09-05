@@ -1,0 +1,10 @@
+query getAttributedata($attributeId: Int!){
+  getDistributorsAttributesById(attributeId: $attributeId){
+    attribute_id
+    label
+      options{
+      label
+      value
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.acc-imagevideo-slider{
+    .acc-videoimage-slider-video-holder{
+        iframe{
+            height: 250px;
+            @include media-breakpoint-up(xl) {
+                height: 450px;
+            }
+        }
+    }
+    .acc-imagevdeo-text-sec{
+        h2{
+            border-bottom: 5px $secondary solid;
+        }
+    }
+    .slick-slider{
+        .slick-dots{
+            li{
+                button{
+                    width: 13px;
+                    height: 13px;
+                }
+            }
+        }
+    }
+}

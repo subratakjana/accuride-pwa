@@ -1,0 +1,55 @@
+@import "/src/styles/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+.acc-market-inner-pages-banner-wrapper {
+  min-height: 170px;
+
+  @include media-breakpoint-up(md) {
+    min-height: 250px;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    min-height: 400px;
+  }
+}
+
+.acc-accesscontrol-bg-image {
+  background-size: cover;
+}
+
+.acc-acess-control-static-banner1 {
+  background: #0e0d12;
+}
+
+.acc-acess-control-static-banner2 {
+  :global {
+    .container-fluid {
+      .row {
+        .col-lg-7 {
+          background: $primary;
+
+          article {
+            width: 85%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.acc-static-banner-bg-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.acc-constr-rail-bannerbgimage {
+  @include media-breakpoint-down(md) {
+    :global {
+      .container {
+        .row {
+          min-height: auto;
+        }
+      }
+    }
+  }
+}

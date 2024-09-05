@@ -1,0 +1,122 @@
+.acc-image-slider-with-desc{
+    &.acc-sameheight-image-slider{
+        @include media-breakpoint-down(sm) {
+            .carousel-caption{
+                & > div{
+                    min-height: 200px;
+                }
+            }
+        }
+    }
+    .acc-author-details{
+        top: 18%;
+        right: 10%;
+        @include media-breakpoint-up(xl) {
+            top: 18%;
+            left: 20%;
+        }
+        @include media-breakpoint-up(xxl) {
+            top: 18%;
+            left: 36%;
+        }
+        p{
+            color: $white;
+        }
+    }
+    .carousel-caption{
+        @include media-breakpoint-up(xl) {
+            bottom: auto;
+            top: 50%;
+            transform: translateY(-50%);
+            left: auto;
+            max-width: $spacer*40;
+            position: absolute;
+        }
+        position: unset;
+        padding: 15px;
+        h1{
+            @include media-breakpoint-up(xl) {
+                color: $white !important;
+            }
+            color: $grey-dark !important;
+        }
+        p{
+            @include media-breakpoint-up(xl) {
+                color: $white;
+            }
+            color: $grey-dark;
+            a{
+                @include media-breakpoint-up(xl) {
+                    color: $white;
+                }
+            }
+        }
+    }
+    .carousel-indicators{
+        visibility: hidden;
+        @include media-breakpoint-up(xl) {
+            visibility: visible;
+        }
+        li{
+            &::before{
+                display: none;
+            }
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 1px $grey-dark solid;
+            @include media-breakpoint-up(xl) {
+                border: none;
+            }
+        }
+    }
+    .carousel-item{
+        img{
+            @include media-breakpoint-up(xl) {
+                height: 600px;
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+
+        span.carousalSnap {
+            width: 100%;
+            position: relative;
+            @include media-breakpoint-up(xl) {
+                min-height: 600px;
+            }
+
+            @include media-breakpoint-down(xl) {
+                min-height: 500px;
+            }
+
+            @include media-breakpoint-down(lg) {
+                min-height: 400px;
+            }
+
+            @include media-breakpoint-down(md) {
+                min-height: 300px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                min-height: 200px;
+            }
+
+            @include media-breakpoint-down(xs) {
+                min-height: 120px;
+            }
+        }
+    }
+    &.acc-second-slide-left-text{
+        .carousel-item{
+            &:last-child{
+                .carousel-caption{
+                    @include media-breakpoint-up(xl) {
+                        left: 12%;
+                        right: auto;
+                    }
+                }
+            }
+        }
+    }
+}

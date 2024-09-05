@@ -1,0 +1,199 @@
+.acc-proadvantage-banner {
+    position: relative;
+
+    .acc-proadvantage-banner-img-wrap {
+        position: relative;
+
+        .unset-img {
+            width: 100%;
+
+            &>span {
+                position: unset !important;
+            }
+
+            .custom-img {
+                object-fit: contain;
+                width: 100% !important;
+                position: relative !important;
+                height: unset !important;
+            }
+        }
+    }
+
+    .acc-proadvantage-banner-content {
+        @include media-breakpoint-up(xl) {
+            height: 100%;
+            top: 50%;
+            left: auto;
+            right: 0;
+            -moz-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        h1 {
+            &.acc-proadvantage-banner-heading {
+                font-size: $spacer * 3;
+                letter-spacing: -2.4px;
+                line-height: $spacer * 2.688;
+                font-family: $font-family-tertiary;
+                font-weight: 900;
+            }
+
+            span {
+                &:first-child {
+                    font-size: $spacer*1.8;
+
+                    @include media-breakpoint-up(xl) {
+                        font-size: $spacer*2.3;
+                    }
+                }
+            }
+
+        }
+
+        h2 {
+            color: $black;
+            line-height: $spacer/1rem;
+        }
+
+    }
+}
+
+.acc-proadvantage-title {
+    font-size: $spacer * 2.813 !important;
+    letter-spacing: -2.25px;
+    @include media-breakpoint-down(sm) {
+        font-size: $spacer * 2 !important;
+    }
+}
+
+.acc-proadvantage-main-bttn-sec {
+    button {
+        width: $spacer * 16;
+        font-size: $spacer * 1.2;
+        font-weight: 400;
+        padding-top: $spacer/1.3;
+        padding-bottom: $spacer/1.3;
+        border-radius: $spacer/3;
+        position: relative;
+        box-shadow: 0 0 10px rgb(0 0 0 / 0.8);
+        margin: $spacer*1 0;
+
+        @include media-breakpoint-up(md) {
+            margin: 0 $spacer * 2;
+        }
+
+        &.btn-primary {
+            background: #08539e;
+            /* Old browsers */
+            background: -moz-linear-gradient(left, #08539e 0%, #2285d7 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(left, #08539e 0%, #2285d7 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right, #08539e 0%, #2285d7 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#08539e', endColorstr='#2285d7', GradientType=1);
+            /* IE6-9 */
+        }
+
+        &:after {
+            content: '';
+            width: 100%;
+            border-radius: 50%;
+            box-shadow: 0 5px 5px rgb(0 0 0 / 0.5);
+            position: absolute;
+            bottom: 0;
+            height: 10px;
+            left: 0;
+            z-index: -1;
+        }
+    }
+}
+
+.acc-proadvantage-image-grid {
+    .acc-proadvantage-image-grid-img {
+        // height: 257px;
+        position: relative;
+
+        .unset-img {
+            width: 100%;
+
+            &>span {
+                position: unset !important;
+            }
+
+            .custom-img {
+                object-fit: contain;
+                width: 100% !important;
+                position: relative !important;
+                height: unset !important;
+            }
+        }
+    }
+}
+
+.acc-exclusive-benifits {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include media-breakpoint-up(xl) {
+        height: 180px;
+    }
+
+    .acc-exclusive-benifits-con {
+        h3 {
+            font-size: $spacer*2;
+            letter-spacing: -0.05rem;
+            text-shadow: 6px 6px 8px #333;
+
+            @include media-breakpoint-up(xxl) {
+                font-size: $spacer*2;
+            }
+
+            @include media-breakpoint-up(xxxl) {
+                font-size: $spacer*2.3;
+            }
+        }
+
+        button {
+            width: $spacer * 16;
+            font-size: $spacer * 1.2;
+            font-weight: 400;
+            padding-top: $spacer/1.3;
+            padding-bottom: $spacer/1.3;
+            border-radius: $spacer/3;
+            position: relative;
+            box-shadow: 0 0 10px rgb(0 0 0 / 0.8);
+            margin: 0 $spacer * 2;
+
+            &.btn-primary {
+                background: #08539e;
+                /* Old browsers */
+                background: -moz-linear-gradient(left, #08539e 0%, #2285d7 100%);
+                /* FF3.6-15 */
+                background: -webkit-linear-gradient(left, #08539e 0%, #2285d7 100%);
+                /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to right, #08539e 0%, #2285d7 100%);
+                /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#08539e', endColorstr='#2285d7', GradientType=1);
+                /* IE6-9 */
+            }
+
+            &:after {
+                content: '';
+                width: 100%;
+                border-radius: 50%;
+                box-shadow: 0 5px 5px rgb(0 0 0 / 0.5);
+                position: absolute;
+                bottom: 0;
+                height: 10px;
+                left: 0;
+                z-index: -1;
+            }
+        }
+    }
+}

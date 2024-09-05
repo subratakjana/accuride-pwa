@@ -1,0 +1,98 @@
+query aboutSlides {
+  aboutSlideses(stage: DRAFT, where: {storeLanguage: {languages: English}, AND: {pages: {pageSlug: "about-slides"}}}) {
+    id
+    stage
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    section1Image {
+      id
+      fileName
+      height
+      width
+      size
+      mimeType
+      url(transformation: {image: {resize: {width: 700, height: 500, fit: clip}}})
+    }
+    section1Title
+    section1Description
+    section2Accordion {
+      id
+      pageName
+      videoLink
+      image {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 400, height: 260, fit: scale}}})
+      }
+      title
+      description {
+        html
+        text
+      }
+      description2 {
+        html
+        text
+      }
+      buttonLabel
+      buttonLink
+      videoImage
+    }
+    section3Image {
+      id
+      fileName
+      height
+      width
+      size
+      mimeType
+      url(transformation: {image: {resize: {width: 700, height: 500, fit: clip}}})
+    }
+    section3Title
+    section3Description {
+      html
+      text
+    }
+    buttonLabel
+    buttonLink
+    section4Accordion {
+      id
+      pageName
+      videoLink
+      image {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 400, height: 260, fit: scale}}})
+      }
+      title
+      description {
+        html
+        text
+      }
+      description2 {
+        html
+      }
+      buttonLabel
+      buttonLink
+      videoImage
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

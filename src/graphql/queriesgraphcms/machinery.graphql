@@ -1,0 +1,131 @@
+query machineryContent {
+  machineries {
+    id
+    stage
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    section1ImageGallery {
+      id
+      imageTitle
+      imageDescription
+      galleryImages {
+        id
+        fileName
+        url
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    section2ImageDesc {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 789, height: 450, fit: clip}}})
+      }
+      sliderOrFixedBlock
+    }
+    section3ImageDesc {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 789, height: 450, fit: clip}}})
+      }
+      sliderOrFixedBlock
+    }
+    section4ImageDesc {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 789, height: 450, fit: clip}}})
+      }
+      sliderOrFixedBlock
+    }
+    section5ImageDesc {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section6Title
+    section6Description
+    featuredProducts{
+      id
+      productSku
+      productId
+      productFeatureImage{
+        url(transformation: {image: {resize: {width: 387, height: 221, fit: clip}}})
+        fileName
+        width
+        height
+      }
+      productTitle
+      productSlug
+      productLink
+      productId
+      
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }       
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@import '~bootstrap/scss/functions';
+@import '/src/styles/scss/variables';
+
+.acc-popover-search {
+  max-width: 900px !important;
+  width: 100%;
+  max-height: Calc(100vh - 120px);
+  border-radius: 0.3rem;
+  margin-top: 13px;
+  overflow: auto;
+  .arrow {
+    top: -$spacer/2;
+    &:before {
+      top: 0;
+      border-width: 0 $spacer/2 $spacer/2;
+      border-bottom-color: rgba($black, 0.25) !important;
+    }
+    &:after {
+      top: 1px;
+      border-width: 0 $spacer/2 $spacer/2;
+      border-bottom-color: theme-color(primary) !important;
+    }
+  }
+
+  // body
+  .popover-body {
+    padding: 0;
+    .acc-suggestion-bar {
+      max-width: 270px;
+      .acc-suggestion-list {
+        li {
+          &.acc-active-suggest > a {
+            background-color: theme-color(secondary);
+          }
+          > a {
+            display: block;
+            padding: $spacer;
+            &:hover {
+              background-color: theme-color(secondary);
+              color: theme-color(primary);
+            }
+          }
+        }
+      }
+    }
+    .acc-search-product {
+      max-width: calc(100% - 270px);
+    }
+  }
+}
+.acc-desktop-search {
+  .acc-desktop-search-input {
+    pointer-events: none;
+  }
+}
+
+.acc-search-icon {
+  width: $spacer;
+}

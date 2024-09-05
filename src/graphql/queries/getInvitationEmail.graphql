@@ -1,0 +1,5 @@
+query getInvitationEmail($invitationToken: String!){
+    emailByInvitation(invitationToken:$invitationToken){
+        email
+    }
+}

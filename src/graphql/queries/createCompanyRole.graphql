@@ -1,0 +1,18 @@
+mutation createCompanyRole($getInput: CompanyRoleCreateInput!) {
+  createCompanyRole(input: $getInput) {
+    role {
+      id
+      name
+      permissions {
+        id
+        text
+        sort_order
+        children {
+          id
+          text
+          sort_order
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,157 @@
+.acc-products-wrap{
+    // container
+    .container{
+        @include media-breakpoint-up(xl) {
+            padding-left: $spacer;
+            padding-right: $spacer;
+        }
+    }
+    // for mobile
+    .acc-category-view-mob{
+        .embed-responsive{
+            max-height: 300px;
+        }
+        
+    }
+    
+    // for web
+    .acc-category-view-web{
+        .acc-img{
+            width: 100%;
+            object-fit: cover;
+        }
+        &.acc-custom-accordion{
+            h1{
+                &:after{
+                    border: none;
+                    position: absolute;
+                    right: $spacer;
+                    top: 0;
+                    height: 100%;
+                    width: $spacer*1.5;
+                    background: url('/assets/images/icons/chevron-down.svg') no-repeat center center / 100% auto;
+                    margin: 0;
+                    content: '';
+                    @include media-breakpoint-up(xl) {
+                        width: $spacer;
+                    }
+                }
+            }
+            .acc-arrow-transform{
+                h1{
+                    &:after{
+                        filter: inherit;
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+
+    // block
+    .acc-product-block{
+        .acc-list-image-view {
+            .img {
+                &.acc-list-img{
+                    height: auto;
+                    margin-bottom: 10px;
+                    @include media-breakpoint-up(sm) {
+                        height: 200px;
+                        margin-bottom: 0;
+                    }
+                }                
+            }
+        }
+        .img{
+            height: 140px;
+            object-fit: contain;
+            width: 100%;
+            max-width: initial;
+            background: $white;
+            @include media-breakpoint-up(xl) {
+                height: 225px;
+            }
+            &.acc-list-img{
+                height: 200px;
+                width: 200px;
+            }
+        }
+
+        // configuration
+        .acc-configuration{
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            right: 0;
+            top: 0;
+            background: $white;
+            opacity: 0;
+            transition: $transition;
+            // &:visited{
+            //    opacity: 1;
+            //    z-index: 1; 
+            // }
+            .form-control[disabled] {
+                pointer-events: none;
+            }
+            select.form-control{
+                -moz-appearance: none;
+            }
+        }
+        &:hover{
+            .acc-configuration{
+                opacity: 1;
+                z-index: 1;
+            }
+        }
+        .acc-product-btns{
+            width: $spacer*10;
+        }
+        h6{
+            @include media-breakpoint-up(xl) {
+                cursor: pointer;
+                font-size: $font-size-base;
+            }
+        }
+        
+    }
+
+    // pagination
+    .pagination{
+        .page-item.prev,
+        .page-item.next {
+            .page-link{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                width: $spacer*2;
+                height: $spacer*2;
+                &:focus{
+                    z-index: 2;
+                }
+            }
+        }
+    }
+
+    // limiter
+    .acc-pagination-limiter{
+        .form-control{
+            min-width: $spacer*3.5;
+        }
+    }
+
+    // cms content
+    .acc-cms-content{
+        ul{
+            text-align: left;
+        }
+    }
+
+    .acc-avilable-product.section-padding + .section-padding.pt-xl-5 {
+        padding-top:0!important;
+    }
+    
+}

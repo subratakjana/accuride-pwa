@@ -1,0 +1,34 @@
+query allRecentPostContent {
+  blogs(last: 3, orderBy: publishedAt_DESC) {
+    postTitle
+    postSlug
+    createdAt
+    id
+    postExcerpt
+    setAsFeaturePost
+    postImage {
+      id
+      url
+    }
+    categories {
+      id
+      categoryTitle
+      categorySlug
+    }
+    pages {
+      id
+      banner {
+        id
+        bannerHeading
+        bannerDescription
+        bannerImage {
+          id
+          fileName
+          url
+        }
+        bannerButtonText
+        bannerButtonLink
+      }
+    }
+  }
+}

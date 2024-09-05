@@ -1,0 +1,25 @@
+query getCustomerCompany {
+    getCustomerCompany {
+        company_name
+        legal_name
+        company_email
+        vat_tax_id
+        reseller_id
+        comment
+        street
+        city
+        country_name
+        region
+        region_name
+        postcode
+        telephone
+        job_title
+        email
+        administrator_name
+        sales_representative_name
+        sales_representative_email
+        paymentMethods {
+            method_name
+        }
+    }
+}

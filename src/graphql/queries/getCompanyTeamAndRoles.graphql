@@ -1,0 +1,29 @@
+query getCompanyTeamAndRoles {
+    company{
+        id
+        name
+        structure{
+            items {
+                entity{
+                    ... on CompanyTeam {
+                        name
+                        description
+                        id
+                    }
+                }
+            }
+        }
+        roles(pageSize: 5, currentPage: 1){
+        items{
+              id
+              name
+              permissions{
+                  id
+                  sort_order
+                  text
+              }
+              users_count
+           }
+        }
+    }
+}

@@ -1,0 +1,5 @@
+query sendEmailInvoiceDetails ($invoiceId: Int!) {
+    invoiceMailSend(invoiceId: $invoiceId) {
+        message
+    }
+}

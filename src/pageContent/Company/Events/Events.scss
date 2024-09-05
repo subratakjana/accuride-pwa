@@ -1,0 +1,30 @@
+.acc-accesscontrol-bg-image{
+    background-size: cover;
+} 
+.acc-acess-control-static-banner1{
+    background: #0E0D12;
+    .container-fluid{
+        .row{
+            .col-lg-7{
+                
+            }
+        }
+    }
+}
+.acc-acess-control-static-banner2{
+    .container-fluid{
+        .row{
+            .col-lg-7{
+                background: $primary;
+                article{
+                    width: 85%;
+                }
+            }
+        }
+    }
+}
+
+.acc-static-banner-bg-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+}

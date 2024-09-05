@@ -1,0 +1,14 @@
+@import '/src/styles/scss/variables';
+
+.acc {
+  &-logo-icon {
+    width: $spacer * 2;
+  }
+  &-close-icon {
+    width: $spacer * 1.625;
+    height: $spacer * 1.625;
+  }
+  &-filter-icon {
+    width: $spacer;
+  }
+}

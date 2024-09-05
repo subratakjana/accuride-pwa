@@ -1,0 +1,15 @@
+.acc-quest-ans-custom-accordion{
+    p{
+        margin: 0;
+        padding-bottom: $spacer/2;
+    }
+    .acc-no-bullet-list{
+        ul{
+            padding-bottom: $spacer/2;
+            li{
+                list-style: none !important;
+                padding-bottom: 0 !important;
+            }
+        }
+    }
+}

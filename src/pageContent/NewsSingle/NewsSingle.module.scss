@@ -1,0 +1,329 @@
+@import "/src/styles/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+.acc-news-details-page {
+  :global(.container) {
+    max-width: 980px;
+
+    .acc-news-details-image {
+      width: 100%;
+      height: 200px;
+      position: relative;
+
+      @include media-breakpoint-up(sm) {
+        width: 100%;
+        height: 350px;
+      }
+
+      @include media-breakpoint-up(md) {
+        width: 100%;
+        height: 450px;
+      }
+    }
+
+    .acc-news-details-description {
+      h1,
+      h2 {
+        font-weight: 700;
+      }
+
+      img {
+        max-width: 100%;
+        margin: auto auto 10px;
+      }
+
+      h6 {
+        font-size: 12px;
+        text-align: center;
+        color: $grey-dark;
+        font-style: italic;
+      }
+
+      iframe {
+        width: 100%;
+        min-height: 400px;
+        // padding-bottom: $spacer;
+        border: solid 1px $input-border-color;
+        padding: 0 0 $spacer;
+      }
+
+      ul {
+        padding-left: $spacer * 3;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        li {
+          list-style: disc;
+          padding-bottom: $spacer/2;
+        }
+      }
+
+      ol {
+        padding-left: $spacer * 3;
+
+        li {
+          padding-bottom: $spacer/2;
+          margin: 0;
+        }
+      }
+
+      .acc-blog-custom-list {
+        ul {
+          padding: 0;
+
+          li {
+            position: relative;
+            list-style: none;
+            background-image: url("/assets/images/blog-list-arrow.png");
+            background-repeat: no-repeat;
+            background-position: left top;
+            padding-left: $spacer * 3;
+            padding-bottom: $spacer * 2;
+          }
+        }
+      }
+
+      .acc-two-coloum-vide {
+        iframe {
+          min-height: 199px;
+        }
+      }
+
+      a {
+        &:hover {
+          color: #218acb;
+        }
+      }
+
+      blockquote {
+        border-left: $spacer/2 $primary solid;
+        padding: $spacer;
+        margin-left: $spacer * 2;
+        font-size: $spacer * 1.2;
+      }
+
+      .acc-blog-twitter {
+        iframe {
+          border: none;
+          margin: auto;
+          width: auto;
+          height: auto;
+          min-height: 540px;
+        }
+      }
+
+      .acc-blog-insta-feed {
+        iframe {
+          border: 1px $grey-light solid;
+          width: auto;
+          min-height: auto;
+        }
+      }
+
+      .acc-blog-fb-comment-area {
+        iframe {
+          border: none;
+          height: auto;
+          min-height: 250px;
+        }
+      }
+
+      .acc-blog-bttn-text-group {
+        display: flex;
+        padding: $spacer;
+        border: 1px $grey-light solid;
+        box-shadow: 0 0 5px rgba($black, 0.3);
+        justify-content: center;
+        align-items: center;
+        margin-bottom: $spacer * 2;
+
+        img {
+          margin-bottom: 0;
+        }
+
+        p {
+          padding-left: $spacer;
+          margin-bottom: 0;
+
+          a {
+            display: block;
+          }
+        }
+      }
+
+      .acc-blog-middle-button {
+        margin-top: $spacer * 3;
+        text-align: center;
+
+        a {
+          background: $primary;
+          padding: $spacer;
+          font-size: $spacer;
+          color: $white;
+          border-radius: 3px;
+
+          &:hover {
+            background: $info;
+          }
+        }
+      }
+
+      .acc-blog-small-twitter {
+        iframe {
+          width: auto;
+          border: none;
+        }
+      }
+
+      .blogDetailsCustomBttn {
+        p {
+          margin-bottom: 0;
+          padding-top: $spacer;
+
+          a {
+            color: $white;
+            background: $primary;
+            padding: $spacer;
+            font-size: $h2-font-size;
+            border-radius: $btn-border-radius-lg;
+            display: block;
+            text-align: center;
+          }
+        }
+      }
+
+      .acc-blog-border-sec {
+        border-top: 1px $grey-medium solid;
+        border-bottom: 1px $grey-medium solid;
+        padding-top: $spacer;
+        padding-bottom: $spacer;
+        padding-left: $spacer * 5;
+        margin-top: $spacer * 2;
+        margin-bottom: $spacer * 2;
+
+        p {
+          margin: 0;
+        }
+      }
+
+      .float-left {
+        @include media-breakpoint-up(xl) {
+          margin-bottom: 10px;
+        }
+
+        & > img {
+          @include media-breakpoint-up(xl) {
+            float: left;
+            width: 32%;
+            margin-right: 12px;
+          }
+
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+      }
+
+      :global(.btn-primary) {
+        width: 100%;
+        margin-bottom: $spacer * 1;
+
+        &:global(.text-white) {
+          p {
+            margin: 0;
+
+            a {
+              color: #fff;
+              padding: 5px 10px;
+              display: block;
+            }
+          }
+        }
+
+        a {
+          color: #fff;
+          padding: 10px;
+          display: block;
+          font-size: $font-size-sm;
+          line-height: $line-height-base;
+          text-align: center;
+        }
+      }
+
+      table {
+        td {
+          padding: 10px 15px;
+          width: 50%;
+          vertical-align: top;
+        }
+      }
+
+      .tabular-data {
+        td {
+          padding: 10px 15px;
+          width: 50%;
+          vertical-align: top;
+        }
+      }
+
+      tbody {
+        tr {
+          display: block;
+          margin: 0 -15px;
+
+          td {
+            padding: 10px 15px;
+            width: 50%;
+            vertical-align: middle;
+          }
+        }
+      }
+
+      td {
+        padding: 10px 15px;
+        width: 50%;
+        vertical-align: top;
+      }
+
+      .three-colum-table {
+        table {
+          width: 100%;
+
+          td {
+            padding: 10px 15px;
+            width: 33.333%;
+            vertical-align: top;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .acc-blog-details-sidebar {
+      @include media-breakpoint-up(lg) {
+        position: sticky;
+        top: $spacer * 5;
+      }
+
+      :global(.acc-blog-details-social) {
+        li {
+          a {
+            background: $primary;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            padding-top: 7px;
+            margin: 0 5px 0 0;
+
+            svg {
+              width: 16px;
+              height: 16px;
+              fill: $white;
+              margin: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+mutation createCompanyUser($getInput: CompanyUserCreateInput!) {
+    createCompanyUser(input: $getInput) {
+      user{
+        company
+        created_at
+        customer_id
+      }
+    }
+}

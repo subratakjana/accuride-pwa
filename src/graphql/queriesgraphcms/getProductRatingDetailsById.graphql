@@ -1,0 +1,7 @@
+query getRatingContent($productId: String) {
+  getRating(product_ids: $productId) {
+    product_id
+    ratingSummary
+    reviewCount
+  }
+}

@@ -1,0 +1,81 @@
+.acc-distrib-details-area{
+    .distrb-details{
+        max-height: 90vh;
+        @include media-breakpoint-down(xl) {
+            overflow-y: visible !important;
+            max-height: none;
+        }
+    }
+    .disti-map-area{
+        .storeLocatorInput{
+            display: none;
+        }
+    }
+}
+.storeLocatorAutocomplete{
+    border-radius: 5px;
+    border: 1px $grey-dark solid;
+    height: $spacer*2.25;
+    padding-right: $spacer;
+    padding-left: $spacer;
+    font-size: $spacer*0.875;
+    @include media-breakpoint-down(lg) {
+        width: 100%;
+        margin-bottom: $spacer;
+    }
+}
+.acc-distributor-map-info-box{
+    & > div{
+        overflow: visible !important;
+        margin-top: -15px !important;
+        border-radius: 5px;
+        background: $white;
+        box-shadow: $shadow2;
+        & > div{            
+            h2{
+                font-size: $h1-font-size;
+            }
+            &::after {
+                top: 100%;
+                left: 50%;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+                border-color: rgba(255, 255, 255, 0);
+                border-top-color: #ffffff;
+                border-width: 10px;
+                margin-left: -10px;
+            }
+        }
+    }    
+}
+.acc-distributor-autocomplete-list{
+    position: absolute;
+    z-index: 99;
+    background: $white;
+    border: 1px $grey-medium solid;
+    width: 100%;
+    top: $spacer*2.25;
+    left: 0;
+    border-radius: 5px;
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            font-size: $spacer;
+            background: none !important;
+            cursor: pointer;
+            &:hover{
+                background: $primary !important;
+                color: $white;
+            }
+            &:focus{
+                background: $primary !important;
+                color: $white;
+            }
+        }
+    }
+}

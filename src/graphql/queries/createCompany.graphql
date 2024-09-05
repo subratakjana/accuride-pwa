@@ -1,0 +1,5 @@
+mutation createCompanyQuery($companyInput: CompanyInput!){
+  createCompany(input: $companyInput) {
+      message
+  }
+}

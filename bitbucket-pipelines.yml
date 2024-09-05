@@ -1,0 +1,23 @@
+image: node:18.17.0
+
+definitions:
+    caches:
+        nextcache: .next/cache
+
+pipelines:
+    branches:
+        stage:
+            - step:
+                  name: Deploy to Stage
+                  deployment: Staging
+                  size: 2x
+                  caches:
+                      - node
+                      - nextcache
+                  script:
+                      - npm install -f # Install dependencies
+                      - npm run sst-deploy # Deploy to staging
+            - step:
+                  name: Clear Fastly Cache
+                  script:
+                      - curl -X POST "https://api.fastly.com/service/33G5PKQKa3ZNn4aCbLFP1s/purge_all" -H "Fastly-Key:9c544812b76e47bef03186f1f1abb3ba" -H "Accept:application/json" -H "Content-Type:application/json" -H "cache-control:no-cache" -H "content-type:application/json"

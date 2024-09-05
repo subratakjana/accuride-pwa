@@ -1,0 +1,20 @@
+.acc-contact-banner{
+    position: relative;
+    .acc-title{
+        position: absolute;
+        z-index: 1;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .embed-responsive{
+        max-height: 200px;
+        overflow: hidden;
+        img{
+            object-fit: cover;
+            object-position: center top;
+        }
+    }
+}

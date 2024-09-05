@@ -1,0 +1,26 @@
+mutation updateCompanyRole($id: ID!, $name: String) {
+    updateCompanyRole(input: {
+      id: $id
+      name: $name
+    })  {
+    role {
+      id
+      name
+      permissions {
+        id
+        text
+        sort_order
+        children {
+          id
+          text
+          sort_order
+          children {
+            id
+            text
+            sort_order
+          }
+        }
+      }
+    }
+  }
+}

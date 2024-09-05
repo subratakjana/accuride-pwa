@@ -1,0 +1,155 @@
+.acc-static-banner-bg-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    article{
+        p{
+            color: $white;
+        }
+    }
+    &.BlackColorText{
+        h1{
+            color: $primary  !important;
+        }
+        p{
+            color: $grey-dark !important;
+        }
+    }
+    .container{
+        .row{
+            min-height: $spacer*25;
+        }
+    }  
+    &.acc-static-banner-bg-overlay-text{
+        article{
+            background: rgba($black, 0.5);
+            padding: $spacer;
+            h1{
+                font-size: $h1-font-size;
+            }
+        }
+    } 
+    &.left-text{
+        .justify-content-end{
+            justify-content: flex-start !important;
+        }
+    }
+    &.blue-bg{
+        article{
+            background: rgba($primary, 0.8);
+            padding: $spacer*2;
+            text-align: left !important;
+        }
+    }
+    &.dark-bg{
+        article{
+            background: rgba($black, 0.5);
+            padding: $spacer*2;
+            text-align: left !important;
+        }
+    }
+    &.acc-lg-banner{
+        @include media-breakpoint-up(lg) {
+            padding-top: $spacer*5;
+            padding-bottom: $spacer*5;
+        }
+    }
+    &.acc-left-align-content{
+        @include media-breakpoint-up(lg) {
+            .text-center{
+                text-align: left !important;
+            }
+        }
+    }
+    &.acc-custom-title{
+        .justify-content-end{
+            justify-content: center !important;
+            h1{
+                font-size: $spacer*2;
+                color: $primary !important;
+                @include media-breakpoint-up(lg) {
+                    padding-top: $spacer*15;
+                    text-align: left;
+                    font-size: $spacer*3.5;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+    &.acc-static-banner-healthcare{
+        @include media-breakpoint-up(xl) {
+            background-position: top center;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba($black, 0.5);
+            width: 100%;
+            height: 100%;
+        }
+        position: relative;
+        background-position: left;
+        article{
+            @include media-breakpoint-up(xl) {
+                text-align: left !important;
+            }
+            position: relative;
+            z-index: 1;
+        }
+    }
+    &.acc-drawer-slide-section-banner-bgimage{
+        .col-lg-4{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+    &.acc-electronic-custom{
+        .col-lg-4{
+            flex: 0 0 100%;
+            max-width: 100%;
+            @include media-breakpoint-up(xl) {
+                flex: 0 0 60%;
+                max-width: 60%;
+            }
+            article{
+                @include media-breakpoint-up(md) {
+                    padding: $spacer*0 $spacer*4;
+                }
+                @include media-breakpoint-up(xl) {
+                    text-align: left !important;
+                    padding: $spacer*4 $spacer*6;
+                    background: rgba($primary, 0.8);
+                }
+            }
+        }
+    }
+    &.acc-appliance-section7-bgimage{
+        background-position: top;
+        position: relative;
+        @include media-breakpoint-up(xl) {
+            background-size: 100%, 100%;
+            padding: 0;
+        }        
+        .col-lg-4{
+            position: absolute;
+            top: 10px;
+            @include media-breakpoint-up(lg) {
+                position: relative;
+                top: auto;
+            }
+        }
+    }
+    &.acc-vending-page-bannerbgimage{
+        .col-lg-4{
+            @include media-breakpoint-up(xl) {
+                flex: 0 0 50%;
+                max-width: 50%;
+                article{
+                    text-align: left !important;
+                }
+            }
+        }
+    }
+}

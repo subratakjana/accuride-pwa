@@ -1,0 +1,9 @@
+mutation newsletterSubscription ($email: String!, $formKey: String!) {
+  newsletterSubscription (email: $email, formKey: $formKey) {
+       message {
+        success,
+        notice,
+        error
+    }
+  }
+}

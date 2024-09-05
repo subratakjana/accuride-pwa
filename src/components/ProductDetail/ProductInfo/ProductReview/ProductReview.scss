@@ -1,0 +1,12 @@
+.acc-review{
+    .acc-rating-item{
+        .acc-review-content{
+           border-bottom: 1px solid theme-color(medium); 
+           margin-bottom: $spacer;
+        }
+        .acc-rating-label{
+            width: 100px;
+            display: block;
+        }
+    }
+}

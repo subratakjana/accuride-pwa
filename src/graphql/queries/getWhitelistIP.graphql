@@ -1,0 +1,8 @@
+query whiteListedIP  {
+  MpBetterMaintenanceConfig{
+    general{
+      whitelist_ip
+      enabled
+    }
+  }
+}

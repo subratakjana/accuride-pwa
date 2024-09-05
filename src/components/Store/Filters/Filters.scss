@@ -1,0 +1,189 @@
+.acc-filter-wrap {
+  position: fixed;
+  background: theme-color(light);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  transition: $transition;
+
+  // filter menu
+  .acc-filter-menu {
+    max-width: $spacer * 4.5;
+    .nav-link {
+      width: $spacer * 4.5;
+      height: $spacer * 4.5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0;
+      color: theme-color(dark);
+      padding: $spacer/2;
+      position: relative;
+      svg {
+        height: $spacer * 1.5;
+        width: $spacer * 1.5;
+        fill: theme-color(dark);
+        margin-bottom: $spacer/4;
+      }
+      &.active {
+        background: $white;
+        color: theme-color(primary);
+        svg {
+          fill: theme-color(primary);
+        }
+      }
+      .badge {
+        position: absolute;
+        right: $spacer/4;
+        top: $spacer * 1.25;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    position: initial;
+    top: initial;
+    right: initial;
+    background: transparent;
+    display: initial;
+  }
+  &.openFilterBox {
+    right: 0;
+    z-index: 5;
+  }
+  .acc-filter-header {
+    height: $spacer * 3;
+    min-height: $spacer * 3;
+    border-radius: 0;
+    align-items: center;
+    padding: $spacer/2 $spacer;
+    position: relative;
+    border: 0;
+    background: theme-color(primary);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .acc-filter-close {
+      padding: 0;
+      height: calc(100% - #{spacer});
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo-icon {
+      max-width: 2rem;
+      height: calc(100% - 1rem);
+      position: absolute;
+      top: 50%;
+      right: 0;
+      left: 0;
+      transform: translateY(-50%);
+      padding: 0;
+      margin: 0 auto;
+    }
+  }
+  .acc-filter-body {
+    flex: 1 1 auto;
+    width: 100%;
+    @include media-breakpoint-up(xl) {
+      height: auto;
+    }
+    .acc-filter-content {
+      overflow-y: auto;
+      height: calc(100vh - #{$spacer * 4});
+      @include media-breakpoint-up(xl) {
+        height: auto;
+        overflow: initial;
+      }
+    }
+    .acc-filter-accordian {
+      .card {
+        background: theme-color(light);
+        box-shadow: $shadow2;
+        @include media-breakpoint-up(xl) {
+          background: $white;
+          box-shadow: none;
+        }
+      }
+
+      .cat-length {
+        .card-body {
+          display: flex;
+          flex-wrap: wrap;
+          .item {
+            width: 50%;
+            @include media-breakpoint-up(xl) {
+              width: 33.33%;
+            }
+            .custom-control {
+              padding-left: $spacer * 1.3;
+              .custom-control-label {
+                font-size: $spacer - 0.1;
+                &::after {
+                  left: -($spacer * 1.3);
+                }
+                &::before {
+                  left: -($spacer * 1.3);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .card-header {
+        background: theme-color(light);
+        @include media-breakpoint-up(xl) {
+          background: $white;
+        }
+      }
+      .btn.btn-block {
+        @include media-breakpoint-up(xl) {
+          text-transform: uppercase;
+          padding-left: 0;
+          padding-right: 0;
+        }
+        &:after {
+          content: '';
+          width: 22px;
+          height: 20px;
+          flex-shrink: 0;
+          background: url(/assets/images/icons/chevron-down.svg) no-repeat
+            center center/100% auto;
+          filter: brightness(1000%) invert(0.5);
+          @include media-breakpoint-up(xl) {
+            width: $spacer;
+          }
+        }
+        &.text-primary {
+          &:after {
+            filter: inherit;
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+}
+.badge .w-max-50 {
+  max-width: $spacer * 15;
+}
+
+.acc {
+  &-filter {
+    &-close-icon {
+      width: $spacer * 1.625;
+      height: $spacer * 1.625;
+    }
+    &-logo-icon {
+      width: $spacer * 2;
+    }
+  }
+}

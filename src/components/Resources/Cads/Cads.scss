@@ -1,0 +1,14 @@
+.cads-custom-pagination{
+    li{
+        a{
+            color: $grey-dark;
+            font-size: $h3-font-size;
+            &.active{
+                color: $primary;
+            }
+            .icon-font-size-lg{
+                font-size: 20px;
+            }
+        }
+    }
+}

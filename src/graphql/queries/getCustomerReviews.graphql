@@ -1,0 +1,10 @@
+query getCustomerReviews {
+    customerReviews {
+        created
+        product_name
+        product_url
+        rating
+        review_id
+        review
+    }
+}

@@ -1,0 +1,5 @@
+mutation refreshCustomerToken{
+    refreshCustomerToken {
+        token
+    }
+}

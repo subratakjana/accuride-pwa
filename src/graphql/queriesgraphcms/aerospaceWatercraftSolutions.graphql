@@ -1,0 +1,66 @@
+query aerospaceWatercraftContent{
+  aerospaceWatercrafts {
+    id
+    stage
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    section1StaticBanner {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 992, height: 500, fit: clip}}})
+      }
+      sliderOrFixedBlock
+    }
+    section2Title
+    section2Description
+    featuredProducts{
+      id
+      productSku
+      productId
+      productFeatureImage{
+        url(transformation: {image: {resize: {width: 387, height: 221, fit: clip}}})
+        fileName
+        width
+        height
+      }
+      productTitle
+      productSlug
+      productLink
+      
+    }
+    storeLanguages {
+      id
+      languages
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

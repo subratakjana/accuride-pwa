@@ -1,0 +1,107 @@
+query getCustomerorderDetails ($id: Int!) {
+    orderDetails(id: $id) {
+        increment_id
+        order_status
+        customer_name
+        created_at
+        is_invoiced
+        is_shipped
+        shipping_method
+        sub_total
+        shipping_amount
+        tax_amount
+        grand_total
+        is_guest_customer
+        payment_method
+        base_sub_total
+        base_shipping_amount
+        base_tax_amount
+        base_grand_total
+        items {
+            product_type
+            title
+            sku
+            parent_sku
+            productoptions {
+                value
+                label
+            }
+            qty
+            price 
+            base_price
+            row_total
+            base_row_total 
+        }
+        invoice {
+            created_at
+            invoice_id
+            invoice_increment_id
+            sub_total
+            shipping_amount
+            grand_total
+            base_sub_total
+            base_shipping_amount
+            base_grand_total
+            invoiceItems {
+                product_type
+                title
+                sku
+                price
+                qty
+                sub_total
+                base_price
+                base_sub_total
+                productoptions {
+                    value
+                    label
+                }
+            }
+        }
+        shipment {
+            shipment_id
+            shipment_increment_id
+            shipmentItems {
+                product_type
+                title
+                sku
+                qty
+                productoptions {
+                    value
+                    label
+                }
+            }
+        }
+        billing {
+            city
+            company
+            country
+            fax
+            name
+            postcode
+            region
+            street
+            telephone
+        }
+        shipping {
+            city
+            company
+            country
+            fax
+            name
+            postcode
+            region
+            street
+            telephone
+        }
+        card_details {
+            cc_type
+            cc_card_number
+            processed_amount
+        }
+        tracking {
+            title
+            carrier_code
+            track_number
+        }
+    }
+}

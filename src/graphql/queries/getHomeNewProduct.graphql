@@ -1,0 +1,10 @@
+query getNewProduct {
+  homeNewProduct {
+    prod_id
+    prod_image
+    prod_name
+    prod_rating
+    prod_sku
+    prod_url
+  }
+}

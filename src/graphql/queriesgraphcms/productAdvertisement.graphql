@@ -1,0 +1,25 @@
+query productAdvertisements($category:String!){
+    productAdvertisements(where:{category:$category}) {
+        id
+        title
+        description{
+        html
+        text
+        }
+        productImage{
+        id
+        fileName
+        url
+        mimeType
+        }
+        productId
+        productSlug
+        productLink
+        productUrl
+        storeLanguage{
+        id
+        languages
+        }
+    }
+}
+

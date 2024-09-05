@@ -1,0 +1,16 @@
+query getCategoryList {
+    categoryList(filters: {ids: {in: ["7"]}}) {
+        children {
+            id : uid
+            name
+            url_key
+            display_mode
+            children {
+                id : uid
+                name
+                url_key
+                display_mode
+            }
+        }
+    }
+}

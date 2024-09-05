@@ -1,0 +1,8 @@
+query getCustomerInvitations {
+  customerInvitation {
+    email
+    invitation_date
+    invitation_id
+    status
+  }
+}

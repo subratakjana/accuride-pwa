@@ -1,0 +1,91 @@
+mutation GetSalesGuestOrderStatusquery($orderId:String!, $billing_lastname:String!,$billing_zip_code:String!, $billing_user_email:String!){
+    GetSalesGuestOrderStatus(
+        orderId: $orderId, 
+        billing_lastname: $billing_lastname, 
+        billing_zip_code: $billing_zip_code,
+        billing_user_email: $billing_user_email,
+    ) {
+    order_id
+    state
+    shipping_method
+    grand_total
+    shipping_amount
+    subtotal
+    tax_amount
+    discount_amount
+    purchase_date
+    order_increment_id
+    ordered_items {
+      parent_sku
+      name
+      sku
+      price
+      subtotal
+      qty
+      product_type
+      productoptions {
+        label
+        value
+      }
+    }
+    payment_information {
+      method_name
+      card_type
+      card_label
+      card_last4
+      processed_amount
+    }
+    billing_address {
+      name
+      company
+      street
+      region
+      country
+      zip_code
+      telephone
+    }
+    shipping_address {
+      name
+      company
+      street
+      region
+      country
+      zip_code
+      telephone
+    }
+    order_invoice {
+      invoice_id
+      invoice_increment_id
+      subtotal
+      shipping_amount
+      grand_total
+      invoice_items{
+        name
+        sku
+        qty
+        price
+        product_type
+        productoptions{
+          label
+          value
+        }
+      }
+      created_at
+    }
+    order_shipment {
+      shipment_id
+      shipment_increment_id
+      created_at
+      shipment_items{
+        name
+        sku
+        qty
+        product_type
+        productoptions{
+          label
+          value
+        }
+      }
+    }
+  }
+}

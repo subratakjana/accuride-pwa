@@ -1,0 +1,13 @@
+query seoDetailsContent($slug: String!) {
+  pages(where: {pageSlug: $slug}) {
+    id
+    seoTitle
+    seoDescription
+    secKeywords
+    seoImage{
+      id
+      fileName
+      url
+    }
+  }
+}

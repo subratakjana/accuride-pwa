@@ -1,0 +1,22 @@
+query covid19UpdatesContent {
+  covid19Updates {
+    id
+    description {
+      html
+      text
+    }
+    storelanguage {
+      languages
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

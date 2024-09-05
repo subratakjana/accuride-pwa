@@ -1,0 +1,136 @@
+.acc-slider-banner-bg-image{
+    .carousel{
+        z-index: 1;
+        .carousel-caption{
+            @include media-breakpoint-up(lg) {
+                bottom: auto;
+                top: 50%;
+                transform: translateY(-50%);
+                left: auto;
+                max-width: $spacer*40;
+                position: absolute;
+            }
+            position: unset;
+            padding: 15px;
+            h1{
+                color: $grey-dark;
+            }
+            p{
+                color: $grey-dark;
+            }
+        }
+        .carousel-indicators{
+            visibility: hidden;
+            @include media-breakpoint-up(lg) {
+                visibility: visible;
+            }
+            li{
+                &::before{
+                    display: none;
+                }
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+            }
+        }
+        .carousel-item{
+            z-index: 1;
+
+            span.bgImageWraper {
+                display: block;
+                position: relative;
+                width: 100%;
+                height: 160px;
+
+                @include media-breakpoint-up(xs) {
+                    height: 180px;
+                }
+
+                @include media-breakpoint-up(sm) {
+                    height: 220px;
+                }
+
+                @include media-breakpoint-up(md) {
+                    height: 320px;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    height: 440px;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    height: 600px;
+                }
+            }
+
+            img{
+                @include media-breakpoint-up(xl) {
+                    // height: 600px;
+                    object-fit: cover;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &.acc-corrosion-section-seven-new-slide{
+        .carousel{
+            .carousel-item{
+                &:after{
+
+                    @include media-breakpoint-down(md) {
+                        display: none !important;
+                    }
+                    @include media-breakpoint-down(xl) {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba($black, 0.5);
+                        left: 0;
+                        top: 0;
+                    }
+                }
+                img{
+                    height: 172px;
+                    object-fit: contain;
+                    width: 100%;
+                    @include media-breakpoint-up(xl) {
+                        height: 600px;
+                        object-fit: cover;
+                    }
+                }
+            }
+            .carousel-indicators{
+                visibility: hidden;
+                @include media-breakpoint-up(xl) {
+                    visibility: visible;
+                }
+                li{
+                    border: 1px $black solid;
+                    width: $spacer;
+                    height: $spacer;
+                }
+            }
+        }
+    }
+    &.acc-first-slide-caption-text-visibility{
+        .carousel-inner{
+            div.carousel-item:first-child{
+                &:after{
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba($black, 0.5);
+                    left: 0;
+                    top: 0;
+                }
+                img{
+                    @include media-breakpoint-up(xl) {
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.acc-accesscontrol-bg-image{
+    background-size: cover;
+}
+.acc-acess-control-static-banner1{
+    background: #0E0D12;
+    .container-fluid{
+        .row{
+            .col-lg-7{
+
+            }
+        }
+    }
+}
+.acc-acess-control-static-banner2{
+    .container-fluid{
+        .row{
+            .col-lg-7{
+                background: $primary;
+                article{
+                    width: 85%;
+                }
+            }
+        }
+    }
+}
+
+.acc-static-banner-bg-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.partnerImageOuter {
+    max-width: 1165px;
+    height: 50px;
+    margin: 0 15px;
+    position: relative;
+
+    @include media-breakpoint-up(xs) {
+        height: 70px;
+    }
+
+    @include media-breakpoint-up(sm) {
+        height: 90px;
+    }
+
+    @include media-breakpoint-up(md) {
+        height: 110px;
+    }
+
+    @include media-breakpoint-up(md) {
+        height: 130px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: 150px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        height: 178px;
+        margin: auto;
+    }
+}

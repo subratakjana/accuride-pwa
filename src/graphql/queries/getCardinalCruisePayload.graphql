@@ -1,0 +1,9 @@
+query getCardinalCruisePayload ($cartId: String!) {
+  cyberSourceCardinalCruiseAuthPayload(input: {
+    cartId: $cartId
+  }) {
+    JWT
+    authPayload
+    orderPayload
+  } 
+}

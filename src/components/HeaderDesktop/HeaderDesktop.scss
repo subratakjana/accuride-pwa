@@ -1,0 +1,71 @@
+// desktop header start
+.acc-header-desktop {
+  //   font-family: Helvetica Neue, Helvetica, Arial, sans-serif !important;
+  position: sticky;
+  top: -$spacer * 2;
+  z-index: 14;
+  &.acc-header-desktop-cart {
+    top: 0;
+  }
+  // topbar
+  .acc-header-topbar {
+    height: $spacer * 2;
+  }
+  .acc-sticky-header {
+    height: $spacer * 4;
+    background: theme-color-level(medium, -10);
+
+    // logo start
+    .acc-desktop-logocol {
+      max-width: 220px;
+      flex: none;
+      svg {
+        height: $spacer * 4;
+        fill: theme-color(primary);
+        width: 150px;
+      }
+    }
+
+    // search start
+    .acc-desktop-searchcol {
+      display: flex;
+      align-items: center;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      flex: none;
+
+      @include media-breakpoint-up(lg) {
+        max-width: 150px;
+      }
+
+      @include media-breakpoint-up(xl) {
+        max-width: 150px;
+      }
+
+      @include media-breakpoint-up(xxl) {
+        max-width: 220px;
+      }
+    }
+
+    // minicart
+    .acc-minicart-col {
+      max-width: $spacer * 4;
+      display: flex;
+      align-items: center;
+      .acc-minicart-button {
+        .badge {
+          position: absolute;
+          right: $spacer/4;
+          top: $spacer/2;
+        }
+      }
+    }
+  }
+
+  & > .acc-header-topbar,
+  & > .acc-sticky-header {
+    & > .container {
+      max-width: map-get($container-max-widths, xxxl);
+    }
+  }
+}

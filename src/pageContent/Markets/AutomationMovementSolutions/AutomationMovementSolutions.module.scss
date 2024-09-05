@@ -1,0 +1,19 @@
+@import "/src/styles/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+.acc-market-inner-pages-banner-wrapper {
+  min-height: 170px;
+
+  @include media-breakpoint-up(md) {
+    min-height: 250px;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    min-height: 400px;
+  }
+}
+
+/* .acc-accesscontrol-bg-image {
+    background-size: cover;
+    min-height: 428px;
+} */

@@ -1,0 +1,153 @@
+mutation setShippingMethods($cart_id: String!, $shipping_methods: [ShippingMethodInput]!){
+  setShippingMethodsOnCart(input: {cart_id: $cart_id, shipping_methods: $shipping_methods}) {
+    cart {    
+        applied_coupons {
+            code
+        }
+        total_quantity
+        email
+        shipping_addresses {
+            firstname
+            lastname
+            company
+            street
+            city
+            region_id
+            region {
+                code
+                label
+            }
+            postcode
+            telephone
+            country {
+                code
+                label
+            }
+            selected_shipping_method {
+                amount {
+                    value
+                    currency
+                }
+                carrier_code
+                carrier_title
+                method_code
+                method_title
+            }
+        }
+        prices {
+            applied_taxes {
+                amount {
+                    currency
+                    value
+                }
+                label
+            }
+            discounts {
+                amount {
+                    currency
+                    value
+                }
+                label
+            }
+            grand_total {
+                currency
+                value
+            }
+            subtotal_excluding_tax {
+                currency
+                value
+            }
+            subtotal_including_tax {
+                currency
+                value
+            }
+            subtotal_with_discount_excluding_tax {
+                currency
+                value
+            }
+        }
+        items {
+            __typename
+            quantity
+            id : uid
+            quantity
+            prices {
+                price {
+                    currency
+                    value
+                }
+                row_total {
+                    currency
+                    value
+                }
+            }
+            product {
+                __typename
+                categories{
+                    __typename
+                    name
+                    id : uid
+                }
+                id : uid
+                name
+                canonical_url
+                url_key
+                sku
+                small_image {
+                    label
+                    url(width: 64, height: 64)
+                }
+                price_range {
+                    minimum_price {
+                        final_price {
+                            currency
+                            value
+                        }
+                    }
+                }
+            }
+            ...on ConfigurableCartItem {
+                configurable_options {
+                    option_label
+                    value_id : configurable_product_option_value_uid
+                    value_label
+                }
+                product {
+                    __typename
+                    ...on ConfigurableProduct {
+                        variants {
+                            attributes {
+                                code
+                                label
+                                value_index : uid
+                            }
+                            product {
+                                sku
+                                id : uid
+                                price_range {
+                                    minimum_price {
+                                        final_price {
+                                            value
+                                        }
+                                    }
+                                }
+                                price_tiers {
+                                    discount {
+                                        amount_off
+                                        percent_off
+                                    }
+                                    final_price {
+                                        value
+                                        currency
+                                    }
+                                    quantity
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
+}

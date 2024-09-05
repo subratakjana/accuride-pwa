@@ -1,0 +1,49 @@
+query footer {
+    footerMainMenus(
+        stage: PUBLISHED
+        where: { storeLanguages_some: { languages: English } }
+    ) {
+        id
+        menuTitle
+        pageSlugUrl
+        openInNewTab
+        footerSubMenus {
+            id
+            menuTitle
+            pageSlugUrl
+            openInNewTab
+        }
+    }
+
+    footerOtherMenus(
+        stage: PUBLISHED
+        where: { storeLanguage: { languages: English } }
+    ) {
+        id
+        footerSubMenus {
+            id
+            menuTitle
+            pageSlugUrl
+            openInNewTab
+            externalLink
+        }
+    }
+
+    otherStoresMenus(where: { storeLanguage_some: { languages: English } }) {
+        id
+        menuTitle
+        linkUrl
+    }
+
+    socialLinksMenus(where: { storeLanguage_some: { languages: English } }) {
+        id
+        socialLinkUrl
+        socialNetwork
+        socialIcon {
+            id
+            fileName
+            url
+        }
+        openInNewTab
+    }
+}

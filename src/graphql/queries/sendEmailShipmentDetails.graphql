@@ -1,0 +1,5 @@
+query sendEmailShipmentDetails ($shipmentId: Int!) {
+    shipmentMailSend(shipmentId: $shipmentId) {
+        message
+    }
+}

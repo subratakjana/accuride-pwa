@@ -1,0 +1,16 @@
+.acc-woodcabinet-imagecarosel{
+    .card{
+        .card-text{
+            min-height: 100px;
+        }
+    }
+}
+.acc-rollerbearing-image-slider{
+    border-bottom: $spacer*2 $primary solid;
+    .container{
+        max-width: 100%;
+        .card-img-top{
+            height: 200px;
+        }
+    }    
+}

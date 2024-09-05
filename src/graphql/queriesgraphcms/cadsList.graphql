@@ -1,0 +1,38 @@
+query cadsListAll {
+  cad(stage: PUBLISHED) {
+    id
+    stage
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    cadAllLinks {
+      id
+      linkLabel
+      linkUrl
+      headerOption
+      treeOption
+      breadcrumbsOptions
+      searchOptions
+      targetOptions
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

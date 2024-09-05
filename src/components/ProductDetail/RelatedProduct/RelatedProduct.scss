@@ -1,0 +1,22 @@
+.acc-related-product {
+    margin-left: -$spacer/2;
+    margin-right: -$spacer/2;
+    .slick-track{
+        display: flex;
+        .slick-slide{
+            padding-left: $spacer/2;
+            padding-right: $spacer/2;
+            height: auto;
+            > div{
+                height: 100%;
+                max-width: 200px;
+                margin: 0 auto;
+            }
+
+            .embed-responsive{
+                max-width: 360px;
+                margin: 0 auto;
+            }
+        }
+    }
+}

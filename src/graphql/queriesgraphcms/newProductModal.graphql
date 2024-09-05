@@ -1,0 +1,11 @@
+query newProductContent {
+  newProductLightboxes {
+    lightboxImage {
+      url
+      fileName
+    }
+    buttonText
+    buttonLink
+    showModal
+  }
+}

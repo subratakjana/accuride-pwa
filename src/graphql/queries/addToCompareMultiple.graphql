@@ -1,0 +1,7 @@
+mutation addToCompareMultiple($product_id:[Int]){
+    addToCompareMultiple(product_id: $product_id){
+        product_sku
+        product_name
+        product_id
+    }
+}

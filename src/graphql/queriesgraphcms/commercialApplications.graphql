@@ -1,0 +1,192 @@
+query commApplicationssContent {
+  commApplicationss{
+    id
+    stage
+    banner{
+        id
+        bannerHeading
+        bannerDescription
+        bannerImage {
+        id
+        fileName
+        url
+        }
+        bannerButtonText
+        bannerButtonLink
+    }
+    section1ImageGallery{
+      id
+      imageTitle
+      imageDescription
+      galleryImages {
+        id
+        fileName
+        url
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    section2ImageDesc{
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerVideoUrl
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section3Title
+    section3Description
+    section4Accordian{
+      id
+      pageName
+      videoLink
+      image {
+          id
+          fileName
+          url
+      }
+      title
+      description {
+          html
+          text
+      }
+      description2 {
+          html
+          text
+      }
+      buttonLabel
+      buttonLink
+      videoImage
+    }
+    sec5Img {
+      id
+      fileName
+      url
+    }
+    section5ButtonLabel
+    section5ButtonLink
+    section6Title
+    section6Description
+    sec6Img {
+      id
+      fileName
+      url
+    }
+    section7Title
+    section7Description
+    step1Number
+    step1Title
+    step1SubTitle
+    step2Number
+    step2Title
+    step2SubTitle
+    step3Number
+    step3Title
+    step3SubTitle
+    section8Title
+    section8Accordian{
+      id
+      title
+      question
+      answer {
+        html
+        text
+      }
+      answerImage {
+        id
+        fileName
+        height
+        width
+        size
+        mimeType
+        url
+      }
+      pageName
+    }
+    section9ImageDesc{
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section10Title
+    section10Description
+    sec10Img{
+      id
+      fileName
+      url
+    }
+    section11ImageDesc{
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    storeLanguage{
+      id
+      languages
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }    
+    }
+    section12Title
+    section12Description
+    featuredProducts{
+      id
+      productSku
+      productId
+      productFeatureImage{
+        url
+        fileName
+        width
+        height
+      }
+      productTitle
+      productSlug
+      productLink
+      
+    }
+  }
+}

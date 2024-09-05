@@ -1,0 +1,76 @@
+query homePageV3 {
+    homeV3S {
+        homeBanners {
+            id
+            bannerDesktopImage {
+                id
+                url
+                fileName
+                assetTitle
+            }
+            bannerMobileImage {
+                id
+                url
+                fileName
+                assetTitle
+            }
+            bannerCaption {
+                html
+            }
+            buttonText
+            buttonLink
+            buttonPosition
+            buttonStyle
+            bannerLink
+            bannerLink
+            bannerStyle
+            logo {
+                id
+                url
+                fileName
+                assetTitle
+            }
+        }
+        section2Heading
+        iconLists {
+            id
+            icon {
+                fileName
+                url
+                id
+            }
+            title
+            link
+        }
+        contactBar {
+            barText
+            contactNumber
+            link
+        }
+        titleImageButtonCards {
+            id
+            image {
+                url
+                id
+                fileName
+            }
+            title
+            buttonText
+            buttonLink
+        }
+        featuredProductHeading
+        featuredProductCards {
+            id
+            productName
+            productNameDetails
+            productImage {
+                url
+                id
+                fileName
+            }
+            buttonText
+            buttonLink
+            newProduct
+        }
+    }
+}

@@ -1,0 +1,11 @@
+query tokenBaseCheckoutConfig {
+  tokenBaseCheckoutConfig(method: "paradoxlabs_cybersource") {
+    hasVerification
+    cvvImageUrl
+    cardinalAuthUrl
+    cardinalJWT
+    cardinalScript
+    fingerprintUrl
+    paramUrl
+  }
+}

@@ -1,0 +1,28 @@
+query getDistributorsDetails {
+    getDistributors{
+        address
+        category
+        city
+        country
+        description
+        email
+        fax
+        id
+        lat
+        lng
+        marker
+        marker_img
+        name
+        phone
+        photo
+        position
+        schedule
+        show_schedule
+        state
+        status
+        store_img
+        stores
+        website
+        zip
+    }
+}

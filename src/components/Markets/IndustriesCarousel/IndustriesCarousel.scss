@@ -1,0 +1,37 @@
+.acc-two-icon-carousel{
+    .slick-slide{
+        @include media-breakpoint-up(xl) {
+            padding: 0 $spacer*5;
+        } 
+    }
+}
+.acc-image-auto{
+    .slick-slide{
+        .card-img{
+            width: auto;
+            max-width: none;
+            margin: auto;
+        } 
+        .card-body{
+            .h5{
+                text-transform: uppercase;
+                color: $grey-dark;
+            }
+        }
+    }
+}
+.acc-homeowner-getstarted-sec{
+    .card{
+        .card-body{
+            .card-text{
+                min-height: 145px;
+                @include media-breakpoint-down(xxl) {
+                    min-height: 175px;
+                }
+                @include media-breakpoint-down(xl) {
+                    min-height: 100px;
+                }
+            }
+        }
+    }
+}

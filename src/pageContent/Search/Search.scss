@@ -1,0 +1,30 @@
+.acc-products-wrap {
+    &.acc-search-wrap{
+        @include media-breakpoint-up(xl) {
+            // min-height: 1948.4px;
+            .acc-products-h1-wrap {
+                min-height: 64.8px;
+            }
+        }
+        .stickyFilter {
+            position: sticky;
+            position: -webkit-sticky;
+            top: $navbarHt;
+            z-index: 3;
+            &.openFilter{
+                z-index: 9;
+            }
+        }
+        .acc-product-sidebar{
+            @include media-breakpoint-up(xl) {
+                max-width: 300px;
+                border-right: 1px solid theme-color(medium);
+            }
+        }
+    }
+}
+
+.acc-prod-sugession-wrap {
+    min-height: 81.6px;
+}
+

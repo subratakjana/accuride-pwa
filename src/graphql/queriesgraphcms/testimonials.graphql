@@ -1,0 +1,90 @@
+query testimonialsesContent{
+  testimonialses {
+    id
+    stage
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    scetion1MultiVideo {
+      id
+      pageName
+      videoLink
+      image {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 660, height: 400, fit: clip}}})
+      }
+      title
+      description {
+        html
+        text
+      }
+      description2 {
+        html
+        text
+      }
+      buttonLabel
+      buttonLink
+      videoImage
+    }
+    section2BannerSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section3MultiVideo {
+      id
+      pageName
+      videoLink
+      image {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 775, height: 400, fit: clip}}})
+      }
+      title
+      description {
+        html
+        text
+      }
+      description2 {
+        html
+        text
+      }
+      buttonLabel
+      buttonLink
+      videoImage
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

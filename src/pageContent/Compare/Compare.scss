@@ -1,0 +1,72 @@
+
+.acc-compare-product{
+    .acc-compare-table{
+        overflow-x: auto;
+        @include media-breakpoint-up(xl) {
+            overflow-x: initial;
+        }
+        // thead
+        thead{
+            th{
+                min-width: 50vw;
+                max-width: 50vw;
+                padding: 0 $spacer;
+                border-right: 1px solid theme-color(primary);
+                @include media-breakpoint-up(xl) {
+                    min-width: 325px;
+                    max-width: 650px;
+                    width: 650px;
+                }
+                &:last-child{
+                    border-right: 0;
+                }
+            }
+        }
+
+        // tbody
+        tbody{
+            tr{
+                &:nth-child(odd){
+                    background: theme-color(light);
+                }
+                &:first-child{
+                    background: $white;
+                    td{
+                        border-bottom: 1px solid theme-color(primary);
+                        padding-top: 0;
+                        padding-bottom: $spacer*5.2;
+
+                    }
+                }
+                td{
+                    border-right: 1px solid theme-color(primary);
+                    padding: $spacer*2 $spacer;
+                    position: relative;
+                    &:last-child{
+                        border-right: 0;
+                    }
+                    .acc-img{
+                        height: 140px;
+                        margin: 0 auto;
+                        @include media-breakpoint-up(xl) {
+                            height: 225px;
+                            margin: initial;
+                        }
+                    }
+                    .customHtml ul{
+                        padding-left: $spacer;
+                        li{
+                            list-style: decimal;
+                            margin-bottom: $spacer;
+                        }
+                    }
+                    footer{
+                        position: absolute;
+                        bottom: $spacer*2;
+                        width: calc(100% - #{$spacer}*2);
+                    }
+                }
+            }
+        }
+    }
+}

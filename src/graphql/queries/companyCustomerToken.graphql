@@ -1,0 +1,5 @@
+mutation getCompanyCustomerToken($company_customer_email: String!) {
+    getCompanyCustomerToken(input:{company_customer_email: $company_customer_email}) {
+        company_token
+    }
+}

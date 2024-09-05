@@ -1,0 +1,6 @@
+query getIndustryList {
+    pickYourIndustry {
+        label
+        value
+    }
+}

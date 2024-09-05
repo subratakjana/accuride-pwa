@@ -1,0 +1,11 @@
+query followus{
+  follows(stage: PUBLISHED){
+    id
+    socialMediaTitle
+    socialMediaLink
+    socialMediaIcon{
+      id
+      url
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.acc-card{
+    .acc-card-list{
+        .acc-item{
+            margin-bottom: $spacer*2;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

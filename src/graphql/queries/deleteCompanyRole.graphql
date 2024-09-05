@@ -1,0 +1,5 @@
+mutation deleteCompanyRole($id: ID!){
+    deleteCompanyRole(id: $id){
+        success
+    }
+}

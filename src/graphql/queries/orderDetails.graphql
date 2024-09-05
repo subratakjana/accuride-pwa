@@ -1,0 +1,17 @@
+query orderDetails($order_entity_id: Int) {
+    orderDetails(id: $order_entity_id) {
+        created_at
+        customer_name
+        grand_total
+        increment_id
+        is_guest_customer
+        is_invoiced
+        is_shipped
+        order_status
+        payment_method
+        shipping_amount
+        shipping_method
+        sub_total
+        tax_amount
+    }
+}

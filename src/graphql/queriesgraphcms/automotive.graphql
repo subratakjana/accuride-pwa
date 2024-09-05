@@ -1,0 +1,221 @@
+query automotiveContent {
+    automotives {
+        id
+        stage
+        banner {
+            id
+            bannerHeading
+            bannerDescription
+            bannerImage {
+                id
+                fileName
+                url
+            }
+            bannerMobileImage {
+                id
+                fileName
+                url
+            }
+            bannerButtonText
+            bannerButtonLink
+        }
+        contactBar {
+            barText
+            contactNumber
+            link
+        }
+        section3Title
+        section3Description
+        section5Title
+        section5Description
+        section7Title
+        section7Description
+        section7Images {
+            id
+            fileName
+            height
+            width
+            size
+            mimeType
+            url
+        }
+        section10ImageDesc {
+            id
+            bannerTitle
+            bannerButtonLabel
+            bannerButtonLink
+            bannerButton2Label
+            bannerButton2Link
+            bannerDescription {
+                html
+                text
+            }
+            bannerImage {
+                id
+                fileName
+                url
+            }
+            sliderOrFixedBlock
+        }
+        storeLanguage {
+            id
+            languages
+        }
+        section9ImageDesc {
+            id
+            bannerTitle
+            bannerButtonLabel
+            bannerButtonLink
+            bannerButton2Label
+            bannerButton2Link
+            bannerDescription {
+                html
+            }
+            bannerImage {
+                id
+                fileName
+                url
+            }
+            sliderOrFixedBlock
+        }
+        section6ImageDesc {
+            id
+            bannerTitle
+            bannerButtonLabel
+            bannerButtonLink
+            bannerButton2Label
+            bannerButton2Link
+            bannerDescription {
+                html
+                text
+            }
+            bannerImage {
+                id
+                fileName
+                url
+            }
+            sliderOrFixedBlock
+        }
+        section3ImageGallery {
+            id
+            imageTitle
+            imageDescription
+            galleryImages {
+                id
+                fileName
+                url
+            }
+            imageButtonLabel
+            imageButtonLink
+        }
+        section8ImageDesc {
+            id
+            bannerTitle
+            bannerButtonLabel
+            bannerButtonLink
+            bannerButton2Label
+            bannerButton2Link
+            bannerDescription {
+                html
+                text
+            }
+            bannerImage {
+                id
+                fileName
+                url
+            }
+            sliderOrFixedBlock
+        }
+        section9ImageDesc {
+            id
+            bannerTitle
+            bannerButtonLabel
+            bannerButtonLink
+            bannerButton2Label
+            bannerButton2Link
+            bannerDescription {
+                html
+                text
+            }
+            bannerImage {
+                id
+                fileName
+                url
+            }
+            sliderOrFixedBlock
+        }
+        section4ImageDesc {
+            id
+            bannerTitle
+            bannerButtonLabel
+            bannerButtonLink
+            bannerButton2Label
+            bannerButton2Link
+            bannerDescription {
+                html
+                text
+            }
+            bannerImage {
+                id
+                fileName
+                url
+            }
+            sliderOrFixedBlock
+        }
+        section1ImageGallery {
+            id
+            imageTitle
+            imageDescription
+            galleryImages {
+                id
+                fileName
+                url
+            }
+            imageButtonLabel
+            imageButtonLink
+        }
+        section2VideoImage {
+            id
+            fileName
+            url
+        }
+        section2VideoLink
+        section2VideoId
+        section5BoxSection {
+            id
+            cardTitle
+            cardDescription
+        }
+        featuredProducts {
+            id
+            productSku
+            productId
+            productFeatureImage {
+                url(
+                    transformation: {
+                        image: {
+                            resize: { width: 387, height: 221, fit: clip }
+                        }
+                    }
+                )
+                fileName
+                width
+                height
+            }
+            productTitle
+            productSlug
+            productLink
+            productId
+        }
+        pages {
+            id
+            pageTitle
+            pageName
+            pageSlug
+            pageIntroduction {
+                html
+                text
+            }
+        }
+    }
+}

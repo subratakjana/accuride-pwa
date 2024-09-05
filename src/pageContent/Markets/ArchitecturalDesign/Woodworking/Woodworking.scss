@@ -1,0 +1,10 @@
+.acc-custom-card-coll{
+    .card-columns {
+        column-count: 1;
+        @include media-breakpoint-up(md) {
+            column-count: 2;
+            column-gap: 0;
+            line-height: $spacer*0;
+        }
+    }
+}

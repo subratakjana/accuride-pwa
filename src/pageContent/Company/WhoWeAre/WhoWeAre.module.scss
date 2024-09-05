@@ -1,0 +1,21 @@
+@import "/src/styles/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+.acc-about-flag-image {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    background: $primary;
+    height: $spacer * 4.5;
+    transform: translateX(-50%);
+    top: 0;
+    left: 50%;
+
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
+}

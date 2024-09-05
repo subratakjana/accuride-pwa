@@ -1,0 +1,39 @@
+query companyall {
+  companies(where: {storeLanguage: {languages: English}, AND: {pages: {pageSlug: "company"}}}) {
+    id
+    stage
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    section1ImageGallery {
+      id
+      imageTitle
+      imageDescription
+      galleryImages {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 660, height: 430, fit: clip}}})
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+      }
+    }
+  }
+}

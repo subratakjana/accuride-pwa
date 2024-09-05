@@ -1,0 +1,18 @@
+query getCustomerReviewDetails ($id: Int!) {
+    reviewDetails(id: $id) {
+        product_name
+        product_image
+        product_url_key
+        product_description
+        review_detail
+        review_title
+        approved_review_count
+        avg_rating
+        rating {
+            price
+            value
+            quality
+        }
+        submitted
+    }
+}

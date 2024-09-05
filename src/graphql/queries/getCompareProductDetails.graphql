@@ -1,0 +1,36 @@
+query productCompareDetails ($sku: [String]!) {
+    products(filter: {sku: {in: $sku}}) {
+        total_count
+         items {
+            product_for_sales
+            url_key
+            sku
+            id : uid
+            name
+            meta_title
+            stock_status
+            product_price_range {
+                minimum_price {
+                    final_price {
+                        currency
+                        value
+                    }
+                }
+                maximum_price {
+                    final_price {
+                        currency
+                        value
+                    }
+                }
+            }
+            image {
+                gallery_url
+            }
+            compare_attribute_list {
+                frontend_label
+                attribute_value
+                attribute_name
+            }
+        }  
+    }
+}

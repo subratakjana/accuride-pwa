@@ -1,0 +1,309 @@
+query corrosionResistantsContent {
+  corrosionResistants {
+    id
+    stage
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    section1ImageSlider{
+      id
+      imageTitle
+      imageDescription
+      galleryTitle
+      galleryImages {
+        id
+        fileName
+        url
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    section3TabSection{
+      id
+      tabName
+      tabTitle
+      pageName
+      tabVideoLink
+      tabDescription {
+        text
+        html
+      }
+      tabImage {
+        id
+        fileName
+        url
+        width
+        height
+      }
+      tabBannerSubImage {
+          id
+          fileName
+          url
+      }
+      technicalSpecifications {
+        id
+        pageTitle
+        fullDescription {
+          html
+          text
+        }
+        parentTabTitle
+        buttonLabel
+        buttonLink
+        button2Label
+        button2Link
+      }
+    }
+    section4SlideImage{
+      id
+      fileName
+      url
+      assetTitle
+    }
+    section4SliderDescription{
+      id
+      cardTitle
+      cardDescription
+    }
+    section5ImageGallery{
+      id
+      imageTitle
+      imageDescription
+      galleryImages {
+        id
+        fileName
+        url
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    section6Table{
+      id
+      columnTitle
+      cbFinish
+      chFinish
+      ceFinish
+      cpFinish
+      ewFinish
+      ss
+      al
+    }
+    section6TableDesc
+    rollerBannerSection {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    rollerBearingSectionDesc
+    rollerBearingSideMount {
+      id
+      bannerTitle
+      bannerTitle2
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    rollerBearingBottomMount {
+      id
+      bannerTitle
+      bannerTitle2
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    rollerBearingSideMountOverTravel {
+      id
+      bannerTitle
+      bannerTitle2
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    rollerBearingBottomMountOverTravel {
+      id
+      bannerTitle
+      bannerTitle2
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section7ImageDesc{
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section7ImageDescNewSlide{
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section8Title
+    section8Description{
+      html
+      text
+    }
+    section8ButtonLabel
+    section8ButtonLink
+    section9Tab{
+      id
+      tabName
+      tabTitle
+      pageName
+      tabVideoLink
+      tabDescription {
+        text
+        html
+      }
+      tabImage {
+        id
+        fileName
+        url
+        width
+        height
+      }
+      tabBannerSubImage {
+        id
+        fileName
+        url
+      }
+      technicalSpecifications {
+        id
+        pageTitle
+        fullDescription {
+          html
+          text
+        }
+        parentTabTitle
+        buttonLabel
+        buttonLink
+        button2Label
+        button2Link
+      }
+    }
+    section10Title
+    section10Description{
+      html
+      text
+    }
+    featuredProducts{
+      id
+      productSku
+      productId
+      productFeatureImage{
+        url
+        fileName
+        width
+        height
+      }
+      productTitle
+      productSlug
+      productLink
+      
+    }
+    storeLanguage {
+      id
+      languages
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

@@ -1,0 +1,234 @@
+query Videos {
+  videoses(stage: DRAFT, where: {storeLanguage: {languages: English}, AND: {pages: {pageSlug: "videos"}}}) {
+    id
+    stage
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    homeownersVideoLink
+    homeownersImage {
+      id
+      fileName
+      height
+      width
+      size
+      mimeType
+      url
+    }
+    homeownersTitle
+    homeownersDescription
+    automotiveTransportationVideoUrl
+    automotiveTransportationImage {
+      id
+      fileName
+      height
+      width
+      size
+      mimeType
+      url
+    }
+    automotiveTransportationTitle
+    automotiveTransportationDesc
+    section2Title
+    section2VideoGallery {
+      id
+      pageName
+      videoLink
+      image {
+        id
+        fileName
+        url
+      }
+      title
+      description {
+        html
+        text
+      }
+      description2 {
+        html
+        text
+      }
+      buttonLabel
+      buttonLink
+      videoImage
+    }
+    section3Title
+    section3VideoGallery {
+      id
+      pageName
+      videoLink
+      image {
+        id
+        fileName
+        url
+      }
+      title
+      description {
+        html
+        text
+      }
+      description2 {
+        html
+        text
+      }
+      buttonLabel
+      buttonLink
+      videoImage
+    }
+    section4Title
+    section4VideoGallery {
+      id
+      pageName
+      videoLink
+      image {
+        id
+        fileName
+        url
+      }
+      title
+      description {
+        html
+        text
+      }
+      description2 {
+        html
+        text
+      }
+      buttonLabel
+      buttonLink
+      videoImage
+    }
+    section5Title
+    section5VideoGallery {
+      id
+      pageName
+      videoLink
+      image {
+        id
+        fileName
+        url
+      }
+      title
+      description {
+        html
+        text
+      }
+      description2 {
+        html
+        text
+      }
+      buttonLabel
+      buttonLink
+      videoImage
+    }
+    section6Title
+    section6VideoGallery {
+      id
+      pageName
+      videoLink
+      image {
+        id
+        fileName
+        url
+      }
+      title
+      description {
+        html
+        text
+      }
+      description2 {
+        html
+        text
+      }
+      buttonLabel
+      buttonLink
+      videoImage
+    }
+    section7Title
+    section7VideoGallery {
+      id
+      pageName
+      videoLink
+      image {
+        id
+        fileName
+        url
+      }
+      title
+      description {
+        html
+        text
+      }
+      description2 {
+        html
+        text
+      }
+      buttonLabel
+      buttonLink
+      videoImage
+    }
+    section8Title
+    section8VideoGallery {
+      id
+      pageName
+      videoLink
+      image {
+        id
+        fileName
+        url
+      }
+      title
+      description {
+        html
+        text
+      }
+      description2 {
+        html
+        text
+      }
+      buttonLabel
+      buttonLink
+      videoImage
+    }
+    section9Title
+    section9VideoGallery {
+      id
+      pageName
+      videoLink
+      image {
+        id
+        fileName
+        url
+      }
+      title
+      description {
+        html
+      }
+      description2 {
+        html
+      }
+      buttonLabel
+      buttonLink
+      videoImage
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

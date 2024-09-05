@@ -1,0 +1,18 @@
+mutation getValidateAddress($country_id:String!, $region:String!,$region_code:String!, $street:[String]!, $postcode:String!, $city:String!){
+    getValidateAddress(
+        country_id: $country_id,
+        region: $region,
+        region_code: $region_code,
+        street: $street,
+        postcode: $postcode,
+        city: $city
+    ) {
+        street
+        city
+        region
+        country_id
+        postcode
+        region_id
+        validate
+    }
+}

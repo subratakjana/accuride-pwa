@@ -1,0 +1,336 @@
+query automationMovementSolutionsContent {
+  automationMotionControls {
+    id
+    stage
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    contactBar {
+        barText
+        contactNumber
+        link
+    }
+    section2AllBoxes {
+      id
+      cardTitle
+      cardDescription
+    }
+    section4Description
+    section5Title
+    section5Description
+    section5ButtonLabel
+    section5ButtonLink
+    section5BGimageSlider {
+      id
+      tabName
+      tabTitle
+      pageName
+      tabVideoLink
+      tabDescription {
+        text
+        html
+      }
+      tabImage {
+        id
+        fileName
+        url
+        width
+        height
+      }
+      tabBannerSubImage {
+        id
+        fileName
+        url
+      }
+      technicalSpecifications {
+        id
+        pageTitle
+        fullDescription {
+          html
+          text
+        }
+        parentTabTitle
+        buttonLabel
+        buttonLink
+        button2Label
+        button2Link
+      }
+    }
+    section8ImageDesc {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section6Title
+    section6Description
+    section9ImageDesc {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section6Image {
+      id
+      fileName
+      height
+      width
+      size
+      mimeType
+      url
+    }
+    section10BannerSlide {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerVideoUrl
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section2ImageAndDesc {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerVideoUrl
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 660, height: 271, fit: clip}}})
+      }
+      sliderOrFixedBlock
+    }
+    section7ImageDesc {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section7ImageDescNewSlide {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section1ImageGallery {
+      id
+      imageTitle
+      imageDescription
+      galleryImages {
+        id
+        fileName
+        url
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    section11ImageDesc {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    section4ImageGallery {
+      id
+      imageTitle
+      imageDescription
+      galleryImages {
+        id
+        fileName
+        url
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    storeLanguage {
+      id
+    }
+    section5TabSection {
+      id
+      tabName
+      tabTitle
+      pageName
+      tabVideoLink
+      tabDescription {
+        text
+        html
+      }
+      tabImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 612, height: 502, fit: clip}}})
+        width
+        height
+      }
+      tabBannerSubImage {
+        id
+        fileName
+        url
+      }
+      technicalSpecifications {
+        id
+        pageTitle
+        fullDescription {
+          html 
+          text
+        }
+        parentTabTitle
+        videoLink
+        videoId
+        buttonLabel
+        buttonLink
+        button2Label
+        button2Link
+      }
+    }
+    section3TabArea {
+      id
+      tabName
+      tabTitle
+      pageName
+      tabVideoLink
+      tabDescription {
+        text
+        html
+      }
+      tabImage {
+        id
+        fileName
+        url
+        width
+        height
+      }
+      tabBannerSubImage {
+        id
+        fileName
+        url
+      }
+      technicalSpecifications {
+        id
+        pageTitle
+        fullDescription {
+          html
+          text
+        }
+        parentTabTitle
+        buttonLabel
+        buttonLink
+        button2Label
+        button2Link
+      }
+    }
+    section12Title
+    section12Description
+    featuredProducts{
+      id
+      productSku
+      productId
+      productFeatureImage{
+        url(transformation: {image: {resize: {width: 387, height: 221, fit: clip}}})
+        fileName
+        width
+        height
+      }
+      productTitle
+      productSlug
+      productLink
+      
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

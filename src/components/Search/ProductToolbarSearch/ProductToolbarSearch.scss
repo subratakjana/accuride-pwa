@@ -1,0 +1,17 @@
+.acc-product-toolbar{
+    .acc-modes{
+        max-width: $spacer*8;
+    }
+    .acc-switcher{
+        font-size: $font-size-base - .0625;
+    }
+
+    .acc-suggestion-item{
+        outline: none;
+        &:hover{
+            .acc-text{
+                color: theme-color(primary);
+            }
+        }
+    }
+}

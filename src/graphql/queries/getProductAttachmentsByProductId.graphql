@@ -1,0 +1,9 @@
+query downloads($productId: Int!) {
+   productAttachment(input: {productId: $productId}) {
+    file_id
+    attachment_type
+    frontend_url
+    icon_url
+    label
+  }
+}

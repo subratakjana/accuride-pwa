@@ -1,0 +1,41 @@
+query getCustomerOrders{
+  customerOrders {
+    items {
+      order_number
+      id
+      created_date
+      grand_total
+      status
+      ship_to
+      base_amount
+      order_rate
+    }
+  }
+}
+
+#query getCustomerOrders1dsfsdf {
+#    customer {
+#      orders(
+#        pageSize: 999999
+#      ) {
+#        items {
+#          increment_id : id
+#          id
+#          order_number : number
+#          created_date
+#          order_date
+#          total {
+#            grand_total{
+#              value
+#              currency
+#            }
+#          }
+#          status
+#          shipping_address{
+#            firstname
+#            lastname
+#          }
+#        }
+#      }
+#   }
+#}

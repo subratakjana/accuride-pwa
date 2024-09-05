@@ -1,0 +1,147 @@
+query fAQ9300DrawerSlidesContent {
+  fAQ9300DrawerSlides(where: {section5Table_every: {selectPage: FAQ9300DrawerSlide}}) {
+    id
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    section1Slider {
+      id
+      imageTitle
+      imageDescription
+      galleryTitle
+      galleryImages {
+        id
+        fileName
+        url
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    section2Title
+    section2Description {
+      text
+      html
+    }
+    section3TabSection {
+      id
+      tabName
+      tabTitle
+      pageName
+      tabVideoLink
+      tabDescription {
+        text
+        html
+      }
+      tabImage {
+        id
+        fileName
+        url
+        width
+        height
+      }
+      technicalSpecifications {
+        id
+        pageTitle
+        fullDescription {
+          html
+          text
+        }
+        parentTabTitle
+        buttonLabel
+        buttonLink
+        button2Label
+        button2Link
+      }
+    }
+    section4ImageGallery {
+      id
+      imageTitle
+      imageDescription
+      imageDescription2 {
+        html
+        text
+      }
+      galleryImages {
+        id
+        fileName
+        url
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    section5Table {
+      id
+      columnTitle
+      columnLink
+      standard
+      lockIn
+      lockOut
+      pocketBayonetDesign
+      selectPage
+    }
+    sliderImgSec5{
+      id
+      fileName
+      url
+    }
+    sliderDescSec5{
+      id
+      cardTitle
+      cardDescription
+      pageName
+    }
+    section6StaticBanner {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+    }
+    featuredProductTitle
+    featuredProductDescription
+    featuredProducts {
+      id
+      productSku
+      productId
+      productFeatureImage {
+        url(transformation: {image: {resize: {width: 400, height: 260, fit: clip}}})
+        fileName
+        width
+        height
+      }
+      productTitle
+      productSlug
+      productLink
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

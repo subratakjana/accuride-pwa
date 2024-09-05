@@ -1,0 +1,51 @@
+@import "/src/styles/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+.acc-distributor-map-info-box {
+  h2 {
+    font-size: $h1-font-size;
+  }
+
+  overflow: visible !important;
+  //   margin-top: -12px !important;
+  border-radius: 5px;
+
+  &::after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #ffffff;
+    border-width: 10px;
+    margin-left: -10px;
+  }
+
+  &.mw_609 {
+    max-width: 609px !important;
+  }
+
+  &.mh_426 {
+    max-height: 426px;
+  }
+
+  &.minW_0 {
+    min-width: 0;
+  }
+
+  &.w_270 {
+    width: 270px;
+  }
+
+  .top_0 {
+    top: 0;
+  }
+
+  .right_0 {
+    right: 0;
+  }
+}

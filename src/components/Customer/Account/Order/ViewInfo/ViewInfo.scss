@@ -1,0 +1,22 @@
+.acc-total-area{
+    margin-top: $spacer/2;
+    z-index: 1;
+    position: relative;
+    strong{
+        @include media-breakpoint-up(xl) {
+            font-size: $font-size-base;
+        }
+    }
+    .price-figure{
+        @include media-breakpoint-up(xl) {
+            font-size: $font-size-base;
+            width: $spacer*12;
+        }
+    }
+    .acc-ca-price-figure{
+        @include media-breakpoint-up(xl) {
+            font-size: $font-size-base;
+            width: $spacer*12;
+        }
+    }
+}

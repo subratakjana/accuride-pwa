@@ -1,0 +1,43 @@
+query CaliforniaProp65Content {
+  californiaProp65S {
+    id
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    section1image {
+      id
+      fileName
+      url
+      height
+      width
+      size
+      mimeType
+    }
+    section2description {
+      html
+      text
+    }
+    storelanguage {
+      languages
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

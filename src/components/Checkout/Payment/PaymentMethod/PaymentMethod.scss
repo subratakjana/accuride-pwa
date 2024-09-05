@@ -1,0 +1,121 @@
+.acc-payment-method-choose-sec {
+  .credit-debit-sec-show {
+    transform: scaleY(1);
+    transition: ease 0.2s;
+    transform-origin: top;
+    padding-top: $spacer * 2;
+  }
+  .credit-debit-sec-hide {
+    height: 0px;
+    transition: ease 0.2s;
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  .paypal-sec-show {
+    transform: scaleY(1);
+    transition: ease 0.2s;
+    transform-origin: top;
+    padding-top: $spacer * 2;
+  }
+  .paypal-sec-hide {
+    height: 0px;
+    transform: scaleY(0);
+    transition: ease 0.2s;
+    transform-origin: top;
+  }
+  .klarna1-sec-show {
+    transform: scaleY(1);
+    transition: ease 0.2s;
+    transform-origin: top;
+    padding-top: $spacer * 2;
+  }
+  .klarna1-sec-hide {
+    height: 0px;
+    transform: scaleY(0);
+    transition: ease 0.2s;
+    transform-origin: top;
+  }
+  .klarna2-sec-show {
+    transform: scaleY(1);
+    transition: ease 0.2s;
+    transform-origin: top;
+    padding-top: $spacer * 2;
+  }
+  .klarna2-sec-hide {
+    height: 0px;
+    transform: scaleY(0);
+    transition: ease 0.2s;
+    transform-origin: top;
+  }
+}
+.acc-payment-method {
+  .acc-address {
+    position: relative;
+    border: 2px solid theme-color(secondary);
+    border-radius: 0.25rem;
+    padding: $spacer;
+    @include media-breakpoint-up(xl) {
+      max-width: 480px;
+    }
+    .acc-action {
+      position: absolute;
+      right: 0;
+      top: 0;
+      svg {
+        fill: theme-color(dark);
+        stroke: theme-color(dark);
+      }
+    }
+  }
+  .acc-update-address {
+    @include media-breakpoint-up(xl) {
+      max-width: 480px;
+    }
+  }
+
+  .shippingAddBlock {
+    border: 2px solid theme-color(secondary);
+    border-radius: 0.25rem;
+    padding: $spacer;
+    @include media-breakpoint-up(xl) {
+      max-width: 576px;
+    }
+  }
+  .cardNumber {
+    border-right: none;
+  }
+  .cardPosition {
+    padding: 5px 5px 0;
+    border: 1px solid theme-color(dark);
+    border-radius: 0 0.25rem 0.25rem 0;
+    svg {
+      fill: theme-color(dark);
+      stroke: theme-color(dark);
+      font-size: 25px;
+    }
+  }
+
+  .acc-card-width {
+    @include media-breakpoint-up(md) {
+      max-width: 480px;
+    }
+  }
+}
+
+.acc {
+  &-payment {
+    &-logo-icon {
+      width: $spacer * 1.875;
+    }
+    &-close-icon {
+      width: $spacer * 1.7;
+      height: $spacer * 1.7;
+    }
+    &-maintenance-icon {
+      width: $spacer * 2.5;
+    }
+    &-edit-icon {
+      width: $spacer * 1.25;
+    }
+  }
+}

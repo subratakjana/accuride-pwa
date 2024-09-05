@@ -1,0 +1,30 @@
+.acc-automotive-youtube-video-sec{
+    .container {
+        @include media-breakpoint-down(xs) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        
+        .video-image{
+            position: relative;
+            cursor: pointer;
+            & > img{
+                @include media-breakpoint-up(lg) {
+                    height: 400px;
+                }
+                @include media-breakpoint-up(xl) {
+                    height: 700px;
+                }
+                height: 300px;
+                object-fit: cover;
+            }
+            .acc-video-play-icon{
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: $spacer*6;
+                fill: #f00;
+            }
+        }
+    }
+}

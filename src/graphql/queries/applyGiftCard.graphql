@@ -1,0 +1,21 @@
+mutation applyGiftCard($cartId: String!, $giftCode: String!) {
+    applyGiftCardToCart(input: {
+        cart_id: $cartId,
+        gift_card_code: $giftCode
+    }) {
+        cart {
+            applied_gift_cards {
+                applied_balance {
+                    value
+                    currency
+                }
+                code
+                current_balance {
+                    value
+                    currency
+                }
+                expiration_date
+            }
+        }
+    }
+}

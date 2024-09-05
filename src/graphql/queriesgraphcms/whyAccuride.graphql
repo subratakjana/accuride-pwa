@@ -1,0 +1,279 @@
+query whyAccuridesContent {
+  whyAccurides {
+    id
+    stage
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    section1FixedSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 919, height: 500, fit: clip}}})
+      }
+      sliderOrFixedBlock
+    }
+    section2Title
+    section2Description {
+      html
+      text
+    }
+    section3Accordion {
+      id
+      pageName
+      videoLink
+      image {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 397, height: 266, fit: clip}}})
+      }
+      title
+      description {
+        html
+        text
+      }
+      description2 {
+        html
+        text
+      }
+      buttonLabel
+      buttonLink
+      videoImage
+    }
+    section4FixedSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 951, height: 400, fit: clip}}})
+      }
+      sliderOrFixedBlock
+    }
+    section5Accordion {
+      id
+      pageName
+      videoLink
+      image {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 397, height: 266, fit: clip}}})
+      }
+      title
+      description {
+        html
+        text
+      }
+      description2 {
+        html
+        text
+      }
+      buttonLabel
+      buttonLink
+      videoImage
+    }
+    section6Heading
+    section6FixedSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 951, height: 400, fit: clip}}})
+      }
+      sliderOrFixedBlock
+    }
+    section7Accordion {
+      id
+      pageName
+      videoLink
+      image {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 397, height: 266, fit: clip}}})
+      }
+      title
+      description {
+        html
+        text
+      }
+      description2 {
+        html
+        text
+      }
+      buttonLabel
+      buttonLink
+      videoImage
+    }
+    section8FixedSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 951, height: 400, fit: clip}}})
+      }
+      sliderOrFixedBlock
+    }
+    section9Accordion {
+      id
+      pageName
+      videoLink
+      image {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 397, height: 266, fit: clip}}})
+      }
+      title
+      description {
+        html
+        text
+      }
+      description2 {
+        html
+        text
+      }
+      buttonLabel
+      buttonLink
+      videoImage
+    }
+    section10Title
+    section10Description
+    section10ImageGallery {
+      id
+      fileName
+      height
+      width
+      size
+      mimeType
+      url
+    }
+    section11FixedSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 951, height: 400, fit: clip}}})
+      }
+      sliderOrFixedBlock
+    }
+    section12Accordion {
+      id
+      pageName
+      videoLink
+      image {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 397, height: 266, fit: clip}}})
+      }
+      title
+      description {
+        html
+        text
+      }
+      description2 {
+        html
+        text
+      }
+      buttonLabel
+      buttonLink
+      videoImage
+    }
+    section13FixedSlider {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 951, height: 400, fit: clip}}})
+      }
+      sliderOrFixedBlock
+    }
+    section14Accordion {
+      id
+      pageName
+      videoLink
+      image {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 397, height: 266, fit: clip}}})
+      }
+      title
+      description {
+        html
+        text
+      }
+      description2 {
+        html
+        text
+      }
+      buttonLabel
+      buttonLink
+      videoImage
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

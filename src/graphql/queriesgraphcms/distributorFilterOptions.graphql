@@ -1,0 +1,15 @@
+query distributorOptions{
+ 	state: __type(name : "DistributorState"){
+    name
+    enumValues{
+      name
+    }
+  }
+  category:__type(name : "DistributorCategory"){
+    name
+    enumValues{
+      name
+    }
+  }
+
+}

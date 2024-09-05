@@ -1,0 +1,10 @@
+.acc-recent-review{
+    .acc-recentreview-list{
+        .acc-item{
+            margin-bottom: $spacer;
+            &:last-child{
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+}

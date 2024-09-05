@@ -1,0 +1,15 @@
+query review($productId: Int!) {
+   productReview(input: {productId: $productId}) {
+    detail
+    created_at
+    status_id
+    title
+    nickname
+    customer_id
+    entity_code
+    rating {
+      rating_code
+      rating_percent
+    }
+  }
+}

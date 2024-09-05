@@ -1,0 +1,5 @@
+query sendEmailOrderDetails ($id: Int!) {
+    orderMailSend(orderId: $id) {
+        message
+    }
+}

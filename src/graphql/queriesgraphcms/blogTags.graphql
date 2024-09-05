@@ -1,0 +1,68 @@
+query blogTagsContent ($slug : String!){
+  blogTagss(stage: PUBLISHED, where: {tags: {tagSlug: $slug}}) {
+    id
+    tags {
+      id
+      tagTitle
+      tagSlug
+      tagLink
+      metaTitle
+      metaDescription
+      metaKeywords
+      metaImage {
+        id
+        fileName
+        url
+      }
+      storeLanguage {
+        languages
+      }
+    }
+    blogs {
+      postTitle
+      postSlug
+      createdAt
+      id
+      postExcerpt
+      setAsFeaturePost
+      postImage {
+        id
+        url
+      }
+      categories(first: 1) {
+        id
+        categoryTitle
+        categorySlug
+      }
+      pages {
+        id
+        pageSlug
+        banner {
+          id
+          bannerHeading
+          bannerDescription
+          bannerImage {
+            id
+            fileName
+            url
+          }
+          bannerButtonText
+          bannerButtonLink
+        }
+      }
+    }
+    storeLanguages {
+      languages
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

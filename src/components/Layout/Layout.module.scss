@@ -1,0 +1,14 @@
+@import "/src/styles/scss/variables";
+
+.mobile-header-container {
+    height: $spacer * 3;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+:global(.acc-has-sticky-banner) {
+    .mobile-header-container {
+        top: $spacer * 2.5;
+    }
+}

@@ -1,0 +1,16 @@
+query blogcategories{
+  categories{
+    id
+    categoryTitle
+    categorySlug
+    parentCategory {
+      id
+      categoryTitle
+      categorySlug
+    }
+    categories {
+      id
+      categoryTitle
+    }
+  }
+}

@@ -1,0 +1,261 @@
+query homeownersesContent {
+  homeownerses {
+    id
+    stage
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerDescription2{
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    allTabses {
+      id
+      tabName
+      tabTitle
+      pageName
+      tabVideoLink
+      tabDescription {
+        text
+        html
+      }
+      tabImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 580, height: 410, fit: clip}}})
+        width
+        height
+        assetTitle
+      }
+      tabBannerSubImage {
+        id
+        fileName
+        url
+      }
+      technicalSpecifications {
+        id
+        pageTitle
+        heading
+        subTitle
+        fullDescription {
+          html
+          text
+        }
+        parentTabTitle
+        buttonLabel
+        buttonLink
+        button2Label
+        button2Link
+      }
+    }
+    section2Title
+    section2Desc{
+      html
+      text
+    }
+    section2ButtonLabel
+    section2ButtonLink
+    section2Images {
+      id
+      fileName
+      height
+      width
+      size
+      mimeType
+      url
+    }
+    section3ImageDesc {
+      id
+      title
+      description {
+        html
+      }
+      productLink1
+      productLink2
+      buttonLabel
+      buttonLink
+      videoLink
+      name
+      designation
+      image {
+        id
+        fileName
+        url
+        assetTitle
+      }
+    }
+    section4Title
+    section4Description
+    section5ImageDesc {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+      }
+      bannerImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 789, height: 450, fit: clip}}})
+      }
+      sliderOrFixedBlock
+    }
+    section6ImageDesc {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+      }
+      bannerImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 789, height: 450, fit: clip}}})
+      }
+      sliderOrFixedBlock
+    }
+    section7ImageDesc {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+      }
+      bannerImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 789, height: 450, fit: clip}}})
+      }
+      sliderOrFixedBlock
+    }
+    section8ImageDesc {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+      }
+      bannerImage {
+        id
+        fileName
+        url(transformation: {image: {resize: {width: 789, height: 450, fit: clip}}})
+      }
+      sliderOrFixedBlock
+    }
+    section9ImageDesc {
+      id
+      title
+      description {
+        html
+      }
+      productLink1
+      productLink2
+      buttonLabel
+      buttonLink
+      videoLink
+      name
+      designation
+      image {
+        id
+        fileName
+        url
+        assetTitle
+      }
+    }
+    section10Description
+    section10WriterName
+    section11ImageDesc {
+      id
+      bannerTitle
+      bannerButtonLabel
+      bannerButtonLink
+      bannerButton2Label
+      bannerButton2Link
+      bannerDescription {
+        html
+        text
+      }
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      sliderOrFixedBlock
+      externalLink
+    }
+    section12Title
+    section12ImageGallery {
+      id
+      imageTitle
+      imageDescription
+      galleryImages {
+        id
+        fileName
+        url
+      }
+      imageButtonLabel
+      imageButtonLink
+    }
+    section13Description
+    section13WriterName
+    section13WriterDetails
+    section13BgImage {
+      id
+      fileName
+      height
+      width
+      size
+      mimeType
+      url
+      assetTitle
+    }
+    section14Title
+    section14Description
+    featuredProducts{
+      id
+      productSku
+      productId
+      productFeatureImage{
+        url(transformation: {image: {resize: {width: 387, height: 221, fit: clip}}})
+        fileName
+        width
+        height
+      }
+      productTitle
+      productSlug
+      productLink
+      productId
+      
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+      }        
+    }
+  }
+}

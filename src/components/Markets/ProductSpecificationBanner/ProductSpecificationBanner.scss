@@ -1,0 +1,22 @@
+.product-bg-desc{
+    .right-with-text{
+        article{
+            @include media-breakpoint-up(lg) {
+                background: $grey-light;
+                padding: $spacer*6 $spacer*4;
+            }
+        }
+    }
+}
+.product-right{
+    .left-with-image{
+        @include media-breakpoint-up(lg) {
+            order: 2;
+        }
+    }
+    .right-with-text{
+        @include media-breakpoint-up(lg) {
+            order: 1;
+        }
+    }
+}

@@ -1,0 +1,113 @@
+query fullelectrics {
+  fullelectrics {
+    id
+    banner {
+      ... on BannerWithMultiImage {
+        id
+        bannerTitles
+        multiImages {
+          id
+          url
+        }
+      }
+    }
+    section1TitleWithDescription {
+      __typename
+      ... on TitleWithDescription {
+        id
+        title
+        description {
+          html
+        }
+      }
+    }
+    section2Title
+    section2TabArea {
+      id
+      tabName
+      tabNameImage {
+        id
+        url
+        width
+        height
+      }
+      tabTitle
+      tabImage {
+        id
+        url
+        width
+        height
+      }
+      technicalSpecifications {
+        id
+        parentTabTitle
+      }
+      tabDescription {
+        html
+      }
+    }
+    section3SliderImage {
+      url
+      fileName
+    }
+    section3SliderDescription {
+      id
+      cardTitle
+      cardDescription
+    }
+    section5TitleWithDescription {
+      ... on TitleWithDescription {
+        id
+        title
+        description {
+          html
+        }
+        button {
+          ... on ButtonsWithLink {
+            id
+            buttonLink
+            buttonText
+          }
+        }
+      }
+    }
+    section8VideoLink
+    section8VideoImage {
+      id
+      url
+    }
+    section9Title
+    section9Description
+    section9StaticBanner {
+      titleWithDescription {
+        ... on TitleWithDescription {
+          id
+          title
+          description {
+            html
+          }
+        }
+      }
+      bannerTitle
+      bannerDescription {
+        html
+      }
+      bannerButtonLink
+      bannerButtonLabel
+      bannerImage {
+        id
+        url
+      }
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

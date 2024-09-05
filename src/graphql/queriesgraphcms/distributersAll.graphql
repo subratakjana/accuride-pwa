@@ -1,0 +1,37 @@
+query distributers {
+  distributorses(where: {storeLanguage: {languages: English}, AND: {pages: {pageSlug: "distributors"}}}) {
+    id
+    banner {
+      id
+      bannerHeading
+      bannerDescription
+      bannerImage {
+        id
+        fileName
+        url
+      }
+      bannerButtonText
+      bannerButtonLink
+    }
+    distributorsList {
+      id
+      stage
+      name
+      address
+      phoneNumber
+      email
+      lat
+      lng
+    }
+    pages {
+      id
+      pageTitle
+      pageName
+      pageSlug
+      pageIntroduction {
+        html
+        text
+      }
+    }
+  }
+}

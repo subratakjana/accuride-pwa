@@ -1,0 +1,76 @@
+query desktopMegaMenu($pageSlug: String!) {
+    desktopMegaMenus(where: {storeLanguage_some: {languages: English}, AND: {pageSlugUrl: $pageSlug}}) {
+        id
+        menuTitle
+        pageSlugUrl
+        staticLink
+        externalLink
+        openInNewTab
+        show
+        iconImage {
+            id
+            fileName
+            url
+        }
+        videoUrl
+        descriptionText
+        additionalLinkButtonText
+        additionalLinkButtonSlugUrl
+        dropdownMenuStyle
+        subMenu {
+            id
+            menuTitle
+            pageSlugUrl
+            staticLink
+            externalLink
+            openInNewTab
+            show
+            iconImage {
+                id
+                fileName
+                url
+            }
+            videoUrl
+            descriptionText
+            additionalLinkButtonText
+            additionalLinkButtonSlugUrl
+            dropdownMenuStyle
+            subMenu {
+                id
+                menuTitle
+                pageSlugUrl
+                staticLink
+                externalLink
+                openInNewTab
+                iconImage {
+                    id
+                    fileName
+                    url
+                }
+                videoUrl
+                descriptionText
+                additionalLinkButtonText
+                additionalLinkButtonSlugUrl
+                dropdownMenuStyle
+                subMenu {
+                    id
+                    menuTitle
+                    pageSlugUrl
+                    staticLink
+                    externalLink
+                    openInNewTab
+                    iconImage {
+                        id
+                        fileName
+                        url
+                    }
+                    videoUrl
+                    descriptionText
+                    additionalLinkButtonText
+                    additionalLinkButtonSlugUrl
+                    dropdownMenuStyle
+                }
+            }
+        }
+    }
+}
